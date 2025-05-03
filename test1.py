@@ -1,1 +1,2 @@
-i= int(input("Enter the name: "))
+i= int(input("Enter : "))  #integer
+y= float (input("Enter : "))
