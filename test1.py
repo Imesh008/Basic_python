@@ -6,4 +6,4 @@ print(f"Hello,{name}!, You are {age} , years old.")
 #example using variables
 current_year = 2025
 birth_year =current_year- age #estimate birth year
-print("You were probably born in", birth_year)
+print(f"You were probably born in { birth_year}")
