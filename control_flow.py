@@ -6,3 +6,9 @@ if score >=50:
     print("You Passed")
 else:
     print("Try Again...")
+
+print("-"*25)
+
+#for loop example
+print("counting froom 1 to 5 :")
+ 
