@@ -17,3 +17,11 @@ for i in range (1,6):
 print("-"*25)
 #while loop example
 print("While loop countdown:")
+
+count = 3  # Initialize the countdown
+while count>0:
+    print("Error")
+
+    count-=1 #decrease the value of count 
+
+print("-"*25)
