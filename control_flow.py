@@ -13,3 +13,7 @@ print("-"*25)
 print("counting froom 1 to 5 :")
 for i in range (1,6):
     print(i)
+
+print("-"*25)
+#while loop example
+print("While loop countdown:")
