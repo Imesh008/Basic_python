@@ -16,3 +16,9 @@ fruits.append ("mango")
 #for loop to print each fruit
 for fruit in fruits:
     print(fruit)
+
+#wrap print loop in to the function
+def print_fruits (fruit_list):
+    for fruit in fruit_list:
+        print(fruit)
+print_fuits(fruits)
