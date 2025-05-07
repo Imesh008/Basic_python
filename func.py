@@ -22,3 +22,9 @@ def print_fruits (fruit_list):
     for fruit in fruit_list:
         print(fruit)
 print_fuits(fruits)
+
+#creat another funtion to add a fruit
+def add_fruit(fruit_list,fruit_name): #func
+    fruit_list.append(fruit_name)    #add fruit
+
+add_fruit(fruits,"orange")
