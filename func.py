@@ -4,3 +4,8 @@ def greet (name):
 
 #print func
 print(greet("Ayesh"))
+
+print("-"*25)
+
+#create a list
+fruits=["apple","banana","cherry"]
