@@ -10,3 +10,9 @@ person["city"]="colombo"
 #loop throught the keys and values in the dictionary
 for key,value in person.items():
     print(key, ":", value)
+
+
+print("-"*25)
+
+#creat a basic tuple
+colors =("red","green","blue")
