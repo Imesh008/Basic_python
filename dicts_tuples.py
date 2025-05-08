@@ -16,3 +16,6 @@ print("-"*25)
 
 #creat a basic tuple
 colors =("red","green","blue")
+
+#access item in the tupple
+print(colors[1])   
