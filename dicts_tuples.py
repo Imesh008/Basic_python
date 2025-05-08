@@ -6,3 +6,7 @@ print(person["name"])
 
 #add a new key value pair to the dictionary
 person["city"]="colombo"
+
+#loop throught the keys and values in the dictionary
+for key,value in person.items():
+    print(key, ":", value)
