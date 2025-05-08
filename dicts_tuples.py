@@ -19,3 +19,7 @@ colors =("red","green","blue")
 
 #access item in the tupple
 print(colors[1])   
+
+#loop through the tuple
+for color in colors:
+    print(color)
