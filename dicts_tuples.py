@@ -23,3 +23,7 @@ print(colors[1])
 #loop through the tuple
 for color in colors:
     print(color)
+
+#combine dictionary and tuple useage
+favourite = {"Ravi":colors[0]}   #ravi likes red
+print(favourite)
