@@ -11,7 +11,7 @@ with open("hello.txt" , "r") as file:
     print(content)
     print("Read the content")  #confirmation
 
-#wrap file rading in try/except
+#wrap file reading in try/except
 try:
     with open ("hello.txt" , "r") as file:
         content = file.read()
@@ -27,6 +27,14 @@ try:
 except FileNotFoundError:
     print("Oops! File does not exist...")
 
-#add general exception hadnler
+#add general exception handler
 except Exception as e:
-    print("An error occured:" , e)
+    print("An error occurred:" , e)
+
+#write and read multiple lines with a loop
+with open ("data.txt" , "w") as file:
+    file.write ("Line 1\nLine 2\nLine 3")
+
+with open("data.txt", "r") as file:
+    for line in file:
+        print(line.strip())
