@@ -10,3 +10,12 @@ with open("hello.txt" , "r") as file:
     content = file.read()
     print(content)
     print("Read the content")  #confirmation
+
+#wrap file rading in try/except
+try:
+    with open ("hello.txt" , "r") as file:
+        content = file.read()
+        print(content)
+
+except FileNotFoundError:
+    print("File not found...! ")
