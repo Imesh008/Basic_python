@@ -19,3 +19,10 @@ try:
 
 except FileNotFoundError:
     print("File not found...! ")
+
+#test error handling with a missing file
+try:
+    with open ("hello.txt" , "r") as file:
+        print (file.read())
+except FileNotFoundError:
+    print("Oops! File does not exist...")
