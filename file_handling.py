@@ -26,3 +26,7 @@ try:
         print (file.read())
 except FileNotFoundError:
     print("Oops! File does not exist...")
+
+#add general exception hadnler
+except Exception as e:
+    print("An error occured:" , e)
