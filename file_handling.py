@@ -4,3 +4,9 @@ with open("hello.txt" , "w") as file:
 
 #add print to confirm file write
 print("File Written Successfully...")
+
+#open and read the file content
+with open("hello.txt" , "r") as file:
+    content = file.read()
+    print(content)
+    print("Read the content")  #confirmation
