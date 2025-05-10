@@ -20,7 +20,7 @@ while True:
         task = input ("Enter task: ")
         add_task(task)
 
-#handle view task option
+#handle view task options
     elif choice == "2":
         show_tasks()
 
