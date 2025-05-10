@@ -5,3 +5,7 @@ tasks = []   #initialize the tasks list
 def add_tasl(task):
     tasks.append(task)
 
+#define show_tasks function
+def show_tasks():
+    for i , task in enumerate (tasks , 1) :
+        print (f"(i). {task}")
