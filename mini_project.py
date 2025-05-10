@@ -19,3 +19,8 @@ while True:
 if choice == "1":
     task = input ("Enter task: ")
     add_task(task)
+
+#handle task addition option
+elif choice == "2":
+    show_tasks()
+    
