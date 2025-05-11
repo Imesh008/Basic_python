@@ -12,3 +12,5 @@ def show_menu():
 #addition function
 def add (a, b):
     return a + b
+
+#substraction function
