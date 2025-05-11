@@ -1,1 +1,11 @@
+#a simple calculator in python
 
+#display the menu
+def show_menu():
+    print("\nSimple Calculator")
+    print("1. Add")
+    print("2. Susbtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Exit")
+    
