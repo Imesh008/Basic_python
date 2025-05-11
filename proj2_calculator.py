@@ -10,3 +10,5 @@ def show_menu():
     print("5. Exit")
 
 #addition function
+def add (a, b):
+    return a + b
