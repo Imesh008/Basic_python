@@ -15,3 +15,4 @@ def add (a, b):
 
 #substraction function
 def substract (a, b):
+    return a - b
