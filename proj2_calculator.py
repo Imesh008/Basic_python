@@ -4,7 +4,7 @@
 def show_menu():
     print("\nSimple Calculator")
     print("1. Add")
-    print("2. Susbtract")
+    print("2. Substract")
     print("3. Multiply")
     print("4. Divide")
     print("5. Exit")
@@ -23,8 +23,12 @@ def multiply(a, b):
 
 #define divide function with zero check
 def divide (a, b):
-     if b== 0:
+    if b== 0:
         return "Cannot divide by zero"
     return a / b
 
 print ("_" * 25)
+#input loop to choose option
+while True :
+    show_menu ()
+    if b == 0:
