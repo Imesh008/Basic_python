@@ -16,3 +16,7 @@ def add (a, b):
 #substraction function
 def substract (a, b):
     return a - b
+
+#define multiply function
+def multiply(a, b):
+    return a * b
