@@ -23,4 +23,6 @@ def multiply(a, b):
 
 #define divide function with zero check
 def divide (a, b):
+     if b== 0:
+        return "Cannot divide by zero"
      
