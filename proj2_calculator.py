@@ -28,7 +28,7 @@ def divide (a, b):
     return a / b
 
 print ("_" * 25)
-#input loop to choose option
+#input loop to show choose option
 while True :
     show_menu ()
     choice = input ("Choose an option (1-5): ")
