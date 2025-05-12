@@ -20,3 +20,7 @@ def substract (a, b):
 #define multiply function
 def multiply(a, b):
     return a * b
+
+#define divide function with zero check
+def divide (a, b):
+     
