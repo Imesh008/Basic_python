@@ -31,4 +31,4 @@ print ("_" * 25)
 #input loop to choose option
 while True :
     show_menu ()
-    if b == 0:
+    choice = input ("Choose an option (1-5): ")
