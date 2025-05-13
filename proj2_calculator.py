@@ -42,4 +42,5 @@ while True :
 num1 = float(input("Enter fisrt number: "))
 num2 = float(input("Enter second number: "))
 #getting user inputes
- 
+
+if choice == "1":
