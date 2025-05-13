@@ -40,3 +40,4 @@ while True :
 
 #input numbers
 num1 = float(input("Enter fisrt number: "))
+ 
