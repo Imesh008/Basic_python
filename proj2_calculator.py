@@ -36,3 +36,7 @@ while True :
     if choice == "5":   #choice number 5 
         print ("Existing calculator... Goodbye ...!")
         break
+
+
+#input numbers
+num1 = float(input("Enter fisrt number: "))
