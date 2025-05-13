@@ -44,3 +44,4 @@ num2 = float(input("Enter second number: "))
 #getting user inputes
 
 if choice == "1":
+    print ("Result: ", add(num1 ,num2))
