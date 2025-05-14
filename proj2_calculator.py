@@ -51,3 +51,6 @@ elif choice == "2":
 
 elif choice == "3":
     print ("Result: ", multiply (num1, num2))
+
+elif choice == "4":
+     
