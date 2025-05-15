@@ -35,7 +35,7 @@ while True :
 
     #improve input validation
     if choices not in ["1", "2" ,"3" "4" ,"5"]:
-        print("Invalid option. Please")
+        print("Invalid option. Please try again.")
     
 
     if choice == "5":   #choice number 5 
