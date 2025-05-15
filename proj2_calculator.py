@@ -34,8 +34,8 @@ while True :
     choice = input ("Choose an option (1-5): ")
 
     #improve input validation
-     
-    
+    if choices not in ["1", "2" ,"3" "4" ,"5"]:
+         
 
     if choice == "5":   #choice number 5 
         print ("Existing calculator... Goodbye ...!")
