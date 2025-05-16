@@ -45,9 +45,12 @@ while True :
 
 
 #input numbers
-num1 = float(input("Enter fisrt number: "))
-num2 = float(input("Enter second number: ")) #getting user inputes
-#getting user inputes
+#add try except for number input
+try:
+    num1 = float(input("Enter fisrt number: "))
+    num2 = float(input("Enter second number: ")) #getting user inputes
+ 
+ 
 
 if choice == "1":
     print ("Result: ", add(num1 ,num2))
