@@ -63,6 +63,8 @@ if choice == "1":
 
 elif choice == "2":
     print("Result: ", substract(num1, num2))
+    input ("Press Enter to continue")
+
 
 elif choice == "3":
     print ("Result: ", multiply (num1, num2))
