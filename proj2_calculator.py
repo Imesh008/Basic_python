@@ -50,7 +50,7 @@ try:
     num1 = float(input("Enter fisrt number: "))
     num2 = float(input("Enter second number: ")) #getting user inputes
 except ValueError:
-    print()
+    print("Invalid input. Please enter numbers only...!")
      
  
 
