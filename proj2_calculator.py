@@ -1,5 +1,8 @@
 #a simple calculator in python
 
+#add a welcome message
+print("Welcom to the Python Calculator")
+
 #display the menu
 def show_menu():
     print("\nSimple Calculator")
@@ -68,3 +71,6 @@ elif choice == "4":
 
 else:
     print("Invalid option... Try again...")
+
+
+ 
