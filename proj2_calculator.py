@@ -1,7 +1,7 @@
 #a simple calculator in python
 
 #add a welcome message
-print("Welcom to the Python Calculator")
+print("Welcome to the Python Calculator")
 
 #display the menu
 def show_menu():
