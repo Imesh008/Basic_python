@@ -54,7 +54,7 @@ while True :
 #input numbers
 #add try except for number input
 try:
-    num1 = float(input("Enter fisrt number: "))
+    num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: ")) #getting user inputes
 except ValueError:
     print("Invalid input. Please enter numbers only...!")
