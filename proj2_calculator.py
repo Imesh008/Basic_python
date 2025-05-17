@@ -10,6 +10,8 @@ def show_menu():
     print("2. Substract")
     print("3. Multiply")
     print("4. Divide")
+    print("5. Power")
+     
     print("5. Exit")
 
 #addition function
