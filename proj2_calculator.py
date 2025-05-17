@@ -12,6 +12,7 @@ def show_menu():
     print("4. Divide")
     print("5. Power")
     print("6. Modules")
+    print("7. Show History")
     print("5. Exit")
 
 #addition function
