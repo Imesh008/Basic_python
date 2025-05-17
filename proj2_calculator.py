@@ -11,7 +11,7 @@ def show_menu():
     print("3. Multiply")
     print("4. Divide")
     print("5. Power")
-    print("6. Modules")
+    print("6. Modulus")
     print("7. Show History")
     print("5. Exit")
 
