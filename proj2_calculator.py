@@ -20,7 +20,7 @@ def add (a, b):
     return a + b
 
 #substraction function
-def substract (a, b):
+def subtract (a, b):
     return a - b
 
 #define multiply function
