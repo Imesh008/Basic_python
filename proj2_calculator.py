@@ -7,7 +7,7 @@ print("Welcome to the Python Calculator")
 def show_menu():
     print("\nSimple Calculator")
     print("1. Add")
-    print("2. Substract")
+    print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
     print("5. Power")
