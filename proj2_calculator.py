@@ -40,7 +40,7 @@ while True :
     choice = input ("Choose an option (1-5): ")
 
     #improve input validation
-    if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7"]:
+    if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8"]:
        print("Invalid option. Please try again.")
        continue
   
