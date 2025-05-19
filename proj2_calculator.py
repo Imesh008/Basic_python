@@ -19,8 +19,8 @@ def show_menu():
 def add (a, b):
     return a + b
 
-#substraction function
-def substract (a, b):
+#subtraction function
+def subtract (a, b):
     return a - b
 
 #define multiply function
