@@ -13,7 +13,7 @@ def show_menu():
     print("5. Power")
     print("6. Modulus")
     print("7. Show History")
-    print("5. Exit")
+    print("8. Exit")
 
 #addition function
 def add (a, b):
@@ -76,7 +76,7 @@ elif choice == "3":
 elif choice == "4":
     print ("Result: ",divide(num1, num2))
     input ("Press Enter to continue")
-
+elif choice == "5":
 else:
     print("Invalid option... Try again...")
 
