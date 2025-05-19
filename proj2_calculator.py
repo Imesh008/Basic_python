@@ -40,7 +40,7 @@ while True :
     choice = input ("Choose an option (1-5): ")
 
     #improve input validation
-    if choice not in ["1", "2" ,"3" ,"4" ,"5"]:
+    if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6"]:
        print("Invalid option. Please try again.")
        continue
   
@@ -76,7 +76,7 @@ elif choice == "3":
 elif choice == "4":
     print ("Result: ",divide(num1, num2))
     input ("Press Enter to continue")
-elif choice == "5":
+
 else:
     print("Invalid option... Try again...")
 
