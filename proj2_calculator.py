@@ -33,6 +33,12 @@ def divide (a, b):
         return "Cannot divide by zero"
     return a / b
 
+#defines power funtion
+def power (a, b):
+
+
+
+
 print ("_" * 25)
 #input loop to show choose option
 while True :
