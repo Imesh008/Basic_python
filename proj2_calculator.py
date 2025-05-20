@@ -35,6 +35,7 @@ def divide (a, b):
 
 #defines power funtion
 def power (a, b):
+    return a ** b
 
 
 
