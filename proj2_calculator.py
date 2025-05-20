@@ -37,7 +37,8 @@ def divide (a, b):
 def power (a, b):
     return a ** b
 
-
+#defines modulus function
+def modules (a,b):
 
 
 print ("_" * 25)
