@@ -51,8 +51,8 @@ while True :
         break
 
 
-#input numbers
-#add try except for number input
+#Input numbers
+#add try-except for number input
 try:
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: ")) #getting user inputes
