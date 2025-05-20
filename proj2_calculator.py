@@ -39,7 +39,7 @@ def power (a, b):
 
 #defines modulus function
 def modules (a,b):
-
+    return a % b
 
 print ("_" * 25)
 #input loop to show choose option
