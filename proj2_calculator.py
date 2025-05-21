@@ -86,6 +86,7 @@ elif choice == "4":
     input ("Press Enter to continue")
 
 elif choice == "5":
+    print ("Result: ", power(num1, num2))
 
 else:
     print("Invalid option... Try again...")
