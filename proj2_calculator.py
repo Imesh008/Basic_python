@@ -91,6 +91,7 @@ elif choice == "5":
 
 elif choice == "6":
     print ("Result: ", modules(num1, num2))
+    input ("Press Enter to continue")
 
 
 else:
