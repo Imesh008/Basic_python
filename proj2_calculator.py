@@ -38,7 +38,7 @@ def power (a, b):
     return a ** b
 
 #defines modulus function
-def modules (a,b):
+def modulus (a,b):
     return a % b
 
 print ("_" * 25)
