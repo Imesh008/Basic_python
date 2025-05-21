@@ -90,7 +90,9 @@ elif choice == "5":
     input ("Press Enter to continue")
 
 elif choice == "6":
-    
+    print ("Result: ", modules(num1, num2))
+
+
 else:
     print("Invalid option... Try again...")
 
