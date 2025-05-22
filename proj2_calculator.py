@@ -71,46 +71,46 @@ while True :
         else:
             for item in history:
                 print(item)
-        input ("Press Enter to continue")
+        input ("Press Enter to continue...")
         continue
 
 #Input numbers
 #add try-except for number input
-try:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: ")) #getting user inputs
-except ValueError:
-    print("Invalid input. Please enter numbers only...!")
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: ")) #getting user inputs
+    except ValueError:
+        print("Invalid input. Please enter numbers only...!")
      
  
 
-if choice == "1":
-    print ("Result: ", add(num1 ,num2))
-    input ("Press Enter to continue")
+    if choice == "1":
+        print ("Result: ", add(num1 ,num2))
+        input ("Press Enter to continue")
 
-elif choice == "2":
-    print("Result: ", subtract(num1, num2))
-    input ("Press Enter to continue")
+    elif choice == "2":
+        print("Result: ", subtract(num1, num2))
+        input ("Press Enter to continue")
 
-elif choice == "3":
-    print ("Result: ", multiply (num1, num2))
-    input ("Press Enter to continue")
+    elif choice == "3":
+        print ("Result: ", multiply (num1, num2))
+        input ("Press Enter to continue")
 
-elif choice == "4":
-    print ("Result: ",divide(num1, num2))
-    input ("Press Enter to continue")
+    elif choice == "4":
+        print ("Result: ",divide(num1, num2))
+        input ("Press Enter to continue")
 
-elif choice == "5":
-    print ("Result: ", power(num1, num2))
-    input ("Press Enter to continue")
+    elif choice == "5":
+        print ("Result: ", power(num1, num2))
+        input ("Press Enter to continue")
 
-elif choice == "6":
-    print ("Result: ", modulus(num1, num2))
-    input ("Press Enter to continue")
+    elif choice == "6":
+        print ("Result: ", modulus(num1, num2))
+        input ("Press Enter to continue")
 
  
-else:
-    print("Invalid option... Try again...")
+    else:
+        print("Invalid option... Try again...")
 
 
  
