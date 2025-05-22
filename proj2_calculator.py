@@ -97,7 +97,9 @@ elif choice == "7":
     print("History: ")
     if not history:
         print("No history available.")
-
+    else:
+        for item in history:
+            print(item)
 else:
     print("Invalid option... Try again...")
 
