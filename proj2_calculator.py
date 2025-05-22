@@ -41,6 +41,10 @@ def power (a, b):
 def modulus (a,b):
     return a % b
 
+#store history of calculations
+history = []
+
+
 print ("_" * 25)
 #input loop to show choose option
 while True :
@@ -101,6 +105,7 @@ elif choice == "7":
         for item in history:
             print(item)
     input ("Press Enter to continue")
+    continue
 else:
     print("Invalid option... Try again...")
 
