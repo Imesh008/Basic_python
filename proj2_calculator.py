@@ -44,12 +44,13 @@ def modulus (a,b):
 #store history of calculations
 history = []
 
-
 print ("_" * 25)
+
+
 #input loop to show choose option
 while True :
     show_menu ()
-    choice = input ("Choose an option (1-5): ")
+    choice = input ("Choose an option (1-8): ")
 
     #improve input validation
     if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8"]:
