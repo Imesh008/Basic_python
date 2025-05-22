@@ -63,6 +63,16 @@ while True :
         print("Thanks for using the calculator...!")        #exit message
         break
 
+    
+    elif choice == "7":
+        print("History: ")
+        if not history:
+            print("No history available.")
+        else:
+            for item in history:
+                print(item)
+        input ("Press Enter to continue")
+        continue
 
 #Input numbers
 #add try-except for number input
@@ -98,15 +108,7 @@ elif choice == "6":
     print ("Result: ", modulus(num1, num2))
     input ("Press Enter to continue")
 
-elif choice == "7":
-    print("History: ")
-    if not history:
-        print("No history available.")
-    else:
-        for item in history:
-            print(item)
-    input ("Press Enter to continue")
-    continue
+ 
 else:
     print("Invalid option... Try again...")
 
