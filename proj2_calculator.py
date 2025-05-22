@@ -100,6 +100,7 @@ elif choice == "7":
     else:
         for item in history:
             print(item)
+    input ("Press Enter to continue")
 else:
     print("Invalid option... Try again...")
 
