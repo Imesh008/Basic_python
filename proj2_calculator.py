@@ -81,6 +81,7 @@ while True :
         num2 = float(input("Enter second number: ")) #getting user inputs
     except ValueError:
         print("Invalid input. Please enter numbers only...!")
+        continue
      
  
 
