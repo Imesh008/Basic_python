@@ -86,8 +86,9 @@ while True :
  
 
     if choice == "1":
-        print ("Result: ", add(num1 ,num2))
-        input ("Press Enter to continue")
+        result= add(num1 ,num2)
+        history.append(f"{num1} + {num2} = {result}")
+
 
     elif choice == "2":
         print("Result: ", subtract(num1, num2))
