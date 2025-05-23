@@ -100,7 +100,7 @@ while True :
 
 
     elif choice == "3":
-        print ("Result: ", multiply (num1, num2))
+        result = multiply (num1, num2)
         input ("Press Enter to continue")
 
     elif choice == "4":
