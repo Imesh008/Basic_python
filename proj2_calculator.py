@@ -88,6 +88,7 @@ while True :
     if choice == "1":
         result= add(num1 ,num2)
         history.append(f"{num1} + {num2} = {result}")
+        print("Result: ", result)
 
 
     elif choice == "2":
