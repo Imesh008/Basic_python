@@ -92,8 +92,7 @@ while True :
 
 
     elif choice == "2":
-        print("Result: ", subtract(num1, num2))
-        input ("Press Enter to continue")
+        result = subtract(num1, num2)
 
     elif choice == "3":
         print ("Result: ", multiply (num1, num2))
