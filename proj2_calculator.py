@@ -93,6 +93,8 @@ while True :
 
     elif choice == "2":
         result = subtract(num1, num2)
+        history.appen(f"{num1}-{num2} = {result}")
+
 
     elif choice == "3":
         print ("Result: ", multiply (num1, num2))
