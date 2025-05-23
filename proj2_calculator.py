@@ -101,7 +101,7 @@ while True :
 
     elif choice == "3":
         result = multiply (num1, num2)
-        history.append()
+        history.append(f"{num1} * {num2} = {result}")
 
     elif choice == "4":
         print ("Result: ",divide(num1, num2))
