@@ -110,7 +110,7 @@ while True :
         history.append (f"{num1} / {num2} = {result}")
 
     elif choice == "5":
-        print ("Result: ", power(num1, num2))
+        result = power(num1, num2)
         input ("Press Enter to continue")
 
     elif choice == "6":
