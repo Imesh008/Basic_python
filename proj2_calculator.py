@@ -114,6 +114,7 @@ while True :
         result = power(num1, num2)
         input ("Press Enter to continue")
         history.append(f"{num1} ** {num2} = {result}")
+        print ("Result: ", result)
 
     elif choice == "6":
         print ("Result: ", modulus(num1, num2))
