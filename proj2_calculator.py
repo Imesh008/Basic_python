@@ -119,6 +119,7 @@ while True :
     elif choice == "6":
         result = modulus(num1, num2)
         input ("Press Enter to continue")
+        history.append(f"{num1} % {num2} = {result}")
 
  
     else:
