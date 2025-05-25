@@ -117,7 +117,7 @@ while True :
         print ("Result: ", result)
 
     elif choice == "6":
-        print ("Result: ", modulus(num1, num2))
+        result = modulus(num1, num2)
         input ("Press Enter to continue")
 
  
