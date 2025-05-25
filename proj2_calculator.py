@@ -120,6 +120,7 @@ while True :
         result = modulus(num1, num2)
         input ("Press Enter to continue")
         history.append(f"{num1} % {num2} = {result}")
+        print("Result: ", result)
 
  
     else:
