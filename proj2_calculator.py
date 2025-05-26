@@ -108,10 +108,8 @@ while True :
     elif choice == "4":
         result =divide(num1, num2)
         input ("Press Enter to continue")
-
         history.append (f"{num1} / {num2} = {result}")
-        input ("Press Enter to continue")
-
+        print ("Result: ", result)
     elif choice == "5":
         result = power(num1, num2)
         input ("Press Enter to continue")
