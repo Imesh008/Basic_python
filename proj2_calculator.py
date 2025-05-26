@@ -33,7 +33,7 @@ def divide (a, b):
         return "Cannot divide by zero"
     return a / b
 
-#defines power funtion
+#defines power function
 def power (a, b):
     return a ** b
 
