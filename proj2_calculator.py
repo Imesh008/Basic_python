@@ -94,7 +94,7 @@ while True :
 
     elif choice == "2":
         result = subtract(num1, num2)
-        history.appen(f"{num1}-{num2} = {result}")
+        history.append(f"{num1}-{num2} = {result}")
         print ("Result: ", result)
         input ("Press Enter to continue...")
 
