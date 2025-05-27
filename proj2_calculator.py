@@ -129,5 +129,5 @@ while True :
         print("Invalid option... Try again...")
     print ("_" * 25)  #print line for better readability
     print("Thank you for using the calculator...!")  #thank you message
-
+    print("Have a great day...!")  #goodbye message
  
