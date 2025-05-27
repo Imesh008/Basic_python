@@ -67,7 +67,7 @@ while True :
     elif choice == "7":
         #show history of calculations
         print("History: ")
-        if not history:
+        if not history:             #check if history is empty
             print("No history available.")
         else:
             # enumerate history with index
