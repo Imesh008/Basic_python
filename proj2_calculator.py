@@ -65,15 +65,13 @@ while True :
 
     
     elif choice == "7":
+        #show history of calculations
         print("History: ")
         if not history:
             print("No history available.")
         else:
-            for item in history:
-                print(item)
-        input ("Press Enter to continue...")
-        continue
-
+            for idx, item in enumerate(history, start=1):
+ 
 #Input numbers
 #add try-except for number input
     try:
