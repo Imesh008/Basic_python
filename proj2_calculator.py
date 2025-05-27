@@ -128,7 +128,6 @@ while True :
     else:
         print("Invalid option... Try again...")
     print ("_" * 25)  #print line for better readability
-    input("Press Enter to continue...")  #wait for user to press enter before showing menu again
-
+    print("Thank you for using the calculator...!")  #thank you message
 
  
