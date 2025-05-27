@@ -70,7 +70,9 @@ while True :
         if not history:
             print("No history available.")
         else:
+            # enumerate history with index
             for idx, item in enumerate(history, start=1):
+                print(f"{idx}. {item}")
  
 #Input numbers
 #add try-except for number input
