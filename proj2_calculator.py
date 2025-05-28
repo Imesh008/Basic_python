@@ -75,7 +75,7 @@ while True :
                 print(f"{idx}. {item}")
  
 #Input numbers
-#add try-except for number input
+#Add try-except for number input
     elif choice in ["1", "2", "3", "4", "5", "6"]:
         try:
             num1 = float(input("Enter first number: "))
