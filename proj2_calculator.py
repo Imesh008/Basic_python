@@ -115,14 +115,14 @@ while True :
 
         
     elif choice == "5":
-        result = power(num1, num2)
+        result = power (num1, num2)
         history.append(f"{num1} ** {num2} = {result}")
         print ("Result: ", result)
         input ("Press Enter to continue...")
 
 
     elif choice == "6":
-        result = modulus(num1, num2)
+        result = modulus (num1, num2)
         history.append(f"{num1} % {num2} = {result}")
         print("Result: ", result)
         input("Press Enter to continue...")
