@@ -77,10 +77,10 @@ while True :
 #Input numbers
 #add try-except for number input
     elif choice in ["1", "2", "3", "4", "5", "6"]:
-    try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: ")) #getting user inputs
-    except ValueError:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: ")) #getting user inputs
+        except ValueError:
         print("Invalid input. Please enter numbers only...!")
         continue
      
