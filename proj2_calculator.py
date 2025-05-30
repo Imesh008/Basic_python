@@ -107,6 +107,7 @@ while True :
         print ("Result: ", result)
         input ("Press Enter to continue...")
 
+
     elif choice == "4":
         result =divide (num1, num2)
         history.append (f"{num1} / {num2} = {result}")
