@@ -128,6 +128,7 @@ while True :
         input("Press Enter to continue...")
 
     elif choice == "9":
+        history.clear()
         
  
     else:
