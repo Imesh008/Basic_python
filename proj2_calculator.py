@@ -93,7 +93,6 @@ while True :
         input ("Press Enter to continue...")
 
 
-
     elif choice == "2":
         result = subtract(num1, num2)
         history.append(f"{num1} - {num2} = {result}")
