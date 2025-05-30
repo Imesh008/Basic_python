@@ -15,6 +15,7 @@ def show_menu():
     print("7. Show History")
     print("8. Exit")
     print("9. Clear History")
+    print("_" * 25)
 
 #addition function
 def add (a, b):
