@@ -70,7 +70,7 @@ while True :
         if not history:             #check if history is empty
             print("No history available.")
         else:
-            # enumerate history with index
+            #Enumerate history with index
             for idx, item in enumerate(history, start=1):
                 print(f"{idx}. {item}")
  
