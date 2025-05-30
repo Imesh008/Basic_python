@@ -37,7 +37,7 @@ def divide (a, b):
 def power (a, b):
     return a ** b
 
-#defines modulus function
+#Defines modulus function
 def modulus (a,b):
     return a % b
 
