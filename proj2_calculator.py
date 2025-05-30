@@ -47,7 +47,7 @@ history = []
 print ("_" * 25)
 
 
-#input loop to choose and show option
+#Input loop to choose and show option
 while True :
     show_menu ()
     choice = input ("Choose an option (1-8): ")
