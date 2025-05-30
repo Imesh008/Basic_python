@@ -126,6 +126,9 @@ while True :
         history.append(f"{num1} % {num2} = {result}")
         print("Result: ", result)
         input("Press Enter to continue...")
+
+    elif choice == "9":
+        
  
     else:
         print("Invalid option... Try again...")
