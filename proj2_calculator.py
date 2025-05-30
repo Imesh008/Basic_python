@@ -58,7 +58,7 @@ while True :
        continue
   
 
-    if choice == "8":   #choice number 8
+    if choice == "8":   #Choice number 8
         print ("Exiting calculator... Goodbye ...!")
         print("Thanks for using the calculator...!")        #exit message
         break
