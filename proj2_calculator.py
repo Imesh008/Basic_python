@@ -60,11 +60,14 @@ while True :
        continue
   
 
-    if choice == "8":   #Choice number 8
+    if choice == "9"  #Choice number 9
         print ("Exiting calculator... Goodbye ...!")
         print("Thanks for using the calculator...!")        #exit message
         break
 
+    elif choice == "8":
+        history.clear()
+        print("History cleared...")
     
     elif choice == "7":
         #Show history of calculations
@@ -129,9 +132,7 @@ while True :
         print("Result: ", result)
         input("Press Enter to continue...")
 
-    elif choice == "9":
-        history.clear()
-        print("History cleared...")
+    
         
  
     else:
