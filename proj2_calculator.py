@@ -52,7 +52,7 @@ while True :
     show_menu ()
     choice = input ("Choose an option (1-8): ")
 
-    #improve input validation
+    #Improve input validation
     if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8"]:
        print("Invalid option. Please try again.")
        continue
