@@ -129,6 +129,7 @@ while True :
 
     elif choice == "9":
         history.clear()
+        print("History cleared...")
         
  
     else:
