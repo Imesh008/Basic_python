@@ -52,7 +52,7 @@ print ("_" * 25)
 #Input loop to choose and show option
 while True :
     show_menu ()
-    choice = input ("Choose an option (1-8): ")
+    choice = input ("Choose an option (1-9): ")
 
     #Improve input validation
     if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8" , "9"]:
