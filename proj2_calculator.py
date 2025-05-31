@@ -79,6 +79,7 @@ while True :
             for idx, item in enumerate(history, start=1):
                 print(f"{idx}. {item}")
         input("Press Enter to continue...")
+        continue
  
 #Input numbers
 #Add try-except for number input
