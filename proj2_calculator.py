@@ -61,7 +61,7 @@ while True :
   
 
     if choice == "9": #Choice number 9
-        print ("Thanks tou for using the calculator ...!")
+        print ("Thanks you for using the calculator ...!")
         print ("Have a great day...!")        #exit message
         break
 
@@ -137,6 +137,4 @@ while True :
     else:
         print("Invalid option... Try again...")
     print ("_" * 25)  #print line for better readability
-    print("Thank you for using the calculator...!")  #thank you message
-    print("Have a great day...!")  #goodbye message
- 
+     
