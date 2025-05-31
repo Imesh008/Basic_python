@@ -60,7 +60,7 @@ while True :
        continue
   
 
-    if choice == "9"  #Choice number 9
+    if choice == "9": #Choice number 9
         print ("Exiting calculator... Goodbye ...!")
         print("Thanks for using the calculator...!")        #exit message
         break
