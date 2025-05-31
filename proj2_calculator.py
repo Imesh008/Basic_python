@@ -13,8 +13,8 @@ def show_menu():
     print("5. Power")
     print("6. Modulus")
     print("7. Show History")
-    print("8. Exit")
-    print("9. Clear History")
+    print("8. Clear History")
+    print("9. Exit")
     print("_" * 25)
 
 #addition function
