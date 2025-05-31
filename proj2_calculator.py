@@ -133,9 +133,6 @@ while True :
         history.append(f"{num1} % {num2} = {result}")
         print("Result: ", result)
         input("Press Enter to continue...")
-
-    
-        
  
     else:
         print("Invalid option... Try again...")
