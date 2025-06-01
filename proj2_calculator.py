@@ -1,5 +1,8 @@
 #a simple calculator in python
 
+class Calculator:
+    def __init__(self):
+        self.history = []
 #add a welcome message
 print("Welcome to the Python Calculator")
 
