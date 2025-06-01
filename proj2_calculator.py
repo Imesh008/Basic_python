@@ -3,9 +3,10 @@
 class Calculator:
     def __init__(self):
         self.history = []
-#add a welcome message
-print("Welcome to the Python Calculator")
+        self.welcome_message = "Welcome to the Python Calculator"   #add a welcome message
 
+#add a welcome message
+ 
 #display the menu
 def show_menu():
     print("\nSimple Calculator")
