@@ -7,6 +7,8 @@ class Calculator:
         print(self.welcome_message)  # Display the welcome message
         print("_" * 25)  # Print a line for better readability
   
+    def add(self, a,b):
+        return a + b
 #display the menu
 def show_menu():
     print("\nSimple Calculator")
