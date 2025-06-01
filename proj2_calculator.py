@@ -5,7 +5,7 @@ class Calculator:
         self.history = []
         self.welcome_message = "Welcome to the Python Calculator"   #add a welcome message
         print(self.welcome_message)  # Display the welcome message
-
+        print("_" * 25)  # Print a line for better readability
   
 #display the menu
 def show_menu():
