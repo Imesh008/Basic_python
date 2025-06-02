@@ -23,6 +23,7 @@ class Calculator:
         return a ** b
 
     def modulus (self, a, b):
+        return a % b
 
 #display the menu
 def show_menu():
