@@ -18,6 +18,9 @@ class Calculator:
     
     def divide(self, a,b):
         return a / b if b != 0 else "Cannot divide by zero"  #check for division by zero
+    
+    def power (self , a, b):
+        
 
 
 #display the menu
