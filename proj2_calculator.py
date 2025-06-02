@@ -8,8 +8,10 @@ class Calculator:
         print("_" * 25)  # Print a line for better readability
   
     def add(self, a,b): 
-        return a + b
-        self.history.append(f"{a} + {b} = {Result}")  #store the result in history
+        result = a + b
+        self.history.append(f"{a} + {b} = {result}")  #store the result in history
+        return result
+
     
     def substract(self,a,b):
         return a - b
