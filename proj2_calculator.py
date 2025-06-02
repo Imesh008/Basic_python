@@ -22,6 +22,7 @@ class Calculator:
     def power (self , a, b):
         return a ** b
 
+    def modulus (self, a, b):
 
 #display the menu
 def show_menu():
