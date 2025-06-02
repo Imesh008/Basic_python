@@ -9,6 +9,7 @@ class Calculator:
   
     def add(self, a,b): 
         return a + b
+        self.history.append(f"{a} + {b} = {Result}")  #store the result in history
     
     def substract(self,a,b):
         return a - b
@@ -24,6 +25,8 @@ class Calculator:
 
     def modulus (self, a, b):
         return a % b
+    
+
 
 #display the menu
 def show_menu():
