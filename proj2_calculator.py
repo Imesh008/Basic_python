@@ -14,7 +14,8 @@ class Calculator:
 
     
     def substract(self,a,b):
-        return a - b
+        result = a - b
+        self.history.append(f"{a} - {b} = {result}")
 
     def multiply(self, a,b):
         return a * b
