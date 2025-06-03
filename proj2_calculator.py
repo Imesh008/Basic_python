@@ -18,8 +18,8 @@ class Calculator:
         return result
     
     def multiply(self, a,b):
-        return a * b
-    
+        result = a * b
+        self.history.append (f"{a} * {b} = {result}")
     def divide(self, a,b):
         return a / b if b != 0 else "Cannot divide by zero"  #check for division by zero
     
