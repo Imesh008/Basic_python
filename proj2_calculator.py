@@ -28,7 +28,7 @@ class Calculator:
         return result
     
     def power (self , a, b):
-        return a ** b
+        result = a ** b
 
     def modulus (self, a, b):
         return a % b
