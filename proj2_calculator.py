@@ -10,13 +10,13 @@ class Calculator:
     def add(self, a,b): 
         result = a + b
         self.history.append(f"{a} + {b} = {result}")  #store the result in history
-        return result #
+        return result 
 
-    
     def substract(self,a,b):
         result = a - b
         self.history.append(f"{a} - {b} = {result}")
-
+        return result
+    
     def multiply(self, a,b):
         return a * b
     
