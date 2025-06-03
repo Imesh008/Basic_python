@@ -21,8 +21,11 @@ class Calculator:
         result = a * b
         self.history.append (f"{a} * {b} = {result}")
         return result
+    
     def divide(self, a,b):
-        return a / b if b != 0 else "Cannot divide by zero"  #check for division by zero
+        result = a / b if b != 0 else "Cannot divide by zero"  #check for division by zero
+        self.history.append (f"{a} / {b} = {result}")
+        return result
     
     def power (self , a, b):
         return a ** b
