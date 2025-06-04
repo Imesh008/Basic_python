@@ -34,6 +34,7 @@ class Calculator:
 
     def modulus (self, a, b):
         result = a % b
+        self.history.append(f"{a} % {b} = {result}")
     
     
 
