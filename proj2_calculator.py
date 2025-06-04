@@ -38,6 +38,7 @@ class Calculator:
         return result
 
     def show_history(self):
+        if not self.history:
     
 
 
