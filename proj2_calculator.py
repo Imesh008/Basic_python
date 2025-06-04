@@ -33,7 +33,8 @@ class Calculator:
         return result
 
     def modulus (self, a, b):
-        return a % b
+        result = a % b
+    
     
 
 
