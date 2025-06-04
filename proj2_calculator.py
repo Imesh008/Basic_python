@@ -65,6 +65,10 @@ def show_menu():
     print("9. Exit")
     print("_" * 25)
 
+
+#main program 
+calc = Calculator()  #create an instance of the Calculator class
+
 #addition function
 def add (a, b):
     return a + b
