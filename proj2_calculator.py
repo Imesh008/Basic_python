@@ -44,6 +44,10 @@ class Calculator:
             print(" History:")
             for idx, item in enumerate(self.history, start=1):
                 print(f"{idx}. {item}")
+
+    def clear_history(self):
+        self.history.clear()
+        return ("History cleared...")
     
 
 
