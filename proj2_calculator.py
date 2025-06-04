@@ -36,7 +36,8 @@ class Calculator:
         result = a % b
         self.history.append(f"{a} % {b} = {result}")
         return result
-    
+
+    def show_history(self):
     
 
 
