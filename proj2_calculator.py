@@ -39,6 +39,8 @@ class Calculator:
 
     def show_history(self):
         if not self.history:
+            return "No history available."
+        else:
     
 
 
