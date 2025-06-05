@@ -139,7 +139,7 @@ while True :
 
 
     elif choice == "3":
-        result = multiply (num1, num2)
+        result = calc.multiply (num1, num2)
         history.append(f"{num1} * {num2} = {result}")
         print ("Result: ", result)
         input ("Press Enter to continue...")
