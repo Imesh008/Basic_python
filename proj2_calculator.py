@@ -12,7 +12,7 @@ class Calculator:
         self.history.append(f"{a} + {b} = {result}")  #store the result in history
         return result 
 
-    def substract(self,a,b):
+    def subtract(self,a,b):
         result = a - b
         self.history.append(f"{a} - {b} = {result}")
         return result
@@ -132,7 +132,7 @@ while True :
 
 
     elif choice == "2":
-        result = subtract(num1, num2)
+        result = calc.subtract(num1, num2)
         history.append(f"{num1} - {num2} = {result}")
         print ("Result: ", result)
         input ("Press Enter to continue...")
