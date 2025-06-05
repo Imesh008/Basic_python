@@ -99,7 +99,7 @@ while True :
         print("History cleared...")
         continue
 
-    
+
     elif choice == "7":
         #Show history of calculations
         print("History: ")
@@ -125,7 +125,7 @@ while True :
  
 
     if choice == "1":
-        result= add(num1 ,num2)
+        result= calc.add(num1 ,num2)
         history.append(f"{num1} + {num2} = {result}")
         print("Result: ", result)
         input ("Press Enter to continue...")
@@ -146,7 +146,7 @@ while True :
 
 
     elif choice == "4":
-        result =divide (num1, num2)
+        result = divide (num1, num2)
         history.append (f"{num1} / {num2} = {result}")
         print ("Result: ", result)
         input ("Press Enter to continue...")
