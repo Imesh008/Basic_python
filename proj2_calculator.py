@@ -69,31 +69,7 @@ def show_menu():
 #main program 
 calc = Calculator()  #create an instance of the Calculator class
 
-#addition function
-def add (a, b):
-    return a + b
 
-#subtraction function
-def subtract (a, b):
-    return a - b
-
-#define multiply function
-def multiply(a, b):
-    return a * b
-
-#define divide function with zero check
-def divide (a, b):
-    if b== 0:
-        return "Cannot divide by zero"
-    return a / b
-
-#defines power function
-def power (a, b):
-    return a ** b
-
-#Defines modulus function
-def modulus (a,b):
-    return a % b
 
 #store history of calculations
 history = []
@@ -118,8 +94,11 @@ while True :
         break
 
     elif choice == "8":
-        history.clear()
+        calc.clear_history()
+        input("Press Enter to continue...")
         print("History cleared...")
+        continue
+
     
     elif choice == "7":
         #Show history of calculations
