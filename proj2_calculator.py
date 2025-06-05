@@ -69,11 +69,6 @@ def show_menu():
 #main program 
 calc = Calculator()  #create an instance of the Calculator class
 
-
-
-#store history of calculations
-history = []
-
 print ("_" * 25)
 
 
@@ -101,16 +96,8 @@ while True :
 
 
     elif choice == "7":
-        #Show history of calculations
-        print("History: ")
-        if not history:             #check if history is empty
-            print("No history available.")
-        else:
-            #Enumerate history with index
-            for idx, item in enumerate(history, start=1):
-                print(f"{idx}. {item}")
+        calc.show_history()
         input("Press Enter to continue...")
-        continue
  
 #Input numbers
 #Add try-except for number input
