@@ -160,7 +160,7 @@ while True :
 
 
     elif choice == "6":
-        result = modulus (num1, num2)
+        result = calc.modulus (num1, num2)
         history.append(f"{num1} % {num2} = {result}")
         print("Result: ", result)
         input("Press Enter to continue...")
