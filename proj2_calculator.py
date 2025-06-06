@@ -91,11 +91,11 @@ def run (self):
             print ("Have a great day...!")        #exit message
             break
 
-    elif choice == "8":
-        calc.clear_history()
-        input("Press Enter to continue...")
-        print("History cleared...")
-        continue
+        elif choice == "8":
+            calc.clear_history()
+            input("Press Enter to continue...")
+            print("History cleared...")
+            continue
 
 
     elif choice == "7":
