@@ -75,14 +75,15 @@ print ("_" * 25)
 
 
 #Input loop to choose and show option
-while True :
-    show_menu ()
-    choice = input ("Choose an option (1-9): ")
+def run (self):
+    while True :
+        self.show_menu()
+        choice = input ("Choose an option (1-9): ")
 
-    #Improve input validation
-    if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8" , "9"]:
-       print("Invalid option. Please try again.")
-       continue
+       #Improve input validation
+        if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8" , "9"]:
+            print("Invalid option. Please try again.")
+            continue
   
 
     if choice == "9": #Choice number 9
