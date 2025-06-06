@@ -23,9 +23,8 @@ class Calculator:
         return result
     
     def divide(self, a,b):
-        result = a / b if b != 0 else "Cannot divide by zero"  #check for division by zero
-        self.history.append (f"{a} / {b} = {result}")
-        return result
+        if b == 0:
+            
     
     def power (self , a, b):
         result = a ** b
