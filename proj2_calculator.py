@@ -98,10 +98,10 @@ def run (self):
             continue
 
 
-    elif choice == "7":
-        calc.show_history()
-        input("Press Enter to continue...")
-        continue
+        elif choice == "7":
+            calc.show_history()
+            input("Press Enter to continue...")
+            continue
  
 #Input numbers
 #Add try-except for number input
