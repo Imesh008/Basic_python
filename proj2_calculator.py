@@ -86,10 +86,10 @@ def run (self):
             continue
   
 
-    if choice == "9": #Choice number 9
-        print ("Thank you for using the calculator ...!")
-        print ("Have a great day...!")        #exit message
-        break
+        if choice == "9": #Choice number 9
+            print ("Thank you for using the calculator ...!")
+            print ("Have a great day...!")        #exit message
+            break
 
     elif choice == "8":
         calc.clear_history()
