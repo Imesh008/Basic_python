@@ -26,6 +26,8 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot divide by zero.")
         result = a / b
+        self.history.append(f"{a} / {b} = {result}")
+        return result
     
     def power (self , a, b):
         result = a ** b
