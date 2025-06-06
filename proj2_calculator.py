@@ -24,7 +24,8 @@ class Calculator:
     
     def divide(self, a,b):
         if b == 0:
-            
+            raise ValueError("Cannot divide by zero.")
+        result = a / b
     
     def power (self , a, b):
         result = a ** b
