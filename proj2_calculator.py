@@ -52,7 +52,10 @@ class Calculator:
         return ("History cleared...")
     
 
-
+class CalculatorApp:
+    def__init__(self):
+        self.calculator = Calculator()  #create an instance of the Calculator class
+        
 #display the menu
 def show_menu():
     print("\nSimple Calculator")
