@@ -123,4 +123,7 @@ def run(self):
             elif choice == "4":
                 result = calc.divide(num1, num2)
 
+            elif choice == "5":
+                result = calc.power(num1, num2)
+
             
