@@ -83,28 +83,8 @@ def run(self):
         if choice == "9":
             print("Thank you for using the calculator ...!")
             print("Have a great day...!")
-
-
-
-print ("_" * 25)
-
-
-#Input loop to choose and show option
-def run (self):
-    while True :
-        self.show_menu()
-        choice = input ("Choose an option (1-9): ")
-
-       #Improve input validation
-        if choice not in ["1", "2" ,"3" ,"4" ,"5" ,"6", "7" , "8" , "9"]:
-            print("Invalid option. Please try again.")
-            continue
-  
-
-        if choice == "9": #Choice number 9
-            print ("Thank you for using the calculator ...!")
-            print ("Have a great day...!")        #exit message
             break
+
 
         elif choice == "8":
             calc.clear_history()
@@ -130,48 +110,8 @@ def run (self):
      
  
 
-    if choice == "1":
-        result= calc.add(num1 ,num2)
-        history.append(f"{num1} + {num2} = {result}")
-        print("Result: ", result)
-        input ("Press Enter to continue...")
+            #Perform the operation based on user choice
+            if choice == "1":
+                result = calc.add(num1, num2)
 
-
-    elif choice == "2":
-        result = calc.subtract(num1, num2)
-        history.append(f"{num1} - {num2} = {result}")
-        print ("Result: ", result)
-        input ("Press Enter to continue...")
-
-
-    elif choice == "3":
-        result = calc.multiply (num1, num2)
-        history.append(f"{num1} * {num2} = {result}")
-        print ("Result: ", result)
-        input ("Press Enter to continue...")
-
-
-    elif choice == "4":
-        result = calc.divide (num1, num2)
-        history.append (f"{num1} / {num2} = {result}")
-        print ("Result: ", result)
-        input ("Press Enter to continue...")
-
-        
-    elif choice == "5":
-        result = calc.power (num1, num2)
-        history.append(f"{num1} ** {num2} = {result}")
-        print ("Result: ", result)
-        input ("Press Enter to continue...")
-
-
-    elif choice == "6":
-        result = calc.modulus (num1, num2)
-        history.append(f"{num1} % {num2} = {result}")
-        print("Result: ", result)
-        input("Press Enter to continue...")
- 
-    else:
-        print("Invalid option... Try again...")
-    print ("_" * 25)  #print line for better readability
-     
+            
