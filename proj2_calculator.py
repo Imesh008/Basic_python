@@ -120,4 +120,7 @@ def run(self):
             elif choice == "3":
                 result = calc.multiply(num1, num2)
 
+            elif choice == "4":
+                result = calc.divide(num1, num2)
+
             
