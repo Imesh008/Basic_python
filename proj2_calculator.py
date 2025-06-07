@@ -70,9 +70,21 @@ def show_menu():
     print("9. Exit")
     print("_" * 25)
 
+def run(self):
+    while True:
+        self.show_menu()
+        choice = input("Choose an option (1-9): ")
 
-#main program 
-calc = Calculator()  #create an instance of the Calculator class
+        #Improve input validation
+        if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+            print("Invalid option. Please try again.")
+            continue
+
+        if choice == "9":
+            print("Thank you for using the calculator ...!")
+            print("Have a great day...!")
+
+
 
 print ("_" * 25)
 
