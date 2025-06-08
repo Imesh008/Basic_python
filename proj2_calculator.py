@@ -94,7 +94,7 @@ class CalculatorApp:
 
 
                 elif choice == "7":
-                    calc.show_history()
+                    self.calculator.show_history()
                     input("Press Enter to continue...")
                     continue
         
