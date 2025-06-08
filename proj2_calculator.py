@@ -57,80 +57,80 @@ class CalculatorApp:
         self.calculator = Calculator()  #create an instance of the Calculator class
         
 #display the menu
-def show_menu():
-    print("\nSimple Calculator")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-    print("5. Power")
-    print("6. Modulus")
-    print("7. Show History")
-    print("8. Clear History")
-    print("9. Exit")
-    print("_" * 25)
+        def show_menu():
+            print("\nSimple Calculator")
+            print("1. Add")
+            print("2. Subtract")
+            print("3. Multiply")
+            print("4. Divide")
+            print("5. Power")
+            print("6. Modulus")
+            print("7. Show History")
+            print("8. Clear History")
+            print("9. Exit")
+            print("_" * 25)
 
-def run(self):
-    while True:
-        self.show_menu()
-        choice = input("Choose an option (1-9): ")
+        def run(self):
+            while True:
+                self.show_menu()
+                choice = input("Choose an option (1-9): ")
 
-        #Improve input validation
-        if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-            print("Invalid option. Please try again.")
-            continue
+                #Improve input validation
+                if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+                    print("Invalid option. Please try again.")
+                    continue
 
-        if choice == "9":
-            print("Thank you for using the calculator ...!")
-            print("Have a great day...!")
-            break
-
-
-        elif choice == "8":
-            calc.clear_history()
-            input("Press Enter to continue...")
-            print("History cleared...")
-            continue
+                if choice == "9":
+                    print("Thank you for using the calculator ...!")
+                    print("Have a great day...!")
+                    break
 
 
-        elif choice == "7":
-            calc.show_history()
-            input("Press Enter to continue...")
-            continue
- 
-        #Input numbers
-        #Add try-except for number input
-        elif choice in ["1", "2", "3", "4", "5", "6"]:
-            try:
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: ")) #getting user inputs
-            except ValueError:
-                print("Invalid input. Please enter numbers only...!")
-                continue
-     
- 
+                elif choice == "8":
+                    calc.clear_history()
+                    input("Press Enter to continue...")
+                    print("History cleared...")
+                    continue
 
-            #Perform the operation based on user choice
-            if choice == "1":
-                result = calc.add(num1, num2)
 
-            elif choice == "2":
-                result = calc.subtract(num1, num2)
-
-            elif choice == "3":
-                result = calc.multiply(num1, num2)
-
-            elif choice == "4":
-                result = calc.divide(num1, num2)
-
-            elif choice == "5":
-                result = calc.power(num1, num2)
-
-            elif choice == "6":
-                result = calc.modulus(num1, num2)
-
+                elif choice == "7":
+                    calc.show_history()
+                    input("Press Enter to continue...")
+                    continue
+        
+                #Input numbers
+                #Add try-except for number input
+                elif choice in ["1", "2", "3", "4", "5", "6"]:
+                    try:
+                        num1 = float(input("Enter first number: "))
+                        num2 = float(input("Enter second number: ")) #getting user inputs
+                    except ValueError:
+                        print("Invalid input. Please enter numbers only...!")
+                        continue
             
+        
 
-                
+                    #Perform the operation based on user choice
+                    if choice == "1":
+                        result = calc.add(num1, num2)
 
-            
+                    elif choice == "2":
+                        result = calc.subtract(num1, num2)
+
+                    elif choice == "3":
+                        result = calc.multiply(num1, num2)
+
+                    elif choice == "4":
+                        result = calc.divide(num1, num2)
+
+                    elif choice == "5":
+                        result = calc.power(num1, num2)
+
+                    elif choice == "6":
+                        result = calc.modulus(num1, num2)
+
+                    
+
+                        
+
+                    
