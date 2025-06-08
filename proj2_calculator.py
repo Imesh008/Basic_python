@@ -112,7 +112,7 @@ class CalculatorApp:
 
                     #Perform the operation based on user choice
                     if choice == "1":
-                        result = calc.add(num1, num2)
+                        result = self.calculator.add(num1, num2)
 
                     elif choice == "2":
                         result = calc.subtract(num1, num2)
