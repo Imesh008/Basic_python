@@ -53,7 +53,7 @@ class Calculator:
     
 
 class CalculatorApp:
-    def__init__(self):
+    def __init__ (self):
         self.calculator = Calculator()  #create an instance of the Calculator class
         
 #display the menu
@@ -128,6 +128,8 @@ def run(self):
 
             elif choice == "6":
                 result = calc.modulus(num1, num2)
+
+            
 
                 
 
