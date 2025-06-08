@@ -115,7 +115,7 @@ class CalculatorApp:
                         result = self.calculator.add(num1, num2)
 
                     elif choice == "2":
-                        result = calc.subtract(num1, num2)
+                        result = self.calculator.subtract(num1, num2)
 
                     elif choice == "3":
                         result = calc.multiply(num1, num2)
