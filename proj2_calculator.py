@@ -110,24 +110,24 @@ class CalculatorApp:
             
         
 
-                        #Perform the operation based on user choice
-                        if choice == "1":
-                            result = calc.add(num1, num2)
+                    #Perform the operation based on user choice
+                    if choice == "1":
+                        result = calc.add(num1, num2)
 
-                        elif choice == "2":
-                            result = calc.subtract(num1, num2)
+                    elif choice == "2":
+                        result = calc.subtract(num1, num2)
 
-                        elif choice == "3":
-                            result = calc.multiply(num1, num2)
+                    elif choice == "3":
+                        result = calc.multiply(num1, num2)
 
-                        elif choice == "4":
-                            result = calc.divide(num1, num2)
+                    elif choice == "4":
+                        result = calc.divide(num1, num2)
 
-                        elif choice == "5":
-                            result = calc.power(num1, num2)
+                    elif choice == "5":
+                        result = calc.power(num1, num2)
 
-                        elif choice == "6":
-                            result = calc.modulus(num1, num2)
+                    elif choice == "6":
+                        result = calc.modulus(num1, num2)
 
                     
 
