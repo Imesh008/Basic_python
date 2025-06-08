@@ -87,7 +87,7 @@ class CalculatorApp:
 
 
                 elif choice == "8":
-                    calc.clear_history()
+                    self.calculator.clear_history()
                     input("Press Enter to continue...")
                     print("History cleared...")
                     continue
