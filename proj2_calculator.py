@@ -124,7 +124,7 @@ class CalculatorApp:
                         result = self.calculator.divide(num1, num2)
 
                     elif choice == "5":
-                        result = calc.power(num1, num2)
+                        result = self.calculator.power(num1, num2)
 
                     elif choice == "6":
                         result = calc.modulus(num1, num2)
