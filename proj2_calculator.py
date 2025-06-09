@@ -130,6 +130,7 @@ class CalculatorApp:
                         result = self.calculator.modulus(num1, num2)
 
                      
+                    print(f"Result: {result}")
 
                         
 
