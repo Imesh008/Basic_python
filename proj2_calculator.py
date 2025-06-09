@@ -57,18 +57,18 @@ class CalculatorApp:
         self.calculator = Calculator()  #create an instance of the Calculator class
         
 #display the menu
-        def show_menu():
-            print("\nSimple Calculator")
-            print("1. Add")
-            print("2. Subtract")
-            print("3. Multiply")
-            print("4. Divide")
-            print("5. Power")
-            print("6. Modulus")
-            print("7. Show History")
-            print("8. Clear History")
-            print("9. Exit")
-            print("_" * 25)
+    def show_menu():
+        print("\nSimple Calculator")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Power")
+        print("6. Modulus")
+        print("7. Show History")
+        print("8. Clear History")
+        print("9. Exit")
+        print("_" * 25)
 
         def run(self):
             while True:
@@ -129,7 +129,7 @@ class CalculatorApp:
                     elif choice == "6":
                         result = self.calculator.modulus(num1, num2)
 
-                    
+                     
 
                         
 
