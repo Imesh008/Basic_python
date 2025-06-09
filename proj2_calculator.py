@@ -131,6 +131,11 @@ class CalculatorApp:
 
                      
                     print(f"Result: {result}")
+                    input("Press Enter to continue...")
+                    continue
+                else:
+                    print("Invalid option. Please try again.")
+                    continue
 
                         
 
