@@ -139,4 +139,7 @@ class CalculatorApp:
 
                         
 
-                    
+#run the calculator app
+if __name__ == "__main__":
+    app = CalculatorApp()
+    app.run()  # Start the calculator application
