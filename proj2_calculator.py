@@ -134,6 +134,9 @@ class CalculatorApp:
                         print(f"Result: {result}")
                     except ValueError as e:
                         print(f"Error: {e}")
+
+                input("Press Enter to continue...")  # Pause for user to see the result
+                print("_" * 25)
                         
 
 #run the calculator app
