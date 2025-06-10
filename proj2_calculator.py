@@ -131,13 +131,9 @@ class CalculatorApp:
                             result = self.calculator.modulus(num1, num2)
 
                      
-                    print(f"Result: {result}")
-                    input("Press Enter to continue...")
-                    continue
-                else:
-                    print("Invalid option. Please try again.")
-                    continue
-
+                        print(f"Result: {result}")
+                    except ValueError as e:
+                        print(f"Error: {e}")
                         
 
 #run the calculator app
