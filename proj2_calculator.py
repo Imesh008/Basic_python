@@ -127,8 +127,8 @@ class CalculatorApp:
                         elif choice == "5":
                             result = self.calculator.power(num1, num2)
 
-                    elif choice == "6":
-                        result = self.calculator.modulus(num1, num2)
+                        elif choice == "6":
+                            result = self.calculator.modulus(num1, num2)
 
                      
                     print(f"Result: {result}")
