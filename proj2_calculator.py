@@ -118,8 +118,8 @@ class CalculatorApp:
                         elif choice == "2":
                             result = self.calculator.subtract(num1, num2)
 
-                    elif choice == "3":
-                        result = self.calculator.multiply(num1, num2)
+                        elif choice == "3":
+                            result = self.calculator.multiply(num1, num2)
 
                     elif choice == "4":
                         result = self.calculator.divide(num1, num2)
