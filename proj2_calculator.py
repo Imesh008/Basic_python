@@ -70,10 +70,10 @@ class CalculatorApp:
         print("9. Exit")
         print("_" * 25)
 
-        def run(self):
-            while True:
-                self.show_menu()
-                choice = input("Choose an option (1-9): ")
+    def run(self):
+        while True:
+            self.show_menu()
+            choice = input("Choose an option (1-9): ")
 
                 #Improve input validation
                 if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
