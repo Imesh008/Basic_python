@@ -76,9 +76,9 @@ class CalculatorApp:
             choice = input("Choose an option (1-9): ")
 
                 #Improve input validation
-                if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-                    print("Invalid option. Please try again.")
-                    continue
+            if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+                print("Invalid option. Please try again.")
+                continue
 
                 if choice == "9":
                     print("Thank you for using the calculator ...!")
