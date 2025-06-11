@@ -80,7 +80,7 @@ class CalculatorApp:
                 print("Invalid option. Please try again.")
                 continue
 
-                if choice == "9":
+            if choice == "9":
                     print("Thank you for using the calculator ...!")
                     print("Have a great day...!")
                     break
