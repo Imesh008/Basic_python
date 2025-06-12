@@ -139,3 +139,6 @@ input("Press Enter to continue...")  # Pause for user to see the result
 print("_" * 25)
                         
 
+if __name__ == "__main__":
+    app = CalculatorApp()
+    app.run()
