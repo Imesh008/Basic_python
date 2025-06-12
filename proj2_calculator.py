@@ -54,9 +54,9 @@ class Calculator:
 
 class CalculatorApp:
     def __init__ (self):
-        self.calculator = Calculator()  #create an instance of the Calculator class
+        self.calculator = Calculator()  #Create an instance of the Calculator class
         
-#display the menu
+#Display the menu
     def show_menu(self):
         print("\nSimple Calculator")
         print("1. Add")
