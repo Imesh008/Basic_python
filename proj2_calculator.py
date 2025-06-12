@@ -43,7 +43,7 @@ class Calculator:
         if not self.history:
             return ("No history available.")
         else:
-            print(" History:")
+            print("History: ")
             for idx, item in enumerate(self.history, start=1):
                 print(f"{idx}. {item}")
 
