@@ -57,7 +57,7 @@ class CalculatorApp:
         self.calculator = Calculator()  #create an instance of the Calculator class
         
 #display the menu
-    def show_menu():
+    def show_menu(self):
         print("\nSimple Calculator")
         print("1. Add")
         print("2. Subtract")
@@ -135,7 +135,7 @@ class CalculatorApp:
                     except ValueError as e:
                         print(f"Error: {e}")
 
-                input("Press Enter to continue...")  # Pause for user to see the result
-                print("_" * 25)
+input("Press Enter to continue...")  # Pause for user to see the result
+print("_" * 25)
                         
 
