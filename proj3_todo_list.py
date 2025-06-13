@@ -30,3 +30,4 @@ def save_tasks(tasks):
 def display_menu():
     print ("\nTodo List Menu:")
     print ("1. View tasks")
+    print ("2. Add tasks")
