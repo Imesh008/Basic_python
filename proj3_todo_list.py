@@ -22,3 +22,9 @@ def save_tasks(tasks):
         for task in taks:
             file.write(task + '\n')
     print(f"Saved {len(tasks)} tasks to {TASK_FILE}")       #arrange print to confirm that tasks saved nicely
+
+
+
+#display menue options to the users 
+
+def display_menu():
