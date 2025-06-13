@@ -14,3 +14,11 @@ def lead_tasks():
     with open (TASK_FILE, 'r') as file:
         return [line.strip() for line in file.read()]
     
+
+
+#saves tasks to the file
+def save_tasks(tasks):
+    with open (TASK_FILE, "w") as file:
+        for task in taks:
+            file.write(task + '\n')
+    print(f"Saved {len(tasks)} tasks to {TASK_FILE}")       #arrange print to confirm that tasks saved nicely
