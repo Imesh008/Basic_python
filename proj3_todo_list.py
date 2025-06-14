@@ -38,4 +38,5 @@ def display_menu():
 
 #view tasks in the list
 def view_tasks(tasks):
-    if 
+    if no tasks:
+        print("No tasks available.")
