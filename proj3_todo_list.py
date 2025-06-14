@@ -5,9 +5,9 @@ TASK_FILE = 'tasks.txt'
 
 
 #loads tasks from the file into a list
-def lead_tasks():
-    #creat a file if it does not exist
-    if not os.path.ecists(TASK_FILE):
+def load_tasks():
+    #create a file if it does not exist
+    if not os.path.exists(TASK_FILE):
         open(TASK_FILE, 'w').close()
     
     #read each line and return a list of tasks
