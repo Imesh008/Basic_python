@@ -32,3 +32,4 @@ def display_menu():
     print ("1. View tasks")
     print ("2. Add tasks")
     print ("3. Remove tasks")
+    print ("4. Save tasks")
