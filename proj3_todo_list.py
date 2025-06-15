@@ -54,3 +54,4 @@ def add_task(tasks):
 
 #remove task from the list
 def remove_task (tasks):
+    view_tasks(tasks)
