@@ -44,3 +44,8 @@ def view_tasks(tasks):
         for i, task in enumerate (tasks, start ,1):
             print(f"{i}. {task}")
             
+
+
+#add a task to the list
+def add_task(tasks):
+    task = input("Enter the task to add:")
