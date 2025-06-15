@@ -50,3 +50,4 @@ def view_tasks(tasks):
 def add_task(tasks):
     task = input("Enter the task to add: ")
     tasks.append(task)
+    print("Task added successfully...!")
