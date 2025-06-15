@@ -48,4 +48,5 @@ def view_tasks(tasks):
 
 #add a task to the list
 def add_task(tasks):
-    task = input("Enter the task to add:")
+    task = input("Enter the task to add: ")
+    tasks.append(task)
