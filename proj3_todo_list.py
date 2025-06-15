@@ -58,4 +58,5 @@ def remove_task (tasks):
     try:
         index = int(input("Enter the task number to remove: ")) - 1
         if 0<= index < len(tasks):
-            removed = tasks.pop (index)
+            removed = tasks.pop(index)
+            print(f"Removed task: {removed}")
