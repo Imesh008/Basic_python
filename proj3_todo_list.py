@@ -72,3 +72,4 @@ def main():
     #run a loop to show menue
     while True :
         show_menu()
+        choice = input("Choose an option: ")
