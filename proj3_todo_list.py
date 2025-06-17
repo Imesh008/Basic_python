@@ -59,19 +59,7 @@ def remove_task (tasks):
         if 0<= index < len(tasks):
             removed = tasks.pop(index)
             print(f"Removed task: {removed}")
-        else:
-            print("Invalid task number.")
-    except ValueError:
-        print("Please enter a valid number.")
+         
 
 
-#Main app loop
-def main():
-    tasks = load_tasks()
-
-    #run a loop to show menue
-    while True :
-        show_menu()
-        choice = input("Choose an option: ")
-
-        if choice == 
+ 
