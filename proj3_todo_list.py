@@ -74,4 +74,4 @@ def main():
         show_menu()
         choice = input("Choose an option: ")
 
-        if choice == "1"
+        if choice == 
