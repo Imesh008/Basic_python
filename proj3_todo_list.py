@@ -62,3 +62,5 @@ def remove_task (tasks):
             print(f"Removed task: {removed}")
         else:
             print("Invalid task number.")
+    except ValueError:
+        print("Please enter a valid number.")
