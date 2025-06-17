@@ -52,7 +52,7 @@ def add_task(tasks):
     tasks.append(task)
     print("Task added successfully...!")
 
-#remove task from the list
+#remove task from the list 
 def remove_task (tasks):
     view_tasks(tasks)
     try:
