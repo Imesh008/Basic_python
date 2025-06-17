@@ -68,6 +68,7 @@ def remove_task (tasks):
 #Main app loop
 def main():
     tasks = load_tasks()
+    
 
     #run a loop to show menue
     while True :
