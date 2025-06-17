@@ -67,6 +67,7 @@ def remove_task (tasks):
 
 
 #main app loop creation
+def main ():
 
 
  
