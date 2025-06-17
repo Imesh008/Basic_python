@@ -60,3 +60,5 @@ def remove_task (tasks):
         if 0<= index < len(tasks):
             removed = tasks.pop(index)
             print(f"Removed task: {removed}")
+        else:
+            print("Invalid task number.")
