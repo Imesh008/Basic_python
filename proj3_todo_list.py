@@ -73,3 +73,5 @@ def main():
     while True :
         show_menu()
         choice = input("Choose an option: ")
+
+        if choice == "1"
