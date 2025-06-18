@@ -72,6 +72,7 @@ def main ():
 
     while True:
         show_menu()
+        choice == "1":
 
 
  
