@@ -80,5 +80,8 @@ def main ():
         elif chocie == "2":
             add_task(tasks)
 
+        elif choice =="3":
+            remove_task(tasks)
+
 
  
