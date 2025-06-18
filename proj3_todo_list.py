@@ -75,6 +75,7 @@ def main ():
         choice = input ("Enter your choice (1-5): ")
 
         if choice == "1":
+            vew_tasks(tasks)
 
 
  
