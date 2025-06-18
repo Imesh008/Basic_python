@@ -70,5 +70,8 @@ def remove_task (tasks):
 def main ():
     tasks = load_tasks()
 
+    while True:
+        show_menu()
+
 
  
