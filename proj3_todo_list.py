@@ -77,5 +77,8 @@ def main ():
         if choice == "1":
             view_tasks(tasks)
 
+        elif chocie == "2":
+            add_task(tasks)
+
 
  
