@@ -87,6 +87,7 @@ def main ():
             save_tasks(tasks)
 
         elif choice == "5":
-
+            print("Exiting the program. Goodbye!")
+            break
 
  
