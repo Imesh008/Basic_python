@@ -84,6 +84,7 @@ def main ():
             remove_task(tasks)
 
         elif choice == "4":
+            save_tasks(tasks)
 
 
  
