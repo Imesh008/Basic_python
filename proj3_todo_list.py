@@ -71,13 +71,13 @@ def main ():
     tasks = load_tasks()
 
     while True:
-        show_menu()
+        display_menu()
         choice = input ("Enter your choice (1-5): ")
 
         if choice == "1":
             view_tasks(tasks)
 
-        elif chocie == "2":
+        elif choice == "2":
             add_task(tasks)
 
         elif choice =="3":
