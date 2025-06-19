@@ -87,7 +87,7 @@ def main ():
             save_tasks(tasks)
 
         elif choice == "5":
-            print("Exiting the program. Goodbye!")
+            print("Exiting the program. Goodbye!...")
             break
         else:
             print("Invalid choice. Please try again.")
