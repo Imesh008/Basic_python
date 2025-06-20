@@ -1,22 +1,22 @@
 import os
 
-#file where tasks will be stored
+#File where tasks will be stored
 TASK_FILE = 'tasks.txt'
 
 
 #loads tasks from the file into a list
 def load_tasks():
-    #create a file if it does not exist
+    #Create a file if it does not exist
     if not os.path.exists(TASK_FILE):
         open(TASK_FILE, 'w').close()
     
-    #read each line and return a list of tasks
+    #Read each line and return a list of tasks
     with open (TASK_FILE, 'r') as file:
         return [line.strip() for line in file.readlines()]
     
 
 
-#saves tasks to the file
+#Saves tasks to the file
 def save_tasks(tasks):
     with open (TASK_FILE, "w") as file:
         for task in (taks):
@@ -25,7 +25,7 @@ def save_tasks(tasks):
 
 
 
-#display menue options to the users 
+#Display menu options to the users 
 def display_menu():
     print ("\nTodo List Menu:")
     print ("1. View tasks")
@@ -35,7 +35,7 @@ def display_menu():
     print ("5. Exit program")
 
 
-#view tasks in the list
+#View tasks in the list
 def view_tasks(tasks):
     if not tasks:
         print("No tasks available.")
