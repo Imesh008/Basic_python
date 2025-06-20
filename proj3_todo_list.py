@@ -87,6 +87,7 @@ def main ():
             save_tasks(tasks)
 
         elif choice == "5":
+            confirm = input("Do you want to  save tasks before exiting? (yes/no): ").strip().lower()
             print("Exiting the program. Goodbye!...")
             break
         else:
