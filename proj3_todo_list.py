@@ -38,7 +38,7 @@ def display_menu():
 #View tasks in the list
 def view_tasks(tasks):
     if not tasks:
-        print("No tasks available.")
+        print("No tasks available...")
     else:
         for i, task in enumerate (tasks, start=1):
             print(f"{i}. {task}")
@@ -60,10 +60,10 @@ def remove_task (tasks):
             removed = tasks.pop(index)
             print(f"Removed task: {removed}")
         else:
-            print("Invalid task number..")
+            print("Invalid task number...")
 
     except ValueError:
-        print("Please enter a number.")
+        print("Please enter a number...")
 
 
 #Main app loop creation
