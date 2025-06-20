@@ -4,7 +4,7 @@ import os
 TASK_FILE = 'tasks.txt'
 
 
-#loads tasks from the file into a list
+#Loads tasks from the file into a list
 def load_tasks():
     #Create a file if it does not exist
     if not os.path.exists(TASK_FILE):
@@ -19,9 +19,9 @@ def load_tasks():
 #Saves tasks to the file
 def save_tasks(tasks):
     with open (TASK_FILE, "w") as file:
-        for task in (taks):
+        for task in (tasks):
             file.write(task + '\n')
-    print(f"Saved {len(tasks)} tasks to {TASK_FILE}")       #arrange print to confirm that tasks saved nicely
+    print(f"Saved {len(tasks)} tasks to {TASK_FILE}")       #Arrange print to confirm that tasks saved nicely
 
 
 
@@ -40,18 +40,18 @@ def view_tasks(tasks):
     if not tasks:
         print("No tasks available.")
     else:
-        for i, task in enumerate (tasks, start =1):
+        for i, task in enumerate (tasks, start=1):
             print(f"{i}. {task}")
             
 
 
-#add a task to the list
+#Add a task to the list
 def add_task(tasks):
     task = input("Enter the task to add: ")
     tasks.append(task)
     print("Task added successfully...!")
 
-#remove task from the list 
+#Remove task from the list 
 def remove_task (tasks):
     view_tasks(tasks)
     try:
@@ -66,7 +66,7 @@ def remove_task (tasks):
         print("Please enter a number.")
 
 
-#main app loop creation
+#Main app loop creation
 def main ():
     tasks = load_tasks()
 
