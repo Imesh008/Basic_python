@@ -12,7 +12,7 @@ def load_tasks():
     
     #read each line and return a list of tasks
     with open (TASK_FILE, 'r') as file:
-        return [line.strip() for line in file.read()]
+        return [line.strip() for line in file.readlines()]
     
 
 
