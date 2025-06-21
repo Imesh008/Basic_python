@@ -35,6 +35,7 @@ def display_menu():
     print ("3. Remove tasks")
     print ("4. Save tasks")
     print ("5. Exit program")
+    print ("="*30 + "\n")
 
 
 #View tasks in the list
