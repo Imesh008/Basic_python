@@ -43,6 +43,7 @@ def view_tasks(tasks):
     print("\n" + "="*30)
     if not tasks:
     print("="*30)
+    if not tasks: 
         print("No tasks available...")
     else:
         for i, task in enumerate (tasks, start=1):
