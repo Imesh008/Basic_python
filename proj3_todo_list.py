@@ -81,10 +81,10 @@ def main ():
         choice = input ("Enter your choice (1-5): ")
 
         if choice == "1":
-            view_tasks(tasks)
+            add_task(tasks)
 
         elif choice == "2":
-            add_task(tasks)
+            view_tasks(tasks)
 
         elif choice =="3":
             remove_task(tasks)
