@@ -30,7 +30,6 @@ def display_menu():
     print ("\n" + "="*30)
     print ("TODO LIST MENU")
     print ( "="*30)
-     print ("\n")
     print ("1. View tasks")
     print ("2. Add tasks")
     print ("3. Remove tasks")
