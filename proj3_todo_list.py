@@ -48,7 +48,7 @@ def view_tasks(tasks):
     else:
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")
-            
+    print("="*30 + "\n")        
 
 
 #Add a task to the list
