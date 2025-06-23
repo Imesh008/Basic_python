@@ -28,7 +28,7 @@ def save_tasks(tasks):
 #Display menu options to the users 
 def display_menu():
     print ("\n" + "="*30)
-    print ("----TODO LIST MENU----")
+    print ("---- TODO LIST MENU ----")
     print ( "="*30)
     print ("1. Add tasks")
     print ("2. View tasks")
