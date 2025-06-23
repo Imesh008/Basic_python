@@ -34,8 +34,8 @@ def display_menu():
     print ("2. View tasks")
     print ("3. Remove tasks")
     print ("4. Save tasks")
-    print ("Delete All tasks")
-    print ("5. Exit program")
+    print ("5. Delete All tasks")
+    print ("6. Exit program")
     print ("="*30 + "\n")
 
 
@@ -93,7 +93,7 @@ def main ():
         elif choice == "4":
             save_tasks(tasks)
 
-        elif choice == "5":
+        elif choice == "6":
             confirm = input("Do you want to  save tasks before exiting? (yes/no): ").strip().lower()
             if confirm == "yes" or confirm == "y":
                 save_tasks(tasks)
