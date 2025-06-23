@@ -93,6 +93,8 @@ def main ():
         elif choice == "4":
             save_tasks(tasks)
 
+        elif choice == "5":
+
         elif choice == "6":
             confirm = input("Do you want to  save tasks before exiting? (yes/no): ").strip().lower()
             if confirm == "yes" or confirm == "y":
