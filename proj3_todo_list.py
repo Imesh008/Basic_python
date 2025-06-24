@@ -97,7 +97,6 @@ def main ():
             clear_confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
             if clear_confirm == "yes" or clear_confirm == "y":
                 tasks.clear()
-                save_tasks(tasks)
                 print("All tasks have been deleted successfully...!")
                 
 
