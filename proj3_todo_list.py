@@ -98,7 +98,9 @@ def main ():
             if clear_confirm == "yes" or clear_confirm == "y":
                 tasks.clear()
                 save_tasks(tasks)
-    
+                print("All tasks have been deleted successfully...!")
+                
+
         elif choice == "6":
             confirm = input("Do you want to  save tasks before exiting? (yes/no): ").strip().lower()
             if confirm == "yes" or confirm == "y":
