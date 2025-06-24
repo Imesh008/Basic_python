@@ -98,6 +98,7 @@ def main ():
             if clear_confirm == "yes" or clear_confirm == "y":
                 tasks.clear()
                 print("All tasks have been deleted successfully...!")
+            else:
                 
 
         elif choice == "6":
