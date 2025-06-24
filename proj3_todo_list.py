@@ -94,6 +94,7 @@ def main ():
             save_tasks(tasks)
 
         elif choice == "5":
+            clear_confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
 
         elif choice == "6":
             confirm = input("Do you want to  save tasks before exiting? (yes/no): ").strip().lower()
