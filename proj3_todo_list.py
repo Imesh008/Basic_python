@@ -7,11 +7,12 @@ TASK_FILE = 'tasks.txt'
 class Todolist:
     def __init__(self):
         self.tasks = self.load_tasks()
+
 #Loads tasks from the file into a list
-def load_tasks():
-    #Create a file if it does not exist
-    if not os.path.exists(TASK_FILE):
-        open(TASK_FILE, 'w').close()
+    def load_tasks(self):
+        #Create a file if it does not exist
+        if not os.path.exists(TASK_FILE):
+            open(TASK_FILE, 'w').close()
     
     #Read each line and return a list of tasks
     with open (TASK_FILE, 'r') as file:
