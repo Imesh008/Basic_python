@@ -8,7 +8,7 @@ class Todolist:
     def __init__(self):
         self.tasks = self.load_tasks()
 
-#Loads tasks from the file into a list
+    #Loads tasks from the file into a list
     def load_tasks(self):
         #Create a file if it does not exist
         if not os.path.exists(TASK_FILE):
