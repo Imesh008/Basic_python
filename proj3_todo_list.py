@@ -1,6 +1,6 @@
 import os
 
-#File where tasks will be stored
+#File where tasks are stored
 TASK_FILE = 'tasks.txt'
 
 
