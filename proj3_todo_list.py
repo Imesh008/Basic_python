@@ -15,8 +15,8 @@ class Todolist:
             open(TASK_FILE, 'w').close()
     
         #Read each line and return a list of tasks
-    with open (TASK_FILE, 'r') as file:
-        return [line.strip() for line in file.readlines()]
+        with open (TASK_FILE, 'r') as file:
+            return [line.strip() for line in file.readlines()]
     
 
 
