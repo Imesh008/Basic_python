@@ -21,7 +21,7 @@ def save_tasks(tasks):
     with open (TASK_FILE, "w") as file:
         for task in tasks:
             file.write(task + '\n')
-    print(f"Saved {len(tasks)} tasks to {TASK_FILE}")       #Arrange print to confirm that tasks saved nicely
+    print(f"Saved {len(tasks)} tasks to {TASK_FILE}")       #Confirm taks saved
 
 
 
