@@ -79,7 +79,7 @@ def main ():
 
     while True:
         display_menu()
-        choice = input ("Enter your choice (1-5): ")
+        choice = input ("Enter your choice (1-6): ")
 
         if choice == "1":
             add_task(tasks)
