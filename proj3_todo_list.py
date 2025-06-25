@@ -3,7 +3,10 @@ import os
 #File where tasks are stored
 TASK_FILE = 'tasks.txt'
 
-
+#convert this in to OOP
+class Todolist:
+    def __init__(self):
+        self.tasks = self.load_tasks()
 #Loads tasks from the file into a list
 def load_tasks():
     #Create a file if it does not exist
