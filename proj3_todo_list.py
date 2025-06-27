@@ -77,6 +77,8 @@ def remove_task (self):
         print("Please enter a number...")
 
 #Delete all tasks from the list
+def delete_all_tasks(self):
+    confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
 
 
 #Main app loop creation
