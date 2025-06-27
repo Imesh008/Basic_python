@@ -44,7 +44,7 @@ def display_menu(self):
 
 
 #View tasks in the list
-def view_tasks(tasks):
+def view_tasks(self):
     print("\n" + "="*30)
     print("YOUR TASKS: ")
     print("="*30)
