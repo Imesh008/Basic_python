@@ -82,46 +82,46 @@ def delete_all_tasks(self):
     if confirm == "yes" or confirm == "y":
 
 
-#Main app loop creation
-def main ():
-    tasks = load_tasks(self)
 
+#Main app loop creation
+def run(self):
     while True:
-        display_menu()
-        choice = input ("Enter your choice (1-6): ")
+        self.display_menu()
+        choice = input("Enter your choice (1-6): ")
 
         if choice == "1":
-            add_task(tasks)
+            self.add_task()
 
         elif choice == "2":
-            view_tasks(tasks)
+            self.view_tasks()
 
-        elif choice =="3":
-            remove_task(tasks)
+        elif choice == "3":
+            self.remove_task()
 
         elif choice == "4":
-            save_tasks(tasks)
+            self.save_tasks()
 
         elif choice == "5":
             clear_confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
             if clear_confirm == "yes" or clear_confirm == "y":
-                tasks.clear()
+                self.tasks.clear()
                 print("All tasks have been deleted successfully...!")
             else:
                 print("No tasks were deleted...")
-                
+
         elif choice == "6":
-            confirm = input("Do you want to  save tasks before exiting? (yes/no): ").strip().lower()
+            confirm = input("Do you want to save tasks before exiting? (yes/no): ").strip().lower()
             if confirm == "yes" or confirm == "y":
-                save_tasks(tasks)
+                self.save_tasks()
             print("Exiting the program. Goodbye!...")
             break
         else:
             print("Invalid choice. Please try again...")
 
-
+    
 if __name__ == "__main__":
-    main()        
+    app = Todolist()
+    app.run()     
 
 
  
