@@ -21,7 +21,7 @@ class Todolist:
 
 
 #Saves tasks to the file
-def save_tasks(tasks):
+def save_tasks(self):
     with open (TASK_FILE, "w") as file:
         for task in tasks:
             file.write(task + '\n')
