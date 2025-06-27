@@ -76,6 +76,8 @@ def remove_task (self):
     except ValueError:
         print("Please enter a number...")
 
+#Delete all tasks from the list
+
 
 #Main app loop creation
 def main ():
