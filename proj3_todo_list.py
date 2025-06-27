@@ -64,7 +64,7 @@ def add_task(self):
 
 #Remove task from the list 
 def remove_task (self):
-    view_tasks(tasks)
+    self.view_tasks()
     try:
         index = int(input("Enter the task number to remove: ")) - 1
         if 0<= index < len(tasks):
