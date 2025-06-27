@@ -68,7 +68,7 @@ def remove_task (self):
     try:
         index = int(input("Enter the task number to remove: ")) - 1
         if 0<= index < len(self.tasks):
-            removed = tasks.pop(index)
+            removed = selftasks.pop(index)
             print(f"Removed task: {removed}")
         else:
             print("Invalid task number...")
