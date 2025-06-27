@@ -63,7 +63,7 @@ def add_task(self):
     print("Task added successfully...! \n")
 
 #Remove task from the list 
-def remove_task (tasks):
+def remove_task (self):
     view_tasks(tasks)
     try:
         index = int(input("Enter the task number to remove: ")) - 1
@@ -79,7 +79,7 @@ def remove_task (tasks):
 
 #Main app loop creation
 def main ():
-    tasks = load_tasks()
+    tasks = load_tasks(self)
 
     while True:
         display_menu()
