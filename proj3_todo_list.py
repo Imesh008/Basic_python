@@ -36,7 +36,7 @@ class Todolist:
         print ( "="*30)
         print ("1. Add tasks")
         print ("2. View tasks")
-    print ("3. Remove tasks")
+        print ("3. Remove tasks")
     print ("4. Save tasks")
     print ("5. Delete all tasks")
     print ("6. Exit program")
