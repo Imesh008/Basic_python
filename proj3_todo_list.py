@@ -34,7 +34,7 @@ class Todolist:
         print ("\n" + "="*30)
         print ("---- TODO LIST MENU ----")
         print ( "="*30)
-    print ("1. Add tasks")
+        print ("1. Add tasks")
     print ("2. View tasks")
     print ("3. Remove tasks")
     print ("4. Save tasks")
