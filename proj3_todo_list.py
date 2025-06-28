@@ -30,7 +30,7 @@ class Todolist:
 
 
 #Display menu options to the users 
-def display_menu(self):
+    def display_menu(self):
     print ("\n" + "="*30)
     print ("---- TODO LIST MENU ----")
     print ( "="*30)
