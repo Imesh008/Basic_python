@@ -50,7 +50,7 @@ class Todolist:
         print("="*30)
         if not self.tasks:
             print("No tasks available...")
-    else:
+        else:
         for i, task in enumerate(self.tasks, start=1):
             print(f"{i}. {task}")
     print("="*30 + "\n")        
