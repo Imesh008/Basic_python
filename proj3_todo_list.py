@@ -53,7 +53,7 @@ class Todolist:
         else:
             for i, task in enumerate(self.tasks, start=1):
                 print(f"{i}. {task}")
-    print("="*30 + "\n")        
+        print("="*30 + "\n")        
 
 
 #Add a task to the list
