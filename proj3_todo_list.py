@@ -43,8 +43,8 @@ class Todolist:
         print ("="*30 + "\n")
 
 
-#View tasks in the list
-def view_tasks(self):
+    #View tasks in the list
+    def view_tasks(self):
     print("\n" + "="*30)
     print("YOUR TASKS: ")
     print("="*30)
