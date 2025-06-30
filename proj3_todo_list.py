@@ -59,7 +59,7 @@ class Todolist:
     #Add a task to the list
     def add_task(self):
         task = input("Enter the task to add: ")
-    self.tasks.append(task)
+        self.tasks.append(task)
     print("Task added successfully...! \n")
 
 #Remove task from the list 
