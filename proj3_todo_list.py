@@ -62,12 +62,12 @@ class Todolist:
         self.tasks.append(task)
         print("Task added successfully...! \n")
 
-    #Remove task from the list
-    def remove_task(self):
+    #Remove task from the list 
+    def remove_task (self):
         self.view_tasks()
-        try:
-            index = int(input("Enter the task number to remove: ")) - 1
-            if 0 <= index < len(self.tasks):
+    try:
+        index = int(input("Enter the task number to remove: ")) - 1
+        if 0<= index < len(self.tasks):
             removed = self.tasks.pop(index)
             print(f"Removed task: {removed}")
         else:
