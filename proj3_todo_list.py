@@ -71,7 +71,7 @@ class Todolist:
                 removed = self.tasks.pop(index)
                 print(f"Removed task: {removed}")
             else:
-                print("Invalid task number...")
+                    print("Invalid task number...")
 
         except ValueError:
             print("Please enter a number...")
