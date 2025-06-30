@@ -56,8 +56,8 @@ class Todolist:
         print("="*30 + "\n")        
 
 
-#Add a task to the list
-def add_task(self):
+    #Add a task to the list
+    def add_task(self):
     task = input("Enter the task to add: ")
     self.tasks.append(task)
     print("Task added successfully...! \n")
