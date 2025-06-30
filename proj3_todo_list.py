@@ -67,14 +67,14 @@ class Todolist:
         self.view_tasks()
         try:
             index = int(input("Enter the task number to remove: ")) - 1
-        if 0<= index < len(self.tasks):
-            removed = self.tasks.pop(index)
-            print(f"Removed task: {removed}")
-        else:
-            print("Invalid task number...")
+            if 0<= index < len(self.tasks):
+                removed = self.tasks.pop(index)
+                print(f"Removed task: {removed}")
+            else:
+                print("Invalid task number...")
 
-    except ValueError:
-        print("Please enter a number...")
+        except ValueError:
+            print("Please enter a number...")
 
 #Delete all tasks from the list
 def delete_all_tasks(self):
