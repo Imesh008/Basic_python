@@ -62,7 +62,7 @@ class Todolist:
         self.tasks.append(task)
         print("Task added successfully...! \n")
 
-#Remove task from the list 
+    #Remove task from the list 
 def remove_task (self):
     self.view_tasks()
     try:
