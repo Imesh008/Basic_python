@@ -79,7 +79,7 @@ class Todolist:
     #Delete all tasks from the list
     def delete_all_tasks(self):
         confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
-    if confirm == "yes" or confirm == "y":
+        if confirm == "yes" or confirm == "y":
 
 
 
