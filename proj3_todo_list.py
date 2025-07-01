@@ -71,12 +71,12 @@ class Todolist:
                 removed = self.tasks.pop(index)
                 print(f"Removed task: {removed}")
             else:
-                    print("Invalid task number...")
+                print("Invalid task number...")
 
         except ValueError:
             print("Please enter a number...")
 
-#Delete all tasks from the list
+    #Delete all tasks from the list
 def delete_all_tasks(self):
     confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
     if confirm == "yes" or confirm == "y":
