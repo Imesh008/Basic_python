@@ -83,7 +83,7 @@ class Todolist:
 
 
 
-#Main app loop creation
+    #Main app loop creation
 def run(self):
     while True:
         self.display_menu()
