@@ -89,7 +89,7 @@ class Todolist:
         def run(self):
                 while True:
                     self.display_menu()
-                choice = input("Enter your choice (1-6): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == "1":
             self.add_task()
