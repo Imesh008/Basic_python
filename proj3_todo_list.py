@@ -88,7 +88,7 @@ class Todolist:
         #Main app loop creation
         def run(self):
                 while True:
-                self.display_menu()
+                    self.display_menu()
         choice = input("Enter your choice (1-6): ")
 
         if choice == "1":
