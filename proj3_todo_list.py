@@ -92,9 +92,9 @@ class Todolist:
                     choice = input("Enter your choice (1-6): ")
 
                 if choice == "1":
-            self.add_task()
+                self.add_task()
 
-        elif choice == "2":
+                elif choice == "2":
             self.view_tasks()
 
         elif choice == "3":
