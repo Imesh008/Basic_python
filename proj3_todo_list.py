@@ -101,7 +101,7 @@ class Todolist:
                         self.remove_task()
 
                     elif choice == "4":
-            self.save_tasks()
+                    self.save_tasks()
 
         elif choice == "5":
             clear_confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
