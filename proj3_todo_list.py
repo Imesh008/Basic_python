@@ -47,7 +47,7 @@ class Todolist:
     def view_tasks(self):
         print("\n" + "="*30)
         print("YOUR TASKS: ")
-            print("="*30)
+        print("="*30)
         if not self.tasks:
             print("No tasks available...")
         else:
