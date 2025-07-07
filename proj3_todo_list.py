@@ -93,7 +93,7 @@ class Todolist:
             self.display_menu()
             choice = input("Enter your choice (1-6): ")
 
-                    if choice == "1":
+                if choice == "1":
                         self.add_task()
 
                     elif choice == "2":
