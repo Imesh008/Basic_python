@@ -97,7 +97,7 @@ class Todolist:
                 self.add_task()
 
             elif choice == "2":
-                        self.view_tasks()
+                    self.view_tasks()
 
                     elif choice == "3":
                         self.remove_task()
