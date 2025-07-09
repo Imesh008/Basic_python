@@ -101,6 +101,6 @@ def filter_expenses_by_category():
             print("No expenses found for this category.\n")  
 
 
-            
+#delete an expense by index           
 
 
