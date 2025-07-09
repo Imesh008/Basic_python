@@ -97,7 +97,7 @@ def filter_expenses_by_category():
             if date == keyword:
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
-            
+        if not found:    
 
 
 
