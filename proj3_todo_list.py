@@ -110,7 +110,7 @@ class Todolist:
                 if clear_confirm == "yes" or clear_confirm == "y":
                     self.tasks.clear()
                     print("All tasks have been deleted successfully...!")
-                    else:
+                else:
                             print("No tasks were deleted...")
 
                     elif choice == "6":
