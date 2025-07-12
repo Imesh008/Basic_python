@@ -115,7 +115,7 @@ class Todolist:
 
             elif choice == "6":
                 confirm = input("Do you want to save tasks before exiting? (yes/no): ").strip().lower()
-                        if confirm == "yes" or confirm == "y":
+                    if confirm == "yes" or confirm == "y":
                             self.save_tasks()
                             print("Exiting the program. Goodbye!...")
                             break
