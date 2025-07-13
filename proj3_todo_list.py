@@ -112,7 +112,7 @@ class Todolist:
                 elif clear_confirm == "no" or clear_confirm == "n":
                     print("No tasks were deleted...")
                     continue
-                    print("All tasks have been deleted successfully...!")
+                print("All tasks have been deleted successfully...!")
                 else:
                     print("No tasks were deleted...")
 
