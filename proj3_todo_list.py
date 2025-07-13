@@ -119,7 +119,7 @@ class Todolist:
                     self.save_tasks()
                     print("Exiting the program. Goodbye!...")
                     break
-                    else:
+                else:
                         print("Invalid choice. Please try again...")
 
     if __name__ == "__main__":
