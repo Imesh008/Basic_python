@@ -118,7 +118,7 @@ class Todolist:
                 if confirm == "yes" or confirm == "y":
                     self.save_tasks()
                     print("Exiting the program. Goodbye!...")
-                            break
+                        break
                     else:
                         print("Invalid choice. Please try again...")
 
