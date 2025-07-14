@@ -61,7 +61,7 @@ class Todolist:
         task = input("Enter the task to add: ").strip()
         if not task:
             print("Task cannot be empty. Please enter a valid task.")
-            
+            return
         self.tasks.append(task)
         print("Task added successfully...! \n")
 
