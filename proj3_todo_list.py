@@ -122,7 +122,7 @@ class Todolist:
                     break
                 elif confirm == "no" or confirm == "n":
                     print("Exiting the program without saving...")
-                    
+                    break
                 else:
                     print("Invalid choice. Please try again...")
 
