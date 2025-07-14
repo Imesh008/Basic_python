@@ -120,6 +120,7 @@ class Todolist:
                     self.save_tasks()
                     print("Exiting the program. Goodbye!...")
                     break
+                elif confirm == "no" or confirm == "n":
                 else:
                     print("Invalid choice. Please try again...")
 
