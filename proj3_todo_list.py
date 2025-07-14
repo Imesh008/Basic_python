@@ -111,7 +111,7 @@ class Todolist:
                     self.tasks.clear()
                 else clear_confirm == "no" or clear_confirm == "n":
                     print("No tasks were deleted...")
-                    
+                    continue
 
             elif choice == "6":
                 confirm = input("Do you want to save tasks before exiting? (yes/no): ").strip().lower()
