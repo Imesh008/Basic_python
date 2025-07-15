@@ -110,7 +110,7 @@ class Todolist:
 
             elif choice == "5":
                 clear_confirm = input("Are you sure you want to delete all tasks? (yes/no): ").strip().lower()
-                if clear_confirm == "yes" or clear_confirm == "y":
+                if clear_confirm in ["yes", "y"]:
                     self.tasks.clear()
                 elif clear_confirm == "no" or clear_confirm == "n":
                     print("No tasks were deleted...")
