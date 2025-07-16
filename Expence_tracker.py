@@ -7,6 +7,7 @@ FILE_NAME = 'expenses.txt'
 
 #create a file if it don't exist
 if not os.path.exists(FILE_NAME):
+    
                
 
         
