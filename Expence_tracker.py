@@ -22,6 +22,8 @@ def add_expense():
         if not date:
             date = datetime.now().strftime("%Y-%m-%d")
 
+        with open (FILE_NAME, 'a') as f:
+
 
                
 
