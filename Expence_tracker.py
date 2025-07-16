@@ -23,8 +23,4 @@ def add_expense():
             date = datetime.now().strftime("%Y-%m-%d")
 
         with open (FILE_NAME, 'a') as f:
-
-
-               
-
-        
+            f.write(f"{date}, {amount}, {category}, {description}\n")
