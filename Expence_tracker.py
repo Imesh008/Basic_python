@@ -9,6 +9,9 @@ FILE_NAME = 'expenses.txt'
 if not os.path.exists(FILE_NAME):
     open(FILE_NAME, 'w').close()
 
+
+#function to add an expense
+
                
 
         
