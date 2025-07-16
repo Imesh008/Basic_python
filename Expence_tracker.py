@@ -13,6 +13,7 @@ if not os.path.exists(FILE_NAME):
 #function to add an expense
 def add_expense():
     try:
+        amount = float float (input("Enter amount(RS): "))
 
 
                
