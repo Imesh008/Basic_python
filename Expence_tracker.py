@@ -16,7 +16,7 @@ def add_expense():
     try:
         amount = float(input("Enter amount(RS): "))
         category = input("Enter category(Food, Travel, etc.): ").strip()
-        description = input("Enter description (optional): ").strip()
+        description = input("Enter description: ").strip()
         date = input("Enter date (YYYY-MM-DD) or leave a blank for today: ").strip()
         
 
