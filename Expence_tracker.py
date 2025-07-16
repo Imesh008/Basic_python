@@ -7,7 +7,8 @@ FILE_NAME = 'expenses.txt'
 
 #create a file if it don't exist
 if not os.path.exists(FILE_NAME):
-    open(FILE_NAME, 'w').close()
+    with open(FILE_NAME, 'w') as f:
+        pass
 
 
 #function to add an expense
