@@ -14,6 +14,8 @@ if not os.path.exists(FILE_NAME):
 def add_expense():
     try:
         amount = float float (input("Enter amount(RS): "))
+        category = input("Enter category(Food, Travel, etc.): ")
+        
 
 
                
