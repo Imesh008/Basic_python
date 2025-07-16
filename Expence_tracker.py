@@ -20,6 +20,7 @@ def add_expense():
         date = input("Enter date (YYYY-MM-DD) or leave a blank for today: ").strip()
         
         if not date:
+            date = datetime.now().strftime("%Y-%m-%d")
 
 
                
