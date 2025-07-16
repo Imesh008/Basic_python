@@ -24,3 +24,4 @@ def add_expense():
 
         with open (FILE_NAME, 'a') as f:
             f.write(f"{date}, {amount}, {category}, {description}\n")
+            print("✅ Expense added successfully!\n")
