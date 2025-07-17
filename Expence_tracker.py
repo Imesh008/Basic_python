@@ -27,3 +27,5 @@ def add_expense():
         print("✅ Expense added successfully!\n")
     except ValueError:
         print("❌ Invalid input. Please enter a numeric amount.\n")
+
+#function to view all expenses
