@@ -22,6 +22,7 @@ def add_expense():
         if not date:
             date = datetime.now().strftime("%Y-%m-%d")
 
+        #create to the file if doesn't exists
         with open (FILE_NAME, 'a') as f:
             f.write(f"{date}, {amount}, {category}, {description}\n")
             print("✅ Expense added successfully!\n")
