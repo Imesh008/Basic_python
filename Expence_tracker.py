@@ -26,3 +26,4 @@ def add_expense():
             f.write(f"{date}, {amount}, {category}, {description}\n")
         print("✅ Expense added successfully!\n")
     except ValueError:
+        print("❌ Invalid input. Please enter a numeric amount.\n")
