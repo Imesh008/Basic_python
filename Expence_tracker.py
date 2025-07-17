@@ -25,6 +25,7 @@ def add_expense():
         #create to the file if doesn't exists
         if not  os.path.exists(FILE_NAME):
             with open (FILE_NAME, 'w') as f:
+                pass
                 
         with open (FILE_NAME, 'a') as f:
             f.write(f"{date}, {amount}, {category}, {description}\n")
