@@ -30,3 +30,4 @@ def add_expense():
 
 #function to view all expenses
 def view_expenses():
+    total_expenses = 0
