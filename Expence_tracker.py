@@ -29,3 +29,4 @@ def add_expense():
         print("❌ Invalid input. Please enter a numeric amount.\n")
 
 #function to view all expenses
+def view_expenses():
