@@ -34,4 +34,4 @@ def view_expenses():
     with open(FILE_NAME, 'r') as f:
         for line in f:
             parts = line.strip().split(',')
-            
+            if len (parts) >=2:
