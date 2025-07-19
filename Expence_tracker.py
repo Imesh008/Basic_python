@@ -35,3 +35,4 @@ def view_expenses():
         for line in f:
             parts = line.strip().split(',')
             if len (parts) >=2:
+                total += float(parts[1])
