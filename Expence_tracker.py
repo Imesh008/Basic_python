@@ -30,6 +30,7 @@ def add_expense():
 
 #function to view all expenses
 def view_expenses():
+    print("\n📊 All Expenses:")
     total_expenses = 0
     with open(FILE_NAME, 'r') as f:
         for line in f:
@@ -39,3 +40,4 @@ def view_expenses():
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
     #Main menu loop
+
