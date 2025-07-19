@@ -31,6 +31,9 @@ def add_expense():
 #function to view all expenses
 def view_expenses():
     print("\n📊 All Expenses:")
+    if os.path.getsize(FILE_NAME) == 0:
+        print("No expenses recorded yet.\n")
+        return
     total_expenses = 0
     with open(FILE_NAME, 'r') as f:
         for line in f:
