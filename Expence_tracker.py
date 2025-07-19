@@ -33,3 +33,4 @@ def view_expenses():
     total_expenses = 0
     with open(FILE_NAME, 'r') as f:
         for line in f:
+            parts = line.strip().split(', ')
