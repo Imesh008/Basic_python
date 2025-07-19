@@ -36,3 +36,4 @@ def view_expenses():
             parts = line.strip().split(',')
             if len (parts) >=2:
                 total += float(parts[1])
+    print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
