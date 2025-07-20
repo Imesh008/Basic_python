@@ -38,6 +38,7 @@ def view_expenses():
     with open(FILE_NAME, 'r') as f:
         lines = f.readlines()
         print (f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} 'Description")
+        print("-" * 50)
     ###############################################
     total_expenses = 0
     with open(FILE_NAME, 'r') as f:
