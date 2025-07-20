@@ -40,7 +40,8 @@ def view_expenses():
         print (f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} 'Description")
         print("-" * 50)
         for line in lines:
-            date
+            date, amount, category, description = line.strip().split(',', 3)
+            
     ###############################################
     total_expenses = 0
     with open(FILE_NAME, 'r') as f:
