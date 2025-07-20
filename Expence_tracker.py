@@ -34,6 +34,10 @@ def view_expenses():
     if os.path.getsize(FILE_NAME) == 0:
         print("No expenses recorded yet.\n")
         return
+    
+    with open(FILE_NAME, 'r') as f:
+        lines = f.readlines()
+    ###############################################
     total_expenses = 0
     with open(FILE_NAME, 'r') as f:
         for line in f:
