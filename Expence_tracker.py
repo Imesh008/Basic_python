@@ -58,4 +58,5 @@ def show_summary():
     def main_menu():
         while True:
             print("====== EXPENNSE TRACKER ======")
+            print("1. Add Expense")
 
