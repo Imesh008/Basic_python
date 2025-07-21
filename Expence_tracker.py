@@ -45,6 +45,7 @@ def view_expenses():
     print()
 
 def show_summary():     
+    total = 0.0
     with open(FILE_NAME, 'r') as f:
         for line in f:
             parts = line.strip().split(',')
