@@ -56,4 +56,6 @@ def show_summary():
 
     #Main menu loop
     def main_menu():
+        while True:
+            
 
