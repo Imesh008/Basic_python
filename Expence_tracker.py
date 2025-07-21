@@ -59,4 +59,6 @@ def show_summary():
         while True:
             print("====== EXPENNSE TRACKER ======")
             print("1. Add Expense")
+            print("2. View All Expenses")
+
 
