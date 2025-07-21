@@ -60,5 +60,6 @@ def show_summary():
             print("====== EXPENNSE TRACKER ======")
             print("1. Add Expense")
             print("2. View All Expenses")
+            print("3. Show Total Summary")
 
 
