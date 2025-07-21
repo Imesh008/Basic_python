@@ -55,4 +55,5 @@ def show_summary():
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
     #Main menu loop
+    def main_menu():
 
