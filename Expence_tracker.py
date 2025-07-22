@@ -64,4 +64,7 @@ def show_summary():
             print("4. Exit")
             choice = input ("Choose and option (1-4): ").strip()
 
+            if choice == '1':
+
+
 
