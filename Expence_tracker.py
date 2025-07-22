@@ -76,6 +76,7 @@ def show_summary():
             elif choice == '4':
                 print("Exiting the Expense Tracker. Goodbye! 👋")
                 break
+            else:
                 
 
 
