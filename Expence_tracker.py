@@ -65,6 +65,7 @@ def show_summary():
             choice = input ("Choose and option (1-4): ").strip()
 
             if choice == '1':
+                add_expense()
 
 
 
