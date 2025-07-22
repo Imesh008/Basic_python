@@ -67,5 +67,7 @@ def show_summary():
             if choice == '1':
                 add_expense()
 
+            elif choice == '2':
+
 
 
