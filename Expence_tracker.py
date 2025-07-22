@@ -77,6 +77,7 @@ def show_summary():
                 print("Exiting the Expense Tracker. Goodbye! 👋")
                 break
             else:
+                print("❌ Invalid choice. Please select a valid option (1-4).\n")
                 
 
 
