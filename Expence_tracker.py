@@ -62,5 +62,6 @@ def show_summary():
             print("2. View All Expenses")
             print("3. Show Total Summary")
             print("4. Exit")
+            choice = input ("Choose and option (1-4): ").strip()
 
 
