@@ -80,7 +80,7 @@ def main_menu():
                 print("❌ Invalid choice. Please select a valid option (1-4).\n")
 
             
-            
+main_menu            
 
                 
 
