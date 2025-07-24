@@ -94,7 +94,8 @@ def filter_expenses_by_category():
         found = False
         for line in f:
             date, amount, category, description = line.strip().split(',',3)
-            if category.lower()== keyword :
+            if category.lower()== keyword 
+            print (f"{date:<12} {amount:}")
                 
 
 
