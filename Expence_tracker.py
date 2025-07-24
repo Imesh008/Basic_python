@@ -55,7 +55,7 @@ def show_summary():
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
 #Main menu loop
-    def main_menu():
+def main_menu():
         while True:
             print("====== EXPENNSE TRACKER ======")
             print("1. Add Expense")
