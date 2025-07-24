@@ -83,7 +83,10 @@ def main_menu():
 #start the porogram    
 if name == "__main__":
     print("Welcome to the Expense Tracker! 📊")        
-main_menu()
+ 
+
+
+#filter expenses by category
 
                 
 
