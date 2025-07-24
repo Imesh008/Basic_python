@@ -93,7 +93,7 @@ def filter_expenses_by_category():
     with open (FILE_NAME, 'r') as f:
         found = False
         for line in f:
-            
+            date, amount, category, description = line.strip().split(',',3)
  
                 
 
