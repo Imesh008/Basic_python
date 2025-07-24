@@ -91,6 +91,7 @@ def filter_expenses_by_category():
     keyword = input ("Enter category to filter: ").strip().lower()
     print (f"\n Filterd by Category: {keyword}")
     with open (FILE_NAME, 'r') as f:
+        found = False
  
                 
 
