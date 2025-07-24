@@ -80,7 +80,9 @@ def main_menu():
                 print("❌ Invalid choice. Please select a valid option (1-4).\n")
 
 
-#start the porogram            
+#start the porogram    
+if name == "__main__":
+    print("Welcome to the Expense Tracker! 📊")        
 main_menu()
 
                 
