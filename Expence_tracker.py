@@ -89,6 +89,7 @@ if name == "__main__":
 #filter expenses by category
 def filter_expenses_by_category():
     keyword = input ("Enter category to filter: ").strip().lower()
+    print (f"\n Filterd by Category: {keyword}")
     
 
                 
