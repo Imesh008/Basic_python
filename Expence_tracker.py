@@ -87,6 +87,7 @@ if name == "__main__":
 
 
 #filter expenses by category
+def filter_expenses_by_category():
 
                 
 
