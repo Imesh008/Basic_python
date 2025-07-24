@@ -54,7 +54,7 @@ def show_summary():
                 total += float(parts[1])
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
-    #Main menu loop
+#Main menu loop
     def main_menu():
         while True:
             print("====== EXPENNSE TRACKER ======")
@@ -78,6 +78,10 @@ def show_summary():
                 break
             else:
                 print("❌ Invalid choice. Please select a valid option (1-4).\n")
+
+            
+            
+
                 
 
 
