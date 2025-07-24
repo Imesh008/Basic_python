@@ -56,7 +56,7 @@ def show_summary():
 
 #Main menu loop
 def main_menu():
-        while True:
+    while True:
             print("====== EXPENNSE TRACKER ======")
             print("1. Add Expense")
             print("2. View All Expenses")
