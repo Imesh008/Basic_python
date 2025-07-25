@@ -103,3 +103,4 @@ def filter_expenses_by_category():
 
 #delete an expense by index           
 def delete_expense():
+    view_expenses()
