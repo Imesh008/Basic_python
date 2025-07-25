@@ -108,3 +108,4 @@ def delete_expense():
 
     if not lines:
         print ("No expenses to delete.\n")
+        return
