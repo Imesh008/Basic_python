@@ -112,3 +112,5 @@ def delete_expense():
     
     print (f"\n📂 Select an expense to delete: ")
     for idc, line in enumerate(lines):
+        date, amount, category, description = line.strip().split(',', 3)
+        print(f"{idc + 1}. {date} - {amount} - {category} - {description}")
