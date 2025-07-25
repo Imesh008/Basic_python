@@ -107,3 +107,4 @@ def delete_expense():
         lines = f.readlines()
 
     if not lines:
+        print ("No expenses to delete.\n")
