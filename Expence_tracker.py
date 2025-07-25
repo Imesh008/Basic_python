@@ -103,4 +103,5 @@ def filter_expenses_by_category():
 
 #delete an expense by index           
 def delete_expense():
-    
+    with open(FILE_NAME, 'r') as f:
+        lines = f.readlines()
