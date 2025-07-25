@@ -105,3 +105,5 @@ def filter_expenses_by_category():
 def delete_expense():
     with open(FILE_NAME, 'r') as f:
         lines = f.readlines()
+
+    if not lines:
