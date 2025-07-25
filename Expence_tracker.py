@@ -111,4 +111,4 @@ def delete_expense():
         return
     
     print (f"\n📂 Select an expense to delete: ")
-    
+    for idc, line in enumerate(lines):
