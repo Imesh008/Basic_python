@@ -117,6 +117,7 @@ def delete_expense():
 
         try:
             choice = int(input("Enter the number of the entry to delete : ")) -1
-            
+            if confirm = input ("Are you sure you want to dele this entry? (y/n): ").lowee()
+
 
 
