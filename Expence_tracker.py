@@ -123,6 +123,8 @@ def delete_expense():
                 with open(FILE_NAME, 'w') as f:
                     f.writelines(lines)
                 print("✅ Expense deleted successfully!\n")
+            else:
+                print("❌ Deletion cancelled.\n")    
 
 
 
