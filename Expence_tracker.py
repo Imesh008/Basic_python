@@ -116,5 +116,6 @@ def delete_expense():
         print(f"{idc + 1}. {date} - {amount} - {category} - {description}")
 
         try:
-            
+            choice = int(input("Enter the number of the entry to delete : "))
+
 
