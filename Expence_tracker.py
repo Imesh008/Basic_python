@@ -120,6 +120,7 @@ def delete_expense():
             if confirm = input ("Are you sure you want to dele this entry? (y/n): ").lowee()
             if confirm == 'y':
                 del lines[choice]
+                with open(FILE_NAME, 'w') as f:
 
 
 
