@@ -130,4 +130,5 @@ def delete_expense():
             print("❌ Invalid choice. Please enter a valid number.\n")
         except ValueError:
 
-
+ 
+#add new options in the menue
