@@ -128,6 +128,6 @@ def delete_expense():
                 print("❌ Deletion cancelled.\n")    
         else:
             print("❌ Invalid choice. Please enter a valid number.\n")
-
+        except ValueError:
 
 
