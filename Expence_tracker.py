@@ -133,3 +133,5 @@ def delete_expense():
  
 #add new options in the menue
 def main_menu():
+    while True:
+        print("====== EXPENSE TRACKER ======")
