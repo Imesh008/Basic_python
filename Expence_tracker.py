@@ -141,4 +141,4 @@ def main_menu():
         print("4. Filter Expenses by Category")
         print("5. Filter Expenses by date")
         print("6. Delete an Expense")
-        print("6. Exit")
+        print("7. Exit")
