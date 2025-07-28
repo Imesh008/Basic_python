@@ -137,4 +137,4 @@ def main_menu():
         print("====== EXPENSE TRACKER ======")
         print("1. Add Expense")
         print("2. View All Expenses")
-        print
+        print ("3. Show Total Summary")
