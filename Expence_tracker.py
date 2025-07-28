@@ -139,3 +139,4 @@ def main_menu():
         print("2. View All Expenses")
         print ("3. Show Total Summary")
         print("4. Filter Expenses by Category")
+        print("5. Delete an Expense")
