@@ -166,3 +166,4 @@ def main_menu():
             print("Exiting the Expense Tracker. Goodbye! 👋")
             break
         else:
+            print("❌ Invalid choice. Please select a valid option (1-7).\n")
