@@ -170,6 +170,6 @@ def main_menu():
 
 
 
-#export filterd data to another file
+#export filtered data to another file
 def export_filtered_data():
-         
+    category = input("Enter category to export: ").strip().lower()
