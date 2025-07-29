@@ -160,3 +160,4 @@ def main_menu():
             filter_expenses_by_date()
 
         elif choice == '6':
+            delete_expense()
