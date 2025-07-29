@@ -163,3 +163,5 @@ def main_menu():
             delete_expense()
 
         elif choice == '7':
+            print("Exiting the Expense Tracker. Goodbye! 👋")
+            break
