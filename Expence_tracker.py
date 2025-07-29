@@ -165,3 +165,4 @@ def main_menu():
         elif choice == '7':
             print("Exiting the Expense Tracker. Goodbye! 👋")
             break
+        else:
