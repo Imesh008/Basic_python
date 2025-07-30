@@ -154,3 +154,4 @@ def main_menu():
             show_summary()
 
         elif choice == '4':
+            filter_expenses_by_category()
