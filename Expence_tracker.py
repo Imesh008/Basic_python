@@ -146,3 +146,5 @@ def main_menu():
 
         if choice == '1':
             add_expense()
+
+        elif choice == '2':
