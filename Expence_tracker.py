@@ -142,3 +142,4 @@ def main_menu():
         print("5. Filter Expenses by date")
         print("6. Delete an Expense")
         print("7. Exit")
+        choice = input("Choose an option (1-7): ").strip()
