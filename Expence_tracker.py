@@ -148,3 +148,4 @@ def main_menu():
             add_expense()
 
         elif choice == '2':
+            view_expenses
