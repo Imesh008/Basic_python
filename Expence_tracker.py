@@ -145,3 +145,4 @@ def main_menu():
         choice = input("Choose an option (1-7): ").strip()
 
         if choice == '1':
+            add_expense()
