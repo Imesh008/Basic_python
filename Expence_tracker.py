@@ -178,4 +178,5 @@ def export_filtered_data():
         count = 0
         for line in f:
             date, amount, cat, description = line.strip().split(',', 3)
+            if cat.lower()== category:
             
