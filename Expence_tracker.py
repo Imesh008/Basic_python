@@ -176,3 +176,4 @@ def export_filtered_data():
     export_file = f"filtered_expenses_{category}.txt"
     with open(FILE_NAME, 'r') as f:
         count = 0
+        for line in f:
