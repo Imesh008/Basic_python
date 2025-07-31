@@ -182,4 +182,8 @@ def export_filtered_data():
                 f_out.write(line)
                 count += 1
     print(f"✅ Exported {count} expenses to {export_file}\n")
+
+
+#sort and show expenses by date
+def view_sorted_expenses():
             
