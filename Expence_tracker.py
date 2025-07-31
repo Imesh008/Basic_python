@@ -173,3 +173,4 @@ def main_menu():
 #export filtered data to another file
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
+    export_file = f"filtered_expenses_{category}.txt"
