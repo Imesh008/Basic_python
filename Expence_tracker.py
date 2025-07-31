@@ -177,3 +177,5 @@ def export_filtered_data():
     with open(FILE_NAME, 'r') as f:
         count = 0
         for line in f:
+            date, amount, cat, description = line.strip().split(',', 3)
+            
