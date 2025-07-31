@@ -181,4 +181,5 @@ def export_filtered_data():
             if cat.lower()== category:
                 f_out.write(line)
                 count += 1
+    print(f"✅ Exported {count} expenses to {export_file}\n")
             
