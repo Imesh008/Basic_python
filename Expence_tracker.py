@@ -190,5 +190,6 @@ def view_sorted_expenses():
         lines = [line.strip().split(',',3) for line in f]
     lines.sort(key=lambda x: x[0], reverse=True)  #sort by date
     print("\n📅 Sorted Expenses (Latest First):")
+    print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} 'Description")
 
             
