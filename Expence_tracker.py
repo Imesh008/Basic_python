@@ -186,4 +186,7 @@ def export_filtered_data():
 
 #sort and show expenses by date
 def view_sorted_expenses():
+    with open (FILE_NAME, 'r') as f:
+        lines = [line.strip().split(',',3) for line in f]
+
             
