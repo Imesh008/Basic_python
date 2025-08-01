@@ -188,5 +188,6 @@ def export_filtered_data():
 def view_sorted_expenses():
     with open (FILE_NAME, 'r') as f:
         lines = [line.strip().split(',',3) for line in f]
+        lines.sort(key=lambda x: x[0], reverse=True)
 
             
