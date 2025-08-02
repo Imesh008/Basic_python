@@ -199,3 +199,4 @@ def view_sorted_expenses():
 
             
 #add these to the menu
+def main_menu():
