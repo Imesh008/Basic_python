@@ -202,3 +202,4 @@ def view_sorted_expenses():
 def main_menu():
     while True:
         print("====== EXPENSE TRACKER ======")
+        print("1. Add Expense")
