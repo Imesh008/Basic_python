@@ -205,3 +205,4 @@ def main_menu():
         print("1. Add Expense")
         print("2. View All Expenses")
         print("3. Show Total Summary")
+        print("4. Filter Expenses by Category")
