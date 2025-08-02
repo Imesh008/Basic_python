@@ -198,3 +198,4 @@ def view_sorted_expenses():
     print()
 
             
+#add these to the menu
