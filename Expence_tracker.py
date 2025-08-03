@@ -212,3 +212,6 @@ def main_menu():
         print("8. View Sorted Expenses")
         print("9. Exit")
         choice = input("Choose an option (1-9): ").strip()
+
+
+        if choice == '1':
