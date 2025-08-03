@@ -210,3 +210,4 @@ def main_menu():
         print("6. Delete an Expense")
         print("7. Export Filtered Data")
         print("8. View Sorted Expenses")
+        print("9. Exit")
