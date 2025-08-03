@@ -211,3 +211,4 @@ def main_menu():
         print("7. Export Filtered Data")
         print("8. View Sorted Expenses")
         print("9. Exit")
+        choice = input("Choose an option (1-9): ").strip()
