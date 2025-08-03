@@ -208,3 +208,4 @@ def main_menu():
         print("4. Filter Expenses by Category")
         print("5. Filter Expenses by Date")
         print("6. Delete an Expense")
+        print("7. Export Filtered Data")
