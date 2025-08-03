@@ -219,3 +219,5 @@ def main_menu():
 
         elif choice == '2':
             view_expenses()
+
+        elif choice == '3':
