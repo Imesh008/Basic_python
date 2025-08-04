@@ -239,3 +239,4 @@ def main_menu():
             view_sorted_expenses()
 
         elif choice == '9':
+            print("Exiting the Expense Tracker. Goodbye! 👋")
