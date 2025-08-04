@@ -240,3 +240,4 @@ def main_menu():
 
         elif choice == '9':
             print("Exiting the Expense Tracker. Goodbye! 👋")
+            break
