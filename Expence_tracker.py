@@ -237,3 +237,5 @@ def main_menu():
 
         elif choice == '8':
             view_sorted_expenses()
+
+        elif choice == '9':
