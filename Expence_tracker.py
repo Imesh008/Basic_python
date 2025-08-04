@@ -234,3 +234,6 @@ def main_menu():
 
         elif choice == '7':
             export_filtered_data()
+
+        elif choice == '8':
+            view_sorted_expenses()
