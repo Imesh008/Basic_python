@@ -231,3 +231,6 @@ def main_menu():
 
         elif choice == '6':
             delete_expense()
+
+        elif choice == '7':
+            export_filtered_data()
