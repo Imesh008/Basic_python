@@ -229,3 +229,5 @@ def main_menu():
         elif choice == '5':
             filter_expenses_by_date()
 
+        elif choice == '6':
+
