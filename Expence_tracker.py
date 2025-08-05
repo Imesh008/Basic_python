@@ -155,8 +155,6 @@ def main_menu():
 
         elif choice == '4':
             filter_expenses_by_category()
-
-        elif choice == '5':
             
 
             
