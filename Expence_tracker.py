@@ -164,12 +164,7 @@ def main_menu():
 
         elif choice == '7':
             print("Exiting the Expense Tracker. Goodbye! 👋")
-            break
-        else:
-            print("❌ Invalid choice. Please select a valid option (1-7).\n")
-
-
-
+    
 #export filtered data to another file
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
