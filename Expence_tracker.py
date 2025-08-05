@@ -159,12 +159,7 @@ def main_menu():
         elif choice == '5':
             filter_expenses_by_date()
 
-        elif choice == '6':
-            delete_expense()
-
-        elif choice == '7':
-            print("Exiting the Expense Tracker. Goodbye! 👋")
-    
+            
 #export filtered data to another file
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
