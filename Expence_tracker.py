@@ -243,3 +243,4 @@ def main_menu():
             break
 
         else:
+            print("❌ Invalid choice. Please select a valid option (1-9).\n")
