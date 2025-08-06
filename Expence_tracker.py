@@ -54,9 +54,6 @@ def show_summary():
                 total += float(parts[1])
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
- 
-
-
 #start the porogram    
 if name == "__main__":
     print("Welcome to the Expense Tracker! 📊")        
