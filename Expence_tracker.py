@@ -144,8 +144,7 @@ def main_menu():
         print("7. Exit")
         choice = input("Choose an option (1-7): ").strip()
 
-        if choice == '1':
-           
+            
  
             
             
