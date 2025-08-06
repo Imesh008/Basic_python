@@ -120,6 +120,7 @@ def main_menu():
 
 
         if choice == '1':
+            add_expense()
         
 #export filtered data to another file
 def export_filtered_data():
