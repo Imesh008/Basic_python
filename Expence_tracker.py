@@ -54,30 +54,7 @@ def show_summary():
                 total += float(parts[1])
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
-#Main menu loop
-def main_menu():
-    while True:
-        print("====== EXPENNSE TRACKER ======")
-            print("1. Add Expense")
-            print("2. View All Expenses")
-            print("3. Show Total Summary")
-            print("4. Exit")
-            choice = input ("Choose and option (1-4): ").strip()
-
-            if choice == '1':
-                add_expense()
-
-            elif choice == '2':
-                view_expenses()
-
-            elif choice == '3':
-                show_summary()
-
-            elif choice == '4':
-                print("Exiting the Expense Tracker. Goodbye! 👋")
-                break
-            else:
-                print("❌ Invalid choice. Please select a valid option (1-4).\n")
+ 
 
 
 #start the porogram    
