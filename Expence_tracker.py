@@ -123,7 +123,7 @@ def main_menu():
             add_expense()
 
         elif choice == '2':             ############################################
-            view_expenses()
+            
         
 #export filtered data to another file
 def export_filtered_data():
