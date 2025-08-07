@@ -114,8 +114,7 @@ def main_menu():
         print("3. Show Total Summary")
         print("4. Filter Expenses by Category")
         print("5. Filter Expenses by date")
-        print("6. Delete an Expense")
-  
+   
 
   
         elif choice == '2':             ############################################
