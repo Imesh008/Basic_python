@@ -113,8 +113,7 @@ def main_menu():
         print("2. View All Expenses")
         print("3. Show Total Summary")
         print("4. Filter Expenses by Category")
-        print("5. Filter Expenses by date")
-   
+    
 
   
         elif choice == '2':             ############################################
