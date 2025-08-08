@@ -112,7 +112,6 @@ def main_menu():
         print("1. Add Expense")
        
 
-  
              
         
 #export filtered data to another file
