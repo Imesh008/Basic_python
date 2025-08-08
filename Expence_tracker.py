@@ -110,7 +110,6 @@ def main_menu():
     while True:
         print("====== EXPENSE TRACKER ======")
         print("1. Add Expense")
-       
 #export filtered data to another file
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
