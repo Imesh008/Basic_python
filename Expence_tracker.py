@@ -113,8 +113,7 @@ def main_menu():
        
 
   
-        elif choice == '2':             ############################################
-            
+             
         
 #export filtered data to another file
 def export_filtered_data():
