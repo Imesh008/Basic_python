@@ -59,7 +59,6 @@ if name == "__main__":
     print("Welcome to the Expense Tracker! 📊")        
  
 
-
 #filter expenses by category
 def filter_expenses_by_category():
     keyword = input ("Enter category to filter: ").strip().lower()
