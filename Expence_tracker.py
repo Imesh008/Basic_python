@@ -54,7 +54,7 @@ def show_summary():
                 total += float(parts[1])
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
- #filter expenses by category
+#filter expenses by category
 def filter_expenses_by_category():
     keyword = input ("Enter category to filter: ").strip().lower()
     print (f"\n Filterd by Category: {keyword}")
@@ -62,7 +62,7 @@ def filter_expenses_by_category():
         found = False
         for line in f:
             date, amount, category, description = line.strip().split(',',3)
-            if date == keyword:
+            if category.lower() == keyword:
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
         if not found:  
