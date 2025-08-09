@@ -81,7 +81,7 @@ def delete_expense():
     print (f"\n📂 Select an expense to delete: ")
     for idx, line in enumerate(lines):
         date, amount, category, description = line.strip().split(',', 3)
-        print(f"{idc + 1}. {date} - {amount} - {category} - {description}")
+        print(f"{idx + 1}. {date} - {amount} - {category} - {description}")
 
         try:
             choice = int(input("Enter the number of the entry to delete : ")) -1
