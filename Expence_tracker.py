@@ -23,7 +23,7 @@ def add_expense():
             date = datetime.now().strftime("%Y-%m-%d")
        
         with open (FILE_NAME, 'a') as f:
-            f.write(f"{date}, {amount}, {category}, {description}\n")
+            f.write(f"{date},{amount},{category},{description}\n")
         print("✅ Expense added successfully!\n")
     except ValueError:
         print("❌ Invalid input. Please enter a numeric amount.\n")
