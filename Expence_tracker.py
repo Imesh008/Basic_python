@@ -89,7 +89,7 @@ def delete_expense():
         if confirm = input("Are you sure you want to dele this entry? (y/n): ").lower()
         if confirm == 'y':
             del lines[choice]
-                with open(FILE_NAME, 'w') as f:
+            with open(FILE_NAME, 'w') as f:
                     f.writelines(lines)
                 print("✅ Expense deleted successfully!\n")
             else:
