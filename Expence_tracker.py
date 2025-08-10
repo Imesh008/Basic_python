@@ -84,7 +84,7 @@ def delete_expense():
         print(f"{idx + 1}. {date} - {amount} - {category} - {description}")
 
     try:
-            choice = int(input("Enter the number of the entry to delete : ")) -1
+        choice = int(input("Enter the number of the entry to delete : ")) -1
             if  choice < 0 or choice >= len(lines):
             if confirm = input("Are you sure you want to dele this entry? (y/n): ").lower()
             if confirm == 'y':
