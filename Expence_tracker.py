@@ -91,7 +91,7 @@ def delete_expense():
                 del lines[choice]
                 with open(FILE_NAME, 'w') as f:
                     f.writelines(lines)
-            print("✅ Expense deleted successfully!\n")
+                print("✅ Expense deleted successfully!\n")
         else:
             print("❌ Deletion cancelled.\n")    
         else:
