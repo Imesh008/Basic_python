@@ -104,6 +104,7 @@ def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
     export_file = f"filtered_expenses_{category}.txt"
     count = 0
+    with open(FILE_NAME, 'r') as f, open(export_file, 'w') as f_out:
         for line in f:
             date, amount, cat, description = line.strip().split(',', 3)
             if cat.lower()== category:
