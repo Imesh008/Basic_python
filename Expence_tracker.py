@@ -94,7 +94,7 @@ def delete_expense():
                 print("✅ Expense deleted successfully!\n")
             else:
                 print("❌ Deletion cancelled.\n")
-    elif choice < 0 or choice >= len(lines):
+        else:
         print("❌ Invalid choice. Please enter a valid number.\n")
     except ValueError:
 
