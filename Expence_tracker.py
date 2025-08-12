@@ -103,8 +103,7 @@ def delete_expense():
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
     export_file = f"filtered_expenses_{category}.txt"
-    with open(FILE_NAME, 'r') as f:
-        count = 0
+    count = 0
         for line in f:
             date, amount, cat, description = line.strip().split(',', 3)
             if cat.lower()== category:
