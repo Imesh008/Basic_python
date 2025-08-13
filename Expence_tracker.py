@@ -109,7 +109,9 @@ def export_filterd_data():
             date,amount, cat, description = line.strip().split(',', 3)
             if cat.lower() == category:
                 f_out.write(line)
- 
+                count += 1
+    print(f"✅ Exported {count} expenses to {export_file}\n")
+
 #export filtered data to another file
 def filter_expenses_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
