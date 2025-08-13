@@ -99,6 +99,8 @@ def delete_expense():
     except ValueError:
         print ("❌ please ebter a number...\n")
 
+#export filtered data 
+def export_filterd_data():
  
 #export filtered data to another file
 def filter_expenses_by_date():
