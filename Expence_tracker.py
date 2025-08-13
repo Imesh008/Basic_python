@@ -104,6 +104,7 @@ def export_filterd_data():
     category = input("Enter category to export: ").strip().lower()
     export_file = f"filtered_expenses_{category}.txt"
     count = 0
+    with open(FILE_NAME, 'r') as f, open(export_file, 'w') as f_out:
  
 #export filtered data to another file
 def filter_expenses_by_date():
