@@ -121,8 +121,11 @@ def filter_expenses_by_date():
         for line in f:
             date, amount, category, description = line.strip().split(',', 3)
             if date == date_filter:
-    
-     
+                print(f"{date:<12} {amount:<10} {category:<15} {description}")
+                found = True
+
+    if not found:
+        print("No expenses found for this date.\n")
 
 
 #sort and show expenses by date
