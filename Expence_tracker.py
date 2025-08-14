@@ -115,6 +115,7 @@ def export_filtered_data():
 #export filtered data to another file
 def filter_expenses_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
+    print (f"\n📅 Expenses on {date_filter}:")
      
 
 
