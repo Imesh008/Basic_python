@@ -118,6 +118,8 @@ def filter_expenses_by_date():
     print (f"\n📅 Expenses on {date_filter}:")
     found = False
     with open (FILE_NAME, 'r') as f:
+        for line in f:
+            date, amount, category, description = line.strip().split(',', 3)
     
      
 
