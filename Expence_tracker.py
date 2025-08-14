@@ -114,17 +114,7 @@ def export_filtered_data():
 
 #export filtered data to another file
 def filter_expenses_by_date():
-    date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
-    category = input("Enter category to export: ").strip().lower()
-    export_file = f"filtered_expenses_{category}.txt"
-    count = 0
-    with open(FILE_NAME, 'r') as f, open(export_file, 'w') as f_out:
-        for line in f:
-            date, amount, cat, description = line.strip().split(',', 3)
-            if cat.lower()== category:
-                f_out.write(line)
-                count += 1
-    print(f"✅ Exported {count} expenses to {export_file}\n")
+     
 
 
 #sort and show expenses by date
