@@ -120,6 +120,7 @@ def filter_expenses_by_date():
     with open (FILE_NAME, 'r') as f:
         for line in f:
             date, amount, category, description = line.strip().split(',', 3)
+            if date == date_filter:
     
      
 
