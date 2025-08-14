@@ -100,7 +100,7 @@ def delete_expense():
         print ("❌ please ebter a number...\n")
 
 #export filtered data 
-def export_filterd_data():
+def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
     export_file = f"filtered_expenses_{category}.txt"
     count = 0
