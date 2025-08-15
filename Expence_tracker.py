@@ -54,7 +54,7 @@ def show_summary():
                 total += float(parts[1])
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
-#filter expenses by category
+#filtered by category
 def filter_expenses_by_category():
     keyword = input ("Enter category to filter: ").strip().lower()
     print (f"\n Filterd by Category: {keyword}")
