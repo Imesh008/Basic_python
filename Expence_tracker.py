@@ -97,7 +97,7 @@ def delete_expense():
         else:
             print("❌ Invalid choice. Please enter a valid number.\n")
     except ValueError:
-        print ("❌ please ebter a number...\n")
+        print ("❌ please enter a number...\n")
 
 #export filtered data 
 def export_filtered_data():
@@ -123,7 +123,6 @@ def filter_expenses_by_date():
             if date == date_filter:
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
-
     if not found:
         print("No expenses found for this date.\n")
 
