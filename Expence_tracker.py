@@ -141,13 +141,8 @@ def view_sorted_expenses():
         print(f"{date:<12} {amount:<10} {category:<15} {description}")
     print()
 
-            
 #add these to the menu
 def main_menu():
-    if __name__ == "__main__":
-        main_menu()
-
-
     while True:
         print("====== EXPENSE TRACKER ======")
         print("1. Add Expense")
@@ -160,7 +155,6 @@ def main_menu():
         print("8. View Sorted Expenses")
         print("9. Exit")
         choice = input("Choose an option (1-9): ").strip()
-
 
         if choice == '1':
             add_expense()
@@ -193,5 +187,6 @@ def main_menu():
         else:
             print("❌ Invalid choice. Please select a valid option (1-9).\n")
     
-
+if __name__ == "__main__":
+    main_menu()
      
