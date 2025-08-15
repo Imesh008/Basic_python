@@ -132,7 +132,7 @@ def view_sorted_expenses():
     with open (FILE_NAME, 'r') as f:
         lines = [line.strip().split(',',3) for line in f]
     from datetime import datetime
-    lines.sort(key=lambda x: x[0], reverse=True)  #sort by date
+    lines.sort(key=lambda x: datetime.strptime(x[0], "%Y-%m-%d"), reverse=True)  #sort by date
     print("\n📅 Sorted Expenses (Latest First):")
     print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
     print("-" * 60)
