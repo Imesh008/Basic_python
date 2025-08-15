@@ -144,6 +144,10 @@ def view_sorted_expenses():
             
 #add these to the menu
 def main_menu():
+    if __name__ == "__main__":
+        main_menu()
+
+
     while True:
         print("====== EXPENSE TRACKER ======")
         print("1. Add Expense")
