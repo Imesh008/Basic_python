@@ -188,3 +188,6 @@ def main_menu():
         else:
             print("❌ Invalid choice. Please select a valid option (1-9).\n")
     
+
+    if __name__ == "__main__":
+        main_menu()
