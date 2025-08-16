@@ -133,8 +133,7 @@ def filter_expenses_by_date():
 def view_sorted_expenses():
     with open (FILE_NAME, 'r') as f:
         lines = [line.strip().split(',',3) for line in f]
-    lines.sort(key=lambda x: datetime.strptime(x[0], "%Y-%m-%d"), reverse=True)  #sort by date
-   
+    
          print(f"{date:<12} {amount:<10} {category:<15} {description}")
     print()
 
