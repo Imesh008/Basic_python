@@ -138,8 +138,7 @@ def view_sorted_expenses():
     print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
     print("-" * 60)
 
-    for date, amount, category, description in lines:
-        print(f"{date:<12} {amount:<10} {category:<15} {description}")
+         print(f"{date:<12} {amount:<10} {category:<15} {description}")
     print()
 
 #add these to the menu
