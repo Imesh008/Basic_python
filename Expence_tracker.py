@@ -44,6 +44,8 @@ def view_expenses():
             print(f"{date:<12} {amount:<10} {category:<15} {description}")
     print()
 
+
+#show summary
 def show_summary():     
     total = 0.0
     print("\n📈 Expense Summary:")
