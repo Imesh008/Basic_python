@@ -129,7 +129,7 @@ def filter_expenses_by_date():
         print("No expenses found for this date.\n")
 
 
-#sort and show expenses by date
+#view and sort expenses
 def view_sorted_expenses():
     with open (FILE_NAME, 'r') as f:
         lines = [line.strip().split(',',3) for line in f]
