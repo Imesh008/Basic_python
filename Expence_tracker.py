@@ -99,8 +99,7 @@ def delete_expense():
         else:
             print("❌ Invalid choice. Please enter a valid number.\n")
     except ValueError:
-        print ("❌ please enter a number...\n")
-
+ 
 #export filtered data 
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
@@ -138,9 +137,11 @@ def view_sorted_expenses():
         lines = f.readlines()
     sorted_expenses = sorted(lines, key=lambda x: (x.split(',')[0], float(x.split(',')[1])))
 
+    print(f"\n📊 Sorted Expenses:")
+    for line in sorted_expenses:
+        date, amount, category, description = line.strip().split(',', 3)
+        print(f"{date:<12} {amount:<10} {category:<15} {description}")
 
-      
- 
 #add these to the menu
 def main_menu():
     while True:
