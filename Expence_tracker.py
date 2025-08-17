@@ -131,6 +131,7 @@ def filter_expenses_by_date():
 
 #view and sort expenses
 def view_sorted_expenses():
+    id not os.path.exists(FILE_NAME):
       
  
 #add these to the menu
