@@ -132,8 +132,7 @@ def filter_expenses_by_date():
 #view and sort expenses
 def view_sorted_expenses():
       
-     print()
-
+ 
 #add these to the menu
 def main_menu():
     while True:
