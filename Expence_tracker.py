@@ -80,8 +80,7 @@ def delete_expense():
         print ("No expenses to delete.\n")
         return
     
-    print (f"\n📂 Select an expense to delete: ")
-    for idx, line in enumerate(lines):
+     for idx, line in enumerate(lines):
         date, amount, category, description = line.strip().split(',', 3)
         print(f"{idx + 1}. {date} - {amount} - {category} - {description}")
 
