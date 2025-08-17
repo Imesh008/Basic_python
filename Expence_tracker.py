@@ -134,6 +134,8 @@ def view_sorted_expenses():
     if not os.path.exists(FILE_NAME):
         print("No expenses recorded yet.\n")
         return
+    with open(FILE_NAME, 'r') as f:
+
 
       
  
