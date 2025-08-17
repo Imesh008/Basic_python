@@ -133,6 +133,7 @@ def filter_expenses_by_date():
 def view_sorted_expenses():
     if not os.path.exists(FILE_NAME):
         print("No expenses recorded yet.\n")
+        return
 
       
  
