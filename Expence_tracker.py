@@ -71,7 +71,7 @@ def filter_expenses_by_category():
             print("No expenses found for this category.\n")  
 
 
-#delete an expense by index           
+#delete an expense by index           #######################################################from theere
 def delete_expense():
     with open(FILE_NAME, 'r') as f:
         lines = f.readlines()
