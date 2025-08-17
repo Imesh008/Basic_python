@@ -135,6 +135,8 @@ def view_sorted_expenses():
         print("No expenses recorded yet.\n")
         return
     with open(FILE_NAME, 'r') as f:
+        lines = f.readlines()
+    sorted_expenses = sorted(lines, key=lambda x: (x.split(',')[0], float(x.split(',')[1])))
 
 
       
