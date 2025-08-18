@@ -76,10 +76,10 @@ def delete_expense():
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
         print ("No expenses recorded yet.\n")
         return
-        
+
     with open(FILE_NAME, 'r') as f:
-    
-     for idx, line in enumerate(lines):
+ 
+    for idx, line in enumerate(lines):
         date, amount, category, description = line.strip().split(',', 3)
         print(f"{idx + 1}. {date} - {amount} - {category} - {description}")
 
