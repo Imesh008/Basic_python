@@ -78,7 +78,7 @@ def delete_expense():
         return
 
     with open(FILE_NAME, 'r') as f:
-        expenses = file.readlin
+        expenses = f.readlines()
 
             
   
