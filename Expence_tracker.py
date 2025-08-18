@@ -74,6 +74,8 @@ def filter_expenses_by_category():
 #delete an expense by index           #######################################################from theere
 def delete_expense():
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
+        print ("No expenses recorded yet.\n")
+        
 
  
     if not lines:
