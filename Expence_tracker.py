@@ -84,15 +84,7 @@ def delete_expense():
     for idx, line in enumerate(lines):
         date, amount, category, description = line.strip().split(',', 3)
         print(f"{idx + 1}. {date} - {amount} - {category} - {description}")
-
-    try:
-        choice = int(input("Enter the number of the entry to delete : ")) -1
-        if 0 <= choice < len(lines):
-            confirm = input("Are you sure you want to delete this entry? (y/n): ").lower()
-            if confirm == 'y':
-                del lines[choice]
-                with open(FILE_NAME, 'w') as f:
-                    f.writelines(lines)
+ 
                  
   
 #export filtered data 
