@@ -77,11 +77,7 @@ def delete_expense():
         print ("No expenses recorded yet.\n")
         return
         
-
- 
-    if not lines:
-        print ("No expenses to delete.\n")
-        return
+    with open(FILE_NAME, 'r') as f:
     
      for idx, line in enumerate(lines):
         date, amount, category, description = line.strip().split(',', 3)
