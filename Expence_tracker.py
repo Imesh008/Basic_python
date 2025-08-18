@@ -80,12 +80,7 @@ def delete_expense():
     with open(FILE_NAME, 'r') as f:
         expenses = file.readlin
 
- 
-    for idx, line in enumerate(lines):
-        date, amount, category, description = line.strip().split(',', 3)
-        print(f"{idx + 1}. {date} - {amount} - {category} - {description}")
- 
-                 
+            
   
 #export filtered data 
 def export_filtered_data():
