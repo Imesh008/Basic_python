@@ -78,6 +78,8 @@ def delete_expense():
         return
 
     with open(FILE_NAME, 'r') as f:
+        expenses = file.readlin
+
  
     for idx, line in enumerate(lines):
         date, amount, category, description = line.strip().split(',', 3)
@@ -91,13 +93,8 @@ def delete_expense():
                 del lines[choice]
                 with open(FILE_NAME, 'w') as f:
                     f.writelines(lines)
-                print("✅ Expense deleted successfully!\n")
-            else:
-                print("❌ Deletion cancelled.\n")
-        else:
-            print("❌ Invalid choice. Please enter a valid number.\n")
-    except ValueError:
- 
+                 
+  
 #export filtered data 
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
