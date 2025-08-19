@@ -89,6 +89,7 @@ def delete_expense():
 
     try:
         choice = int(input("Enter the number of the expense to delete: "))
+        if 1 <= choice <= len(expenses):
 
 #export filtered data 
 def export_filtered_data():
