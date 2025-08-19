@@ -94,6 +94,7 @@ def delete_expense():
             print(f"✅ Deleted expense: {deleted.strip()}")
         else:
             print("❌ Invalid choice. No expense deleted.")
+    except ValueError:
 
 #export filtered data 
 def export_filtered_data():
