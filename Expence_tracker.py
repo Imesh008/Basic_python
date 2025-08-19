@@ -91,6 +91,7 @@ def delete_expense():
         choice = int(input("Enter the number of the expense to delete: "))
         if 1 <= choice <= len(expenses):
             deleted = expenses.pop(choice - 1)
+            print(f"✅ Deleted expense: {deleted.strip()}")
 
 #export filtered data 
 def export_filtered_data():
