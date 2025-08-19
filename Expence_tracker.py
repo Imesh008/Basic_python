@@ -84,6 +84,7 @@ def delete_expense():
         print ("No expenses to delete.")
         return
 
+    for idx, line in enumerate(expenses, start=1):
             
   
 #export filtered data 
