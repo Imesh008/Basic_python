@@ -85,8 +85,8 @@ def delete_expense():
         return
 
     for idx, line in enumerate(expenses, start=1):
-            
-  
+        print (f"{idx}. {line.strip()}")
+
 #export filtered data 
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
