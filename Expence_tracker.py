@@ -92,6 +92,8 @@ def delete_expense():
         if 1 <= choice <= len(expenses):
             deleted = expenses.pop(choice - 1)
             print(f"✅ Deleted expense: {deleted.strip()}")
+        else:
+            print("❌ Invalid choice. No expense deleted.")
 
 #export filtered data 
 def export_filtered_data():
