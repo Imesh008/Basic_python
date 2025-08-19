@@ -88,6 +88,7 @@ def delete_expense():
         print (f"{idx}. {line.strip()}")
 
     try:
+        choice = int(input("Enter the number of the expense to delete: "))
 
 #export filtered data 
 def export_filtered_data():
