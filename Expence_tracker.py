@@ -80,6 +80,10 @@ def delete_expense():
     with open(FILE_NAME, 'r') as f:
         expenses = f.readlines()
 
+    if not expenses: #extra safety 
+        print ("No expenses to delete.")
+        
+
             
   
 #export filtered data 
