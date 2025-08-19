@@ -82,7 +82,7 @@ def delete_expense():
 
     if not expenses: #extra safety 
         print ("No expenses to delete.")
-        
+        return
 
             
   
