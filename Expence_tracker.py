@@ -92,6 +92,9 @@ def delete_expense():
         if 1 <= choice <= len(expenses):
             deleted = expenses.pop(choice - 1)
             print(f"✅ Deleted expense: {deleted.strip()}\n")
+
+            #save back to the file
+            with open(FILE_NAME, 'w') as f:
         
 
 
