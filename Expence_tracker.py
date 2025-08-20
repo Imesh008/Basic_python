@@ -95,6 +95,7 @@ def delete_expense():
         else:
             print("❌ Invalid choice. No expense deleted.")
     except ValueError:
+        print ("Invalid input. Please enter a number.")
 
 #export filtered data 
 def export_filtered_data():
