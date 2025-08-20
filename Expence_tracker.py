@@ -95,7 +95,12 @@ def delete_expense():
 
             #save back to the file
             with open(FILE_NAME, 'w') as f:
-        
+                f.writelines(expenses)
+    
+        else:
+            print("❌ Invalid choice. No expense deleted.")
+    except ValueError:
+        print("❌ Invalid input. Please enter a number.")
 
 
 #export filtered data 
