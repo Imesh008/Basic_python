@@ -92,7 +92,6 @@ def delete_expense():
         if 1 <= choice <= len(expenses):
             deleted = expenses.pop(choice - 1)
         else:
-    except ValueError:
         print ("Invalid input. Please enter a number.")
 
 #export filtered data 
