@@ -91,9 +91,9 @@ def delete_expense():
         choice = int(input("Enter the number of the expense to delete: "))
         if 1 <= choice <= len(expenses):
             deleted = expenses.pop(choice - 1)
-        else:
-        print ("Invalid input. Please enter a number.")
+        
 
+        
 #export filtered data 
 def export_filtered_data():
     category = input("Enter category to export: ").strip().lower()
