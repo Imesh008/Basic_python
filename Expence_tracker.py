@@ -112,6 +112,7 @@ def export_filtered_data():
     count = 0
     with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
         for line in f:
+            date, amount, cat, description = line.strip().split(',', 3)
 
 
 
