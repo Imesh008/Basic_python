@@ -106,8 +106,7 @@ def delete_expense():
 #export filtered data 
 def export_filtered_data(): ###
     category = input("Enter category to export: ").strip().lower()
-    export_file = (f"filtered_expenses_{category}.txt")
-        
+         
 
 
 #export filtered data to another file
