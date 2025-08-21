@@ -107,7 +107,9 @@ def delete_expense():
 def export_filtered_data():
     category = input ("Enter category to export: ").strip().lower()
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")    #unique time suffix
-          
+    export_file = f"filtered_expenses_{category}_{timestamp}.txt"
+
+    count = 0
 
 
 #export filtered data to another file
