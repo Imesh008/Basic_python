@@ -104,7 +104,7 @@ def delete_expense():
 
 
 #export filtered data 
-def export_filtered_data():
+def export_filtered_data(): ###
     category = input("Enter category to export: ").strip().lower()
     export_file = (f"filtered_expenses_{category}.txt")
     count = 0
@@ -114,8 +114,7 @@ def export_filtered_data():
             if cat.lower() == category:
                 f_out.write(line)
                 count += 1
-    print(f"✅ Exported {count} expenses to {export_file}\n")
-
+ 
 #export filtered data to another file
 def filter_expenses_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
@@ -140,7 +139,7 @@ def view_sorted_expenses():
         lines = f.readlines()
 
     sorted_expenses = sorted(lines, key=lambda x: datetime.strptime(x.split(',')[0], "%Y-%m-%d"))
-    print(f"\n📊 Sorted Expenses:")
+    print(f"\n📊 Sorted Expenses:") 
     for line in sorted_expenses:
         date, amount, category, description = line.strip().split(',', 3)
         print(f"{date:<12} {amount:<10} {category:<15} {description}")
