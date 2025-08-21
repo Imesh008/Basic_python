@@ -110,9 +110,8 @@ def export_filtered_data(): ###
     count = 0
     with open(FILE_NAME, 'r') as f, open(export_file, 'w') as f_out:
         for line in f:
-            date,amount, cat, description = line.strip().split(',', 3)
-            if cat.lower() == category:
-   
+            date, , cat, description = line.strip().split(',', 3)
+    
 #export filtered data to another file
 def filter_expenses_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
