@@ -110,6 +110,8 @@ def export_filtered_data():
     export_file = f"filtered_expenses_{category}_{timestamp}.txt"
 
     count = 0
+    with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
+        
 
 
 #export filtered data to another file
