@@ -138,8 +138,8 @@ def view_sorted_expenses():
         return
     with open(FILE_NAME, 'r') as f:
         lines = f.readlines()
-    sorted_expenses = sorted(lines, key=lambda x: (x.split(',')[0], float(x.split(',')[1])))
 
+    sorted_expenses = sorted(lines, key=lambda x: datetime.strptime(x.split(',')[0], "%Y-%m-%d"))
     print(f"\n📊 Sorted Expenses:")
     for line in sorted_expenses:
         date, amount, category, description = line.strip().split(',', 3)
