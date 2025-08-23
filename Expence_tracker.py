@@ -121,6 +121,7 @@ def export_filtered_data():
 
     if count > 0:
         print(f"✅ Exported {count} expenses to {export_file}\n")
+    else:
 
 #export filtered data to another file
 def filter_expenses_by_date():
