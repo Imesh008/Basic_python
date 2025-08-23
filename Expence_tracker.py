@@ -119,7 +119,7 @@ def export_filtered_data():
                     f_out.write(line)
                     count += 1
 
-
+    if count > 0:
 
 #export filtered data to another file
 def filter_expenses_by_date():
