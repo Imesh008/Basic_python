@@ -117,7 +117,7 @@ def export_filtered_data():
             date, amount, cat, description = line.strip().split(',', 3)
             if cat.lower() == category:
                 f_out.write(line)
-                    count += 1
+                count += 1
 
     if count > 0:
         print(f"✅ Exported {count} expenses to {export_file}\n")
