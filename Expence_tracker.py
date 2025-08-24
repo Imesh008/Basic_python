@@ -162,9 +162,11 @@ def main_menu():
         print("5. Filter Expenses by Date")
         print("6. Delete an Expense")
         print("7. Export Expenses by Category")
-        print("8. View Sorted Expenses")
-        print("9. Exit")
-        choice = input("Choose an option (1-9): ").strip()
+        print("8. Export Expenses by Date")
+        print("9. View Sorted Expenses")
+        print("10. Exit")
+
+        choice = input("Choose an option (1-10): ").strip()
 
         if choice == '1':
             add_expense()
