@@ -161,7 +161,7 @@ def main_menu():
         print("4. Filter Expenses by Category")
         print("5. Filter Expenses by Date")
         print("6. Delete an Expense")
-        print("7. Export Filtered Data")
+        print("7. Export Expenses by Category")
         print("8. View Sorted Expenses")
         print("9. Exit")
         choice = input("Choose an option (1-9): ").strip()
