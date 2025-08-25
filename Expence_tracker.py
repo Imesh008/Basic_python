@@ -190,7 +190,10 @@ def main_menu():
             export_by_category_data()
 
         elif choice == '8':
-            export_by_date_data()
+            export_by_date()
+
+        elif choice == '9':
+            view_sorted_expenses()
 
         elif choice == '10':
             print("Exiting the Expense Tracker. Goodbye! 👋")
