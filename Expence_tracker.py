@@ -114,7 +114,7 @@ def export_by_category_data():
          for line in f:
             date, amount, cat, description = line.strip().split(',', 3)
             if cat.lower() == category:
-                f_out.write(line + "\n")
+                f_out.write(line)
                 count += 1
 
     if count > 0:
