@@ -180,7 +180,7 @@ def main_menu():
             filter_expenses_by_category()
 
         elif choice == '5':
-            export_by_category_data()
+            filter_by_date()
 
         elif choice == '6':
             delete_expense()
