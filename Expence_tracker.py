@@ -104,7 +104,7 @@ def delete_expense():
 
 
 #export filtered data 
-def export_filtered_data():
+def export_by_category_data():
     category = input ("Enter category to export: ").strip().lower()
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")    #unique time suffix
     export_file = f"filtered_expenses_{category}_{timestamp}.txt"
@@ -187,16 +187,17 @@ def main_menu():
             delete_expense()
 
         elif choice == '7':
-            export_filtered_data()
+            export_by_category_data()
 
         elif choice == '8':
-                view_sorted_expenses()
+            export_by_date_data()
 
         elif choice == '9':
             print("Exiting the Expense Tracker. Goodbye! 👋")
             break
+        else:
+            print("❌ Invalid choice. Please select a valid option (1-10).\n")
 
-    
 if __name__ == "__main__":
     main_menu()
      
