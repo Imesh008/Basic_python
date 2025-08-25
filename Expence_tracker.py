@@ -192,7 +192,7 @@ def main_menu():
         elif choice == '8':
             export_by_date_data()
 
-        elif choice == '9':
+        elif choice == '10':
             print("Exiting the Expense Tracker. Goodbye! 👋")
             break
         else:
