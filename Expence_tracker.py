@@ -190,8 +190,8 @@ def main_menu():
             export_filtered_data()
 
         elif choice == '8':
-            view_sorted_expenses()
-
+                view_sorted_expenses()
+                
         elif choice == '9':
             print("Exiting the Expense Tracker. Goodbye! 👋")
             break
