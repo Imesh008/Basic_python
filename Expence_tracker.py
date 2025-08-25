@@ -123,7 +123,7 @@ def export_by_category_data():
         print("❌ No expenses found for this category.\n")
 
 #export filtered data to another file
-def filter_expenses_by_date():
+def filter_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
     print (f"\n📅 Expenses on {date_filter}:")
     found = False
