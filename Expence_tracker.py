@@ -52,11 +52,11 @@ def show_summary():
         print("❌ No expenses recorded yet.\n")
         return
     # rest of your summary code...
-    :
-        for line in f:
-            parts = line.strip().split(',')
-            if len (parts) >=2:
-                total += float(parts[1])
+    total = 0.0
+    for line in f:
+        parts = line.strip().split(',')
+        if len (parts) >=2:
+            total += float(parts[1])
     print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
 
 #filtered by category
