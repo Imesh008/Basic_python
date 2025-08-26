@@ -71,8 +71,6 @@ def filter_expenses_by_category():
             print("❌ No expenses found for this category.\n")
 
 
-
-
 #delete an expense by index          
 def delete_expense():
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
