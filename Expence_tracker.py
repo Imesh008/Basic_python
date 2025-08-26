@@ -47,10 +47,12 @@ def view_expenses():
 
 
 #show summary
-def show_summary():     
-    total = 0.0
-    print("\n📈 Expense Summary:")
-    with open(FILE_NAME, 'r') as f:
+def show_summary():
+    if os.path.getsize(FILE_NAME) == 0:
+        print("❌ No expenses recorded yet.\n")
+        return
+    # rest of your summary code...
+    :
         for line in f:
             parts = line.strip().split(',')
             if len (parts) >=2:
