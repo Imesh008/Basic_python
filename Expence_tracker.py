@@ -136,7 +136,8 @@ def filter_by_date():
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
     if not found:
-        print("No expenses found for this date.\n")
+        print("❌ No expenses found for this filter.\n")
+
 
 
 #view and sort expenses
