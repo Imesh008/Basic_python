@@ -190,7 +190,7 @@ def main_menu():
             export_by_category_data()
 
         elif choice == '8':
-            filter_by_date()
+            export_by_date()
 
         elif choice == '9':
             view_sorted_expenses()
