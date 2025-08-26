@@ -1,3 +1,4 @@
+import keyword
 import os
 from datetime import datetime
 
@@ -116,10 +117,10 @@ def export_by_category_data():
                 f_out.write(line)
                 count += 1
 
-    if count > 0:
-        print(f"✅ Exported {count} expenses to {export_file}\n")
-    else:
+    print(f"\n📂 Filtered by Category: {category}")
+    if count == 0:
         print("❌ No expenses found for this category.\n")
+
 
 #export filtered data to another file
 def filter_by_date():
