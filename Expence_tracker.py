@@ -160,6 +160,11 @@ def view_sorted_expenses():
         date, amount, category, description = line.strip().split(',', 3)
         print(f"{date:<12} {amount:<10} {category:<15} {description}")
 
+
+
+#export expenses by date
+def export_by_date():
+
 #add these to the menu
 def main_menu():
     while True:
