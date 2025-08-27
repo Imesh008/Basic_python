@@ -164,6 +164,7 @@ def view_sorted_expenses():
 
 #export expenses by date
 def export_by_date():
+    date_filter = input("Enter date to export (yyyy-mm-dd):").strip()
 
 #add these to the menu
 def main_menu():
