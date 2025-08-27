@@ -71,12 +71,11 @@ def filter_expenses_by_category():
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
         print(f"\n📂 Filtered by Category: {keyword}")
-if not found:
+        if not found:
     print("❌ No expenses found for this category.\n")
 
 
-
-#delete an expense by index          
+#delete an expense by index
 def delete_expense():
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
         print ("No expenses recorded yet.\n")
