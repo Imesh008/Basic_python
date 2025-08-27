@@ -169,6 +169,7 @@ def export_by_date():
     export_file = f"filtered_expenses_{date_filter}_{timestamp}.txt"
     count = 0
     with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
+        for line in f:
 
 #add these to the menu
 def main_menu():
