@@ -166,6 +166,7 @@ def view_sorted_expenses():
 def export_by_date():
     date_filter = input("Enter date to export (yyyy-mm-dd):").strip()
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")    #unique time suffix
+    export_file = f"filtered_expenses_{date_filter}_{timestamp}.txt"
 
 #add these to the menu
 def main_menu():
