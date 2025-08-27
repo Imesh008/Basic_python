@@ -72,7 +72,7 @@ def filter_expenses_by_category():
                 found = True
         print(f"\n📂 Filtered by Category: {keyword}")
         if not found:
-    print("❌ No expenses found for this category.\n")
+            print("❌ No expenses found for this category.\n")
 
 
 #delete an expense by index
