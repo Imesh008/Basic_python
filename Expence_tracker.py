@@ -168,6 +168,7 @@ def export_by_date():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")    #unique time suffix
     export_file = f"filtered_expenses_{date_filter}_{timestamp}.txt"
     count = 0
+    with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
 
 #add these to the menu
 def main_menu():
