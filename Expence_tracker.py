@@ -171,7 +171,14 @@ def export_by_date():
     with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
         for line in f:
             date, amount, category, description = line.strip().split(',', 3)
-            
+            if date == date_filter:
+                f_out.write(line)
+                count += 1
+
+    print(f"\n📂 Filtered by Date: {date_filter}")
+    if count == 0:
+        print("❌ No expenses found for this date.\n")
+
 
 #add these to the menu
 def main_menu():
