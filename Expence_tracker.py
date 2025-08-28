@@ -175,6 +175,13 @@ def export_by_date():
                 f_out.write(line)
                 count += 1
 
+            print(f"\n📂 Filtered by Date: {date_filter}")
+            if count == 0:
+                print("❌ No expenses found for this date.\n")
+            else:
+                print(f"✅ Exported {count} expenses to {export_file}\n")
+
+
 #add these to the menu
 def main_menu():
     while True:
