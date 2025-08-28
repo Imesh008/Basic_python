@@ -128,8 +128,9 @@ def export_by_category_data():
 def filter_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
     print(f"\n📅 Filtered by Date: {date_filter}")
-    print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
-    print("-" * 50)
+print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
+print("-" * 50)
+
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
         print("❌ No expenses recorded yet.\n")
         return
