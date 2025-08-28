@@ -173,6 +173,7 @@ def export_by_date():
             date, amount, category, description = line.strip().split(',', 3)
             if date == date_filter:
                 f_out.write(line)
+                count += 1
 
 #add these to the menu
 def main_menu():
