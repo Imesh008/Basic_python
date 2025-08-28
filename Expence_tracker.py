@@ -170,6 +170,8 @@ def export_by_date():
     count = 0
     with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
         for line in f:
+            date, amount, category, description = line.strip().split(',', 3)
+            
 
 #add these to the menu
 def main_menu():
