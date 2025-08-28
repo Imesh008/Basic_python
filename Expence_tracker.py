@@ -51,7 +51,6 @@ def show_summary():
     if os.path.getsize(FILE_NAME) == 0:
         print("❌ No expenses recorded yet.\n")
         return
-    # rest of your summary code...
     total = 0.0
     for line in f:
         parts = line.strip().split(',')
