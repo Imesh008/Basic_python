@@ -130,7 +130,7 @@ def filter_by_date():
     for line in f:
         date, amount, category, description = line.strip().split(',', 3)
         if date == date_filter:
-        f_out.write(line)
+            f_out.write(line)
         count += 1
 
 print(f"\n📂 Filtered by Date: {date_filter}")
