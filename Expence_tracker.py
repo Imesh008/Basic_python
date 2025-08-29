@@ -134,7 +134,7 @@ def filter_by_date():
             count += 1
 
     print(f"\n📂 Filtered by Date: {date_filter}")
-if count == 0:
+        if count == 0:
     print("❌ No expenses found for this date.\n")
 else:
     print(f"✅ Exported {count} expenses to {export_file}\n")
