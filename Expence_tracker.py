@@ -1,4 +1,3 @@
-import keyword
 import os
 from datetime import datetime
 
