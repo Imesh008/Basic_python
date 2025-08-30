@@ -70,10 +70,8 @@ def filter_expenses_by_category():
             if category.lower() == keyword:
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
-    if category.lower() == category_filter:
-        print(f"\n📂 Filtered by Category: {category_filter}")
-    if not found:
-        print("❌ No expenses found for this category.\n")
+        if not found:
+            print("❌ No expenses found for this category.\n")
 
 
 #delete an expense by index
