@@ -171,21 +171,23 @@ def view_sorted_expenses():
 
 #export expenses by date
 def export_by_date():
-    date_filter = input("Enter date to export (yyyy-mm-dd):").strip()
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")    #unique time suffix
+    date_filter = input("Enter date to export (YYYY-MM-DD): ").strip()
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     export_file = f"filtered_expenses_{date_filter}_{timestamp}.txt"
     count = 0
-    with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
+    with open(FILE_NAME, 'r') as f, open(export_file, 'w') as f_out:
         for line in f:
             date, amount, category, description = line.strip().split(',', 3)
             if date == date_filter:
                 f_out.write(line)
                 count += 1
-            print(f"\n📂 Filtered by Date: {date_filter}")
-            if count == 0:
-                print("❌ No expenses found for this date.\n")
-            else:
-                print(f"✅ Exported {count} expenses to {export_file}\n")
+
+    print(f"\n📂 Filtered by Date: {date_filter}")
+    if count == 0:
+        print("❌ No expenses found for this date.\n")
+    else:
+        print(f"✅ Exported {count} expenses to {export_file}\n")
+
 
 
 #add these to the menu
