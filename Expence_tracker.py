@@ -73,7 +73,7 @@ def filter_expenses_by_category():
                 found = True
 if category.lower() == category_filter:
     print(f"\n📂 Filtered by Category: {category_filter}")
-        if not found:
+    if not found:
             print("❌ No expenses found for this category.\n")
 
 
