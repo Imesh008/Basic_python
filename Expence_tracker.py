@@ -134,17 +134,21 @@ def filter_by_date():
     print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
     print("-" * 50)
 
-    for line in f:
-        date, amount, category, description = line.strip().split(',', 3)
-        if date == date_filter:
-            f_out.write(line)
-            count += 1
+    if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
+        print("❌ No expenses recorded yet.\n")
+        return
 
-    print(f"\n📂 Filtered by Date: {date_filter}")
-    if count == 0:
+    found = False
+    with open(FILE_NAME, 'r') as f:
+        for line in f:
+            date, amount, category, description = line.strip().split(',', 3)
+            if date == date_filter:
+                print(f"{date:<12} {amount:<10} {category:<15} {description}")
+                found = True
+
+    if not found:
         print("❌ No expenses found for this date.\n")
-    else:
-    print(f"✅ Exported {count} expenses to {export_file}\n")
+
 
 
 
