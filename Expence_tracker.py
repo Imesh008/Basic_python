@@ -47,12 +47,18 @@ def view_expenses():
 
 
 #show summary
-with open(FILE_NAME, 'r') as f:
+def show_summary():
+    if os.path.getsize(FILE_NAME) == 0:
+        print("❌ No expenses recorded yet.\n")
+        return
     total = 0.0
-    for line in f:
-        parts = line.strip().split(',')
-        if len(parts) >= 2:
-            total += float(parts[1])
+    with open(FILE_NAME, 'r') as f:
+        for line in f:
+            parts = line.strip().split(',')
+            if len(parts) >= 2:
+                total += float(parts[1])
+    print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
+
 
 #filtered by category
 def filter_expenses_by_category():
