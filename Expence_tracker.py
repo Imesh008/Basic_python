@@ -46,17 +46,27 @@ def view_expenses():
 
 
 #show summary
+from collections import defaultdict
+
 def show_summary():
     if os.path.getsize(FILE_NAME) == 0:
         print("❌ No expenses recorded yet.\n")
         return
+    
     total = 0.0
+    category_totals = defaultdict(float)
     with open(FILE_NAME, 'r') as f:
         for line in f:
-            parts = line.strip().split(',')
-            if len(parts) >= 2:
-                total += float(parts[1])
-    print(f"\n💰 Total Expenses: Rs. {total:.2f}\n")
+            date, amount, category, description = line.strip().split(',', 3)
+            total += float(amount)
+            category_totals[category] += float(amount)
+    
+    print(f"\n💰 Total Expenses: Rs. {total:.2f}")
+    print("📂 Breakdown by Category:")
+    for cat, amt in category_totals.items():
+        print(f"   - {cat}: Rs. {amt:.2f}")
+    print()
+
 
 
 #filtered by category
@@ -149,10 +159,6 @@ def filter_by_date():
 
     if not found:
         print("❌ No expenses found for this date.\n")
-
-
-
-
 
 #view and sort expenses
 def view_sorted_expenses():
