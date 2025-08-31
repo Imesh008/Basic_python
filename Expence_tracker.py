@@ -125,7 +125,7 @@ def export_by_category_data():
 
     if count == 0:
         print("❌ No expenses found for this category.\n")
-else:
+    else:
     print(f"✅ Exported {count} expenses to {export_file}\n")
 
 
