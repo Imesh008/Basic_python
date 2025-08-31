@@ -1,58 +1,63 @@
 import os
 from datetime import datetime
+from collections import defaultdict
 
-#create a file to store expenses
 FILE_NAME = 'expenses.txt'
 
-
-#create a file if it don't exist
+# Create the file if it doesn't exist
 if not os.path.exists(FILE_NAME):
     with open(FILE_NAME, 'w') as f:
         pass
 
 
-#function to add an expense
+# Function to add an expense
 def add_expense():
     try:
-        amount = float(input("Enter amount(RS): "))
-        category = input("Enter category(Food, Travel, etc.): ").strip()
+        amount = float(input("Enter amount (Rs): "))
+        category = input("Enter category (Food, Travel, etc.): ").strip()
         description = input("Enter description: ").strip()
-        date = input("Enter date (YYYY-MM-DD) or leave a blank for today: ").strip()
-        
-        if not date:
-            date = datetime.now().strftime("%Y-%m-%d")
-       
-        with open (FILE_NAME, 'a') as f:
-            f.write(f"{date},{amount},{category},{description}\n")
+        date_input = input("Enter date (YYYY-MM-DD) or leave blank for today: ").strip()
+
+        if not date_input:
+            date_input = datetime.now().strftime("%Y-%m-%d")
+        else:
+            # Validate date format
+            try:
+                datetime.strptime(date_input, "%Y-%m-%d")
+            except ValueError:
+                print("❌ Invalid date format. Use YYYY-MM-DD")
+                return
+
+        with open(FILE_NAME, 'a') as f:
+            f.write(f"{date_input},{amount},{category},{description}\n")
         print("✅ Expense added successfully!\n")
     except ValueError:
         print("❌ Invalid input. Please enter a numeric amount.\n")
 
-#function to view all expenses
+
+# Function to view all expenses
 def view_expenses():
-    print("\n📊 All Expenses:")
-    if os.path.getsize(FILE_NAME) == 0:
-        print("No expenses recorded yet.\n")
+    if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
+        print("📊 No expenses recorded yet.\n")
         return
-    
+
+    print("\n📊 All Expenses:")
     with open(FILE_NAME, 'r') as f:
         lines = f.readlines()
-        print (f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
-        print("-" * 50)
+        print(f"{'Date':<12} {'Amount(Rs)':<12} {'Category':<15} {'Description'}")
+        print("-" * 60)
         for line in lines:
             date, amount, category, description = line.strip().split(',', 3)
-            print(f"{date:<12} {amount:<10} {category:<15} {description}")
+            print(f"{date:<12} {amount:<12} {category:<15} {description}")
     print()
 
 
-#show summary
-from collections import defaultdict
-
+# Function to show summary
 def show_summary():
-    if os.path.getsize(FILE_NAME) == 0:
+    if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
         print("❌ No expenses recorded yet.\n")
         return
-    
+
     total = 0.0
     category_totals = defaultdict(float)
     with open(FILE_NAME, 'r') as f:
@@ -60,144 +65,120 @@ def show_summary():
             date, amount, category, description = line.strip().split(',', 3)
             total += float(amount)
             category_totals[category] += float(amount)
-    
-    print(f"\n💰 Total Expenses: Rs. {total:.2f}")
+
+    print(f"\n💰 Total Expenses: Rs {total:.2f}")
     print("📂 Breakdown by Category:")
     for cat, amt in category_totals.items():
-        print(f"   - {cat}: Rs. {amt:.2f}")
+        print(f"   - {cat}: Rs {amt:.2f}")
     print()
 
 
+# Function to filter or export expenses by category or date
+def filter_export(exp_type='category', export=False):
+    if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
+        print("❌ No expenses recorded yet.\n")
+        return
 
-#filtered by category
-def filter_expenses_by_category():
-    category_filter = input("Enter category to filter: ").strip().lower()
-    print(f"\n📂 Filtered by Category: {category_filter}")
-    print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
-    print("-" * 50)
+    if exp_type == 'category':
+        filter_input = input("Enter category to filter: ").strip()
+        print(f"\n📂 Filtered by Category: {filter_input}")
+    else:
+        filter_input = input("Enter date to filter (YYYY-MM-DD): ").strip()
+        # Validate date
+        try:
+            datetime.strptime(filter_input, "%Y-%m-%d")
+        except ValueError:
+            print("❌ Invalid date format. Use YYYY-MM-DD")
+            return
+        print(f"\n📅 Filtered by Date: {filter_input}")
 
-    found = False
-    with open(FILE_NAME, 'r') as f:
+    header = f"{'Date':<12} {'Amount(Rs)':<12} {'Category':<15} {'Description'}"
+    print(header)
+    print("-" * 60)
+
+    count = 0
+    export_file = ''
+    if export:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        export_file = f"filtered_expenses_{filter_input}_{timestamp}.txt"
+
+    with open(FILE_NAME, 'r') as f, open(export_file, 'w') if export else open(os.devnull, 'w') as f_out:
         for line in f:
             date, amount, category, description = line.strip().split(',', 3)
-            if category.lower() == category_filter:
-                print(f"{date:<12} {amount:<10} {category:<15} {description}")
-                found = True
-    if not found:
-        print("❌ No expenses found for this category.\n")
+            match = False
+            if exp_type == 'category' and category.lower() == filter_input.lower():
+                match = True
+            elif exp_type == 'date' and date == filter_input:
+                match = True
+
+            if match:
+                print(f"{date:<12} {amount:<12} {category:<15} {description}")
+                if export:
+                    f_out.write(line)
+                count += 1
+
+    if count == 0:
+        print("❌ No matching expenses found.\n")
+    elif export:
+        print(f"✅ Exported {count} expenses to {export_file}\n")
+    else:
+        print()
 
 
-
-#delete an expense by index
+# Function to delete an expense
 def delete_expense():
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
-        print ("No expenses recorded yet.\n")
+        print("❌ No expenses recorded yet.\n")
         return
 
     with open(FILE_NAME, 'r') as f:
         expenses = f.readlines()
 
-    if not expenses: #extra safety 
-        print ("No expenses to delete.")
+    if not expenses:
+        print("❌ No expenses to delete.\n")
         return
 
     for idx, line in enumerate(expenses, start=1):
-        print (f"{idx}. {line.strip()}")
+        print(f"{idx}. {line.strip()}")
 
     try:
         choice = int(input("Enter the number of the expense to delete: "))
         if 1 <= choice <= len(expenses):
             deleted = expenses.pop(choice - 1)
             print(f"✅ Deleted expense: {deleted.strip()}\n")
-
-            #save back to the file
             with open(FILE_NAME, 'w') as f:
                 f.writelines(expenses)
         else:
-            print("❌ Invalid choice. No expense deleted.")
+            print("❌ Invalid choice. No expense deleted.\n")
     except ValueError:
-        print("❌ Invalid input. Please enter a number.")
+        print("❌ Invalid input. Please enter a number.\n")
 
 
-#export filtered data 
-def export_by_category_data():
-    category = input ("Enter category to export: ").strip().lower()
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")    #unique time suffix
-    export_file = f"filtered_expenses_{category}_{timestamp}.txt"
-
-    count = 0
-    with open(FILE_NAME, 'r') as f, open (export_file, 'w') as f_out:
-         for line in f:
-            date, amount, cat, description = line.strip().split(',', 3)
-            if cat.lower() == category:
-                f_out.write(line)
-                count += 1
-    if count == 0:
-        print("❌ No expenses found for this category.\n")
-    else:
-        print(f"✅ Exported {count} expenses to {export_file}\n")
-
-
-#export filtered data to another file
-def filter_by_date():
-    date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
-    print(f"\n📅 Filtered by Date: {date_filter}")
-    print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
-    print("-" * 50)
-
+# Function to view sorted expenses by date
+def view_sorted_expenses():
     if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
         print("❌ No expenses recorded yet.\n")
         return
 
-    found = False
-    with open(FILE_NAME, 'r') as f:
-        for line in f:
-            date, amount, category, description = line.strip().split(',', 3)
-            if date == date_filter:
-                print(f"{date:<12} {amount:<10} {category:<15} {description}")
-                found = True
-
-    if not found:
-        print("❌ No expenses found for this date.\n")
-
-#view and sort expenses
-def view_sorted_expenses():
-    if not os.path.exists(FILE_NAME) or os.path.getsize(FILE_NAME) == 0:
-        print("No expenses recorded yet.\n")
-        return
     with open(FILE_NAME, 'r') as f:
         lines = f.readlines()
 
-    sorted_expenses = sorted(lines, key=lambda x: datetime.strptime(x.split(',')[0], "%Y-%m-%d"))
-    print(f"\n📊 Sorted Expenses:") 
+    try:
+        sorted_expenses = sorted(lines, key=lambda x: datetime.strptime(x.split(',')[0], "%Y-%m-%d"))
+    except ValueError:
+        print("❌ Some dates in the file are invalid.\n")
+        return
+
+    print("\n📊 Sorted Expenses by Date:")
+    print(f"{'Date':<12} {'Amount(Rs)':<12} {'Category':<15} {'Description'}")
+    print("-" * 60)
     for line in sorted_expenses:
         date, amount, category, description = line.strip().split(',', 3)
-        print(f"{date:<12} {amount:<10} {category:<15} {description}")
+        print(f"{date:<12} {amount:<12} {category:<15} {description}")
+    print()
 
 
-
-#export expenses by date
-def export_by_date():
-    date_filter = input("Enter date to export (YYYY-MM-DD): ").strip()
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    export_file = f"filtered_expenses_{date_filter}_{timestamp}.txt"
-    count = 0
-    with open(FILE_NAME, 'r') as f, open(export_file, 'w') as f_out:
-        for line in f:
-            date, amount, category, description = line.strip().split(',', 3)
-            if date == date_filter:
-                f_out.write(line)
-                count += 1
-
-    print(f"\n📂 Filtered by Date: {date_filter}")
-    if count == 0:
-        print("❌ No expenses found for this date.\n")
-    else:
-        print(f"✅ Exported {count} expenses to {export_file}\n")
-
-
-
-#add these to the menu
+# Main menu
 def main_menu():
     while True:
         print("====== EXPENSE TRACKER ======")
@@ -216,37 +197,28 @@ def main_menu():
 
         if choice == '1':
             add_expense()
-
         elif choice == '2':
             view_expenses()
-
         elif choice == '3':
             show_summary()
-
         elif choice == '4':
-            filter_expenses_by_category()
-
+            filter_export('category')
         elif choice == '5':
-            filter_by_date()
-
+            filter_export('date')
         elif choice == '6':
             delete_expense()
-
         elif choice == '7':
-            export_by_category_data()
-
+            filter_export('category', export=True)
         elif choice == '8':
-            export_by_date()
-
+            filter_export('date', export=True)
         elif choice == '9':
             view_sorted_expenses()
-
         elif choice == '10':
             print("Exiting the Expense Tracker. Goodbye! 👋")
             break
         else:
             print("❌ Invalid choice. Please select a valid option (1-10).\n")
 
+
 if __name__ == "__main__":
     main_menu()
-     
