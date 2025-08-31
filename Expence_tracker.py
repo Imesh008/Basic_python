@@ -128,8 +128,6 @@ def export_by_category_data():
         print(f"✅ Exported {count} expenses to {export_file}\n")
 
 
-   
-
 #export filtered data to another file
 def filter_by_date():
     date_filter = input("Enter date to filter (YYYY-MM-DD): ").strip()
