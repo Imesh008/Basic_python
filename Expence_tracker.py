@@ -130,8 +130,7 @@ def export_by_category_data():
 
     print(f"\n📂 Filtered by Category: {category}")
     if count == 0:
-        print("❌ No expenses found for this category.\n")
-
+ 
 
 #export filtered data to another file
 def filter_by_date():
