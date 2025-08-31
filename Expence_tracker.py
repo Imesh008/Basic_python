@@ -63,15 +63,19 @@ def show_summary():
 def filter_expenses_by_category():
     category_filter = input("Enter category to filter: ").strip().lower()
     print(f"\n📂 Filtered by Category: {category_filter}")
+    print(f"{'Date':<12} {'Amount(RS)':<10} {'Category':<15} {'Description'}")
+    print("-" * 50)
+
+    found = False
     with open(FILE_NAME, 'r') as f:
-        found = False
         for line in f:
-            date, amount, category, description = line.strip().split(',',3)
-            if category.lower() == keyword:
+            date, amount, category, description = line.strip().split(',', 3)
+            if category.lower() == category_filter:
                 print(f"{date:<12} {amount:<10} {category:<15} {description}")
                 found = True
-        if not found:
-            print("❌ No expenses found for this category.\n")
+    if not found:
+        print("❌ No expenses found for this category.\n")
+
 
 
 #delete an expense by index
@@ -118,6 +122,12 @@ def export_by_category_data():
             if cat.lower() == category:
                 f_out.write(line)
                 count += 1
+
+    if count == 0:
+        print("❌ No expenses found for this category.\n")
+else:
+    print(f"✅ Exported {count} expenses to {export_file}\n")
+
 
     print(f"\n📂 Filtered by Category: {category}")
     if count == 0:
