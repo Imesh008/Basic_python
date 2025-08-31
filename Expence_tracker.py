@@ -129,8 +129,7 @@ def export_by_category_data():
 
 
     print(f"\n📂 Filtered by Category: {category}")
-    if count == 0:
- 
+  
 
 #export filtered data to another file
 def filter_by_date():
