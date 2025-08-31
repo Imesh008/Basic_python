@@ -122,11 +122,10 @@ def export_by_category_data():
             if cat.lower() == category:
                 f_out.write(line)
                 count += 1
-
     if count == 0:
         print("❌ No expenses found for this category.\n")
     else:
-    print(f"✅ Exported {count} expenses to {export_file}\n")
+        print(f"✅ Exported {count} expenses to {export_file}\n")
 
 
     print(f"\n📂 Filtered by Category: {category}")
