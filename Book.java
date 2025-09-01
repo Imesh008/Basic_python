@@ -5,5 +5,8 @@ public class Book {
     private String author; 
     private boolean isAvailable; 
 
-    public Book  (int id, String tittle, String author)
+    public Book  (int id, String tittle, String author) {
+        this.id = id;
+        
+    }
 }
