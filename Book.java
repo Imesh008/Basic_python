@@ -7,6 +7,7 @@ public class Book {
 
     public Book  (int id, String tittle, String author) {
         this.id = id;
+        this.title = title;
         
     }
 }
