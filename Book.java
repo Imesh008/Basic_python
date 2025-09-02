@@ -20,6 +20,10 @@ public class Book {
         isAvailable = true;
     }
 
+    public String getDetails(){
+        return "ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable
+    }
+
 
 
 
