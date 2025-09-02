@@ -1,4 +1,4 @@
-// class gonna start
+// book class
 public class Book {
     private int id;
     private String title;   
