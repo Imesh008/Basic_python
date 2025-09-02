@@ -15,4 +15,9 @@ public class Book {
     public void borrow (){
         isAvailable = false;
     }
+
+
+
+
+
 }
