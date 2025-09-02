@@ -19,7 +19,7 @@ public class Book {
     public void returnBook (){
         isAvailable = true;
     }
-
+    //method to get book details
     public String getDetails(){
         return "ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable
     }
