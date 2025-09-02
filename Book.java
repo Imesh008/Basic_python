@@ -11,7 +11,7 @@ public class Book {
         this.author = author;
         this.isAvailable = true; // New books are available by default
     }
-
+    //method to return the book again
     public void borrow (){
         isAvailable = false;
     }
