@@ -24,6 +24,10 @@ public class Book {
         return "ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable
     }
 
+    public boolean isAvailable(){
+        return isAvailable;
+    }
+
 
 
 
