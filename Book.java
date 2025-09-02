@@ -10,6 +10,5 @@ public class Book {
         this.title = title;
         this.author = author;
         this.isAvailable = true; // New books are available by default
-
     }
 }
