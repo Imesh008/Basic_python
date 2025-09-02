@@ -15,7 +15,7 @@ public class Book {
     public void borrow (){
         isAvailable = false;
     }
-
+    //method to return the book again
     public void returnBook (){
         isAvailable = true;
     }
