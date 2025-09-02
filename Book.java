@@ -16,6 +16,10 @@ public class Book {
         isAvailable = false;
     }
 
+    public void returnBook (){
+        isAvailable = true;
+    }
+
 
 
 
