@@ -11,4 +11,8 @@ public class Book {
         this.author = author;
         this.isAvailable = true; // New books are available by default
     }
+
+    public void borrow (){
+        isAvailable = false;
+    }
 }
