@@ -12,6 +12,12 @@ public class Book {
         this.isAvailable = true; // New books are available by default
     }
 
+    //methot do borrow the book
+    public void borrow(){
+        if (isAvailable){
+            isAvailable =false;
+        }
+    }
 
 
 
