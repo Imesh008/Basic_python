@@ -26,6 +26,7 @@ public class Book {
     public void returnBook() {
         if (isAvailable){
             isAvailable = true;
+            System.out.println(title + " has been returned.");
         }
 
     }
