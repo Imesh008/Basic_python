@@ -30,8 +30,9 @@ public class Book {
         } else {
             System.out.println(title + " was not borrowed.");
         }
-
     }
+
+    //method to display book details
 
 
 }
