@@ -13,7 +13,7 @@ public class Book {
     }
 
     //methot do borrow the book
-    public void borrow(){
+    public void borrowBook(){
         if (isAvailable){
             isAvailable =false;
             System.out.println(title + " has been borrowed.");
@@ -22,7 +22,8 @@ public class Book {
         }
     }
 
-
+    //method to return the book
+    public void return
 
 
 }
