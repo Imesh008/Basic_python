@@ -16,7 +16,9 @@ public class Book {
     public void borrow(){
         if (isAvailable){
             isAvailable =false;
-            System.out.println("You have borrowed: " + title);
+            System.out.println(title + " has been borrowed.");
+        } else {
+            System.out.println(title + "is already borrowed.");
         }
     }
 
