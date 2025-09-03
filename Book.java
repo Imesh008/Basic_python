@@ -11,22 +11,6 @@ public class Book {
         this.author = author;
         this.isAvailable = true; // New books are available by default
     }
-    //method to return the book again
-    public void borrow (){
-        isAvailable = false;
-    }
-    //method to return the book again
-    public void returnBook (){
-        isAvailable = true;
-    }
-    //method to get book details
-    public String getDetails(){
-        return "ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable
-    }
-
-    public boolean isAvailable(){
-        return isAvailable;
-    }
 
 
 
