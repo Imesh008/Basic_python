@@ -15,7 +15,7 @@ public class Book {
     //methot do borrow the book
     public void borrowBook(){
         if (isAvailable){
-            isAvailable =false;
+            isAvailable = false;
             System.out.println(title + " has been borrowed.");
         } else {
             System.out.println(title + "is already borrowed.");
@@ -24,7 +24,9 @@ public class Book {
 
     //method to return the book
     public void returnBook() {
-        
+        if (isAvailable){
+            isAvailable = true;
+        }
 
     }
 
