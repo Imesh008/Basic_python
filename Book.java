@@ -37,5 +37,6 @@ public class Book {
         return "ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + (isAvailable ? "Yes" : "No");
     }
 
+    //getter method to check availability
 
 }
