@@ -33,7 +33,9 @@ public class Book {
     }
 
     //method to display book details
-    public String getDetails() 
+    public String getDetails(){
+        return "ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + (isAvailable ? "Yes" : "No");
+    }
 
 
 }
