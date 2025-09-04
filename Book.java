@@ -38,5 +38,8 @@ public class Book {
     }
 
     //getter method to check availability
+    public boolean isAvailable() {
+        return isAvailable;
+    }
 
 }
