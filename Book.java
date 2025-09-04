@@ -46,6 +46,8 @@ public class Main{
     public static void main (String[] args){
         Book book1 =new Book (1, "1984", "George Orwell");
         Book book2 =new Book (2, "To Kill a Mockingbird", "Harper Lee");
+
+        //print details 
     }
     
 }
