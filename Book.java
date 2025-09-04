@@ -43,7 +43,9 @@ public class Book {
     }
 // trying to test git
 public class Main{
-    public static void main (String[] args){}
+    public static void main (String[] args){
+        Book book1 =new Book (1, "1984", "George Orwell");
+    }
     
 }
 
