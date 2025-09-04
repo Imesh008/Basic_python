@@ -48,6 +48,7 @@ public class Main{
         Book book2 =new Book (2, "To Kill a Mockingbird", "Harper Lee");
 
         //print details
+        System.out.println(book1.getDetails());
     }
     
 }
