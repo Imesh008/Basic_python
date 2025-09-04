@@ -33,6 +33,7 @@ public class Book {
     }
 
     //method to display book details
+    public String getDetails() 
 
 
 }
