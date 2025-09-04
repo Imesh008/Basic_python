@@ -43,7 +43,7 @@ public class Book {
     }
 // trying to test git
 public class Main{
-    public statid void main (Srint[] args){}
+    public static void main (String[] args){}
     
 }
 
