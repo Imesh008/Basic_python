@@ -52,6 +52,7 @@ public class Main{
         System.out.println(book2.getDetails());
     
         //borrow and return books
+        book1.borrowBook();
         
 }
 
