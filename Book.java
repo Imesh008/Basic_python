@@ -55,6 +55,9 @@ public class Main{
         book1.borrowBook();
         book1,borrowBook(); // trying to borrow again
         book1.returnBook();
+
+        //final details
+        System.out.println(book1.getDetails());
 }
 
 
