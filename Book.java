@@ -21,8 +21,7 @@ public class Book {
             System.out.println(title + "is already borrowed.");
         }
     }
-    }
-
+    
     //method to return the book
     public void returnBook() {
         if (isAvailable){
