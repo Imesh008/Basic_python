@@ -21,6 +21,7 @@ public class Book {
             System.out.println(title + "is already borrowed.");
         }
     }
+    }
 
     //method to return the book
     public void returnBook() {
@@ -53,13 +54,11 @@ public class Main{
     
         //borrow and return books
         book1.borrowBook();
-        book1,borrowBook(); // trying to borrow again
+        book1.borrowBook(); // trying to borrow again
         book1.returnBook();
 
         //final details
         System.out.println(book1.getDetails());
-}
 
-
-
+    }
 }
