@@ -51,6 +51,8 @@ public class Main{
         System.out.println(book1.getDetails());
         System.out.println(book2.getDetails());
     
+        //borrow and return books
+        
 }
 
 
