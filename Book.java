@@ -49,7 +49,7 @@ public class Main{
 
         //print details
         System.out.println(book1.getDetails());
-    }
+        System.out.println(book2.getDetails());
     
 }
 
