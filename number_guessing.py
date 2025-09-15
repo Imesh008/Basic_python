@@ -6,3 +6,4 @@ guess = int(input("Guess a number between 1 and 100: "))
 while guess != number_to_guess:
     if guess < number_to_guess:
         print("Too low! Try again.")
+    else:
