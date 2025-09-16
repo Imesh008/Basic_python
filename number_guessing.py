@@ -2,6 +2,7 @@ import random
 
 number_to_guess =  random.randint (1, 100)
 attemps = 0
+diffculty = input 
 
 guess = int(input("Guess a number between 1 and 100: "))
 
