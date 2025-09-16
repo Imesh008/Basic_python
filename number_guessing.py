@@ -3,8 +3,9 @@ import random
 number_to_guess =  random.randint (1, 100)
 attemps = 0
 diffculty = input ("Choose difficulty (Easy/Medium/Hard): ").lower()
-max_attemps = 10
-
+max_attemps = 10 
+if difficulty == "easy": 
+ 
 
 guess = int(input("Guess a number between 1 and 100: "))
 
