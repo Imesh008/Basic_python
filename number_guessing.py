@@ -21,6 +21,6 @@ while guess != number_to_guess:
 
 
 if guess == number_to_guess:
-    print("Congratulations! You've guessed the number:", )
+    print
 
 print("Congratulations! You've guessed the number:", number_to_guess)
