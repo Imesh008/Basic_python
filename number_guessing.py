@@ -9,8 +9,8 @@ max_attemps = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
 guess = int(input("Guess a number between 1 and 100: "))
 
 while guess != number_to_guess:
+    attemps += 1
 
-    
     if guess < number_to_guess:
         print("Too low! Try again.")
     else:
