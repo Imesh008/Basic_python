@@ -16,6 +16,7 @@ while guess != number_to_guess:
         print("Too high! Try again.")
 
     if attemps >= max_attemps:
+        break
 
     guess = int(input("Try again:"))
 
