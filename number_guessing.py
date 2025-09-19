@@ -4,13 +4,12 @@ import random
 number_to_guess =  random.randint (1, 100)
 
 attempts = 0             #Counting the number of attempts
-
 #Get difficulty level from user
 difficulty = input ("Choose difficulty (Easy/Medium/Hard): ").lower()
 #Set max attempts based on difficulty
 max_attempts = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
  
-
+#Ask user for the first guess
 guess = int(input("Guess a number between 1 and 100: "))
 
 while guess != number_to_guess:
