@@ -19,6 +19,7 @@ while guess != number_to_guess:
         print("Too low! Try again.")
     else:
         print("Too high! Try again.")
+        
     #Stop if attempts are finished
     if attemps >= max_attempts:
         break
