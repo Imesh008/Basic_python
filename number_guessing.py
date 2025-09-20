@@ -3,7 +3,7 @@ import random
 #Genarate a random number between 1 and 100
 number_to_guess =  random.randint (1, 100)
 
-attempts = 0             #Counting the number of attempts
+attempts = 0            #Counting the number of attempts
 #Get difficulty level from user
 difficulty = input ("Choose difficulty (Easy/Medium/Hard): ").lower()
 #Set max attempts based on difficulty
