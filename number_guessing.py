@@ -23,6 +23,7 @@ while guess != number_to_guess:
     #Stop if attempts are finished
     if attemps >= max_attempts:
         break
+    
     guess = int(input("Try again:"))
 
 #Final result message
