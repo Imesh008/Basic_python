@@ -25,7 +25,7 @@ while guess != number_to_guess:
     if attempts >= max_attempts:
         break
 
-    guess = int(input("Try again:"))
+    guess = int(input("Try again: "))
 
 #Final result message
 if guess == number_to_guess:
