@@ -29,7 +29,7 @@ while guess != number_to_guess:
 
 # Final result message
 if guess == number_to_guess:
-    attempts += 1         #Counting the last attempt
+    attempts += 1         # Counting the last attempt
     print(f"🎉 You guessed it in {attempts} attempts!")
 else:
 
