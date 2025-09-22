@@ -3,6 +3,7 @@ import random
 print("-"*30)
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
+print("-"*30)
 
 
 #Generate a random number between 1 and 100
