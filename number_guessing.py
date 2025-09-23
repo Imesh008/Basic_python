@@ -5,7 +5,7 @@ print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
 print("-"*30)
 
-
+def play_game():
 
 
 #Generate a random number between 1 and 100
