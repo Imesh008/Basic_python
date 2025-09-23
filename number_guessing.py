@@ -8,7 +8,7 @@ print("-"*30)
 def play_game():
     number_to_guess = random.randint(1, 100) 
     attempts = 0
-    difficulty
+    difficulty =
 
 #Generate a random number between 1 and 100
 number_to_guess = random.randint(1, 100)
