@@ -6,7 +6,7 @@ print("I'm thinking of a number between 1 and 100.")
 print("-"*30)
 
 def play_game():
-    number_to_guess
+    number_to_guess = random.randint(1, 100)
 
 
 #Generate a random number between 1 and 100
