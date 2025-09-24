@@ -12,6 +12,9 @@ def play_game():
     max_attempts = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
     guess = int(input("Guess a number between 1 and 100: "))
 
+
+    while guess != number_to_guess:
+
 #Generate a random number between 1 and 100
 number_to_guess = random.randint(1, 100)
 
