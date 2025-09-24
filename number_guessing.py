@@ -10,6 +10,7 @@ def play_game():
     attempts = 0 
     difficulty = input("Choose difficulty (Easy/Medium/Hard): ").lower()
     max_attempts = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
+    guess 
 
 #Generate a random number between 1 and 100
 number_to_guess = random.randint(1, 100)
