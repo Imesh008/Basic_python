@@ -23,8 +23,10 @@ def play_game():
             break
         guess = int(input("Try again: "))
 
-if guess == number_to_guess       
+if guess == number_to_guess:
 
+
+    
 #Generate a random number between 1 and 100
 number_to_guess = random.randint(1, 100)
 
