@@ -18,6 +18,7 @@ def play_game():
         if guess < number_to_guess:
             print("Too low! Try a higher number.")
         else:
+            print("Too high! Try a lower number.")
 
 #Generate a random number between 1 and 100
 number_to_guess = random.randint(1, 100)
