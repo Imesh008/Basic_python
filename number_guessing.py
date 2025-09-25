@@ -23,6 +23,7 @@ def play_game():
             break
         guess = int(input("Try again: "))
 
+
 if guess == number_to_guess:
     print(f"🎉 You guessed it in {attempts} attempts!")
 
