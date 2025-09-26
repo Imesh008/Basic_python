@@ -27,7 +27,7 @@ def play_game():
     if guess == number_to_guess:
         print(f"🎉 You guessed it in {attempts} attempts!")
 else:
-    print (f"😞 You've used all your attempts. The number was {number_to_guess}.")
+     print (f"😞 You've used all your attempts. The number was {number_to_guess}.")
 with open ("scores.txt", "a") as file:
     file.write(f"{difficulty} - {attempts} attempts\n")
 
