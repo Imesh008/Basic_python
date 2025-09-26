@@ -31,7 +31,7 @@ else:
 with open ("scores.txt", "a") as file:
     file.write(f"{difficulty} - {attempts} attempts\n")
 
-
+print("-"*30)
 
 
 
