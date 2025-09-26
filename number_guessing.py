@@ -33,6 +33,8 @@ with open ("scores.txt", "a") as file:
 
 
 
+
+
 #Generate a random number between 1 and 100
 number_to_guess = random.randint(1, 100)
 
