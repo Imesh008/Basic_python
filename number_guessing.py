@@ -29,6 +29,7 @@ if guess == number_to_guess:
 else:
     print (f"😞 You've used all your attempts. The number was {number_to_guess}.")
 with open ("scores.txt", "a") as file:
+    file.write(f"{difficulty} - {attempts} attempts\n")
 
 
 
