@@ -26,6 +26,7 @@ def play_game():
 
 if guess == number_to_guess:
     print(f"🎉 You guessed it in {attempts} attempts!")
+else:
 
 
 
