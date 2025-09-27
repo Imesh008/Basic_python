@@ -32,7 +32,7 @@ def play_game():
         file.write(f"{difficulty} - {attempts} attempts\n")
     
 
-print("-"*30)
+    print("-"*30)
 
 
 
