@@ -33,7 +33,8 @@ def play_game():
     print("-"*30)
 
 try:
-    
+    print(open("scores.txt").read())
+
 
 
 #Generate a random number between 1 and 100
