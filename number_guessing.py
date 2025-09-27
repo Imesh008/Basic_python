@@ -32,6 +32,8 @@ def play_game():
         file.write(f"{difficulty} - {attempts} attempts\n")
     print("-"*30)
 
+try:
+    
 
 
 #Generate a random number between 1 and 100
