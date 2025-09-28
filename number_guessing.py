@@ -44,6 +44,7 @@ while True:
     if again != 'y':
         break
 
+print("👋 Thanks for playing!")
 
 
 
