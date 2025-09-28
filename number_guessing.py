@@ -39,7 +39,7 @@ except FileNotFoundError:
 
 
 while True:
-
+    play_game()
 
 
 
