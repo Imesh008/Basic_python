@@ -35,6 +35,7 @@ def play_game():
 try:
     print(open("scores.txt").read())
 except FileNotFoundError:
+    print("No scores recorded yet.")
 
 
 
