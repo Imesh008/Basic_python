@@ -41,6 +41,7 @@ except FileNotFoundError:
 while True:
     play_game()
     again = input ("Do you want to play again? (yes/no): ").lower
+    if again != 'y':
 
 
 
