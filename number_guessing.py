@@ -48,8 +48,7 @@ print("👋 Thanks for playing!")
 
 
  
-number_to_guess =   
-
+ 
 attempts = 0           #Counting the number of attempts
 
 #Get difficulty level from user
