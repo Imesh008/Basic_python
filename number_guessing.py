@@ -49,8 +49,7 @@ print("👋 Thanks for playing!")
 
  
  
-  = #Counting the number of attempts
-
+ 
 #Get difficulty level from user
 difficulty = input ("Choose difficulty (Easy/Medium/Hard): ").lower()
 #Set max attempts based on difficulty
