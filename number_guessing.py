@@ -48,7 +48,7 @@ print("👋 Thanks for playing!")
 
 
  
-number_to_guess = random.randint(1, 100)
+number_to_guess =   
 
 attempts = 0           #Counting the number of attempts
 
