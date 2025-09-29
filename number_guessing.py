@@ -49,7 +49,7 @@ print("👋 Thanks for playing!")
 
  
  
-attempts = 0           #Counting the number of attempts
+  = #Counting the number of attempts
 
 #Get difficulty level from user
 difficulty = input ("Choose difficulty (Easy/Medium/Hard): ").lower()
