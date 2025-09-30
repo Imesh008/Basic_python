@@ -52,7 +52,7 @@ print("👋 Thanks for playing!")
  
  
  
-             "easy" else 7 if difficulty == "medium" else 5
+             " "   7     == " "    
 #Ask user for the first guess
 
 guess = int(input("Guess a number between 1 and 100: "))
