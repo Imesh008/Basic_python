@@ -52,8 +52,7 @@ print("👋 Thanks for playing!")
  
  
  
-#      based on difficulty
-max_attempts = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
+ max_attempts = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
 #Ask user for the first guess
 
 guess = int(input("Guess a number between 1 and 100: "))
