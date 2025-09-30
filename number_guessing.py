@@ -52,7 +52,7 @@ print("👋 Thanks for playing!")
  
  
  
-#Set max attempts based on difficulty
+#      based on difficulty
 max_attempts = 10 if difficulty == "easy" else 7 if difficulty == "medium" else 5
 #Ask user for the first guess
 
