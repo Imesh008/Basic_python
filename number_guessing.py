@@ -52,8 +52,7 @@ print("👋 Thanks for playing!")
  
  
  
-             " "   7     == " "    
-#Ask user for the first guess
+ #Ask user for the first guess
 
 guess = int(input("Guess a number between 1 and 100: "))
 
