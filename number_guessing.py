@@ -52,7 +52,6 @@ print("👋 Thanks for playing!")
  
  
  
- 
 
 guess = int(input("Guess a number between 1 and 100: "))
 
