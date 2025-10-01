@@ -54,7 +54,7 @@ print("👋 Thanks for playing!")
  
 
  
-while guess != number_to_guess:
+      number_to_guess:
     attempts += 1        #Counting attempts
 
     if guess < number_to_guess:
