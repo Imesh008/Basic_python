@@ -55,7 +55,7 @@ print("👋 Thanks for playing!")
 
  
  
-        < number_to_guess:
+        <  : 
         print("Too low! Try again.")
     else:
         print("Too high! Try again.")
