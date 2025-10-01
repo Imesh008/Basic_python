@@ -53,8 +53,7 @@ print("👋 Thanks for playing!")
  
  
 
-     ( ("  a         100 : "))
-
+ 
 while guess != number_to_guess:
     attempts += 1        #Counting attempts
 
