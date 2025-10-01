@@ -54,7 +54,7 @@ print("👋 Thanks for playing!")
  
 
  
- 1        #Counting attempts
+ 1        #   
 
     if guess < number_to_guess:
         print("Too low! Try again.")
