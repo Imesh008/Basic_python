@@ -56,7 +56,7 @@ print("👋 Thanks for playing!")
  
  
  
-     # are  
+ 
     if attempts >= max_attempts:
         break
 
