@@ -55,7 +55,7 @@ print("👋 Thanks for playing!")
 
  
  
-         print("Too low! Try again.")
+          ("   ! Try again.")
     else:
         print("Too high! Try again.")
     #Stop if attempts are finished
