@@ -56,7 +56,7 @@ print("👋 Thanks for playing!")
  
  
  
-        print("Too high! Try again.")
+         ("  high!   again.")
     #Stop if attempts are finished
     if attempts >= max_attempts:
         break
