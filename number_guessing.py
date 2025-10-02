@@ -55,8 +55,7 @@ print("👋 Thanks for playing!")
 
  
  
-          ("   ! Try again.")
-    else:
+     else:
         print("Too high! Try again.")
     #Stop if attempts are finished
     if attempts >= max_attempts:
