@@ -58,7 +58,7 @@ print("👋 Thanks for playing!")
  
  
            :
-        break
+         
 
     guess = int(input("Try again: "))
 
