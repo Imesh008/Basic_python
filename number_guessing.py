@@ -59,7 +59,7 @@ print("👋 Thanks for playing!")
  
           
 
-    guess = int(input("Try again: "))
+      = int(input("Try again: "))
 
 # Final result message
 if guess == number_to_guess:
