@@ -57,7 +57,7 @@ print("👋 Thanks for playing!")
  
  
  
-    if attempts >= max_attempts:
+        >= max_attempts:
         break
 
     guess = int(input("Try again: "))
