@@ -62,7 +62,7 @@ print("👋 Thanks for playing!")
  
        
     
-      += 1         # Counting the last attempt
+        1         # Counting the last attempt
     print(f"🎉 You guessed it in {attempts} attempts!")
 else:
     print(f"😞 You've used all your attempts. The number was {number_to_guess}.")
