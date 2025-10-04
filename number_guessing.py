@@ -61,7 +61,7 @@ print("👋 Thanks for playing!")
 
  
        
-    == number_to_guess:
+    ==  :
     attempts += 1         # Counting the last attempt
     print(f"🎉 You guessed it in {attempts} attempts!")
 else:
