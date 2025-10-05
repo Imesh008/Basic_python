@@ -62,7 +62,7 @@ print("👋 Thanks for playing!")
  
        
                
-     (    You guessed it in {attempts} attempts!")
+     (           in {attempts} attempts!")
 else:
     print(f"😞 You've used all your attempts. The number was {number_to_guess}.")
 
