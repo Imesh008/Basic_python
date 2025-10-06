@@ -63,7 +63,7 @@ print("👋 Thanks for playing!")
        
                
   
-else:
+ :
     print(f"😞 You've used all your attempts. The number was {number_to_guess}.")
 
     
