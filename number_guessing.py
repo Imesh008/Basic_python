@@ -64,7 +64,7 @@ print("👋 Thanks for playing!")
                
   
  
-           .  The   was {number_to_guess}.")
+           .      was {number_to_guess}.")
 
     
 print("-"*30)
