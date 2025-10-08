@@ -63,8 +63,6 @@ print("👋 Thanks for playing!")
        
                
   
- 
- .          
-
+  
     
 print("-"*30)
